@@ -1,0 +1,137 @@
+<link href="default_assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/plan/dashboard"><i class="mdi mdi-view-list"></i> <span> Plan </span> </a>
+
+                                <ul class="submenu">
+                                    <li  data-permission="sales-plan"><a href="#/plan/plan"> Plan </a></li>
+                                    <li  data-permission="sales-plan"><a href="#/plan/requisition_plan"> Requisition Plan </a></li>
+                                </ul>
+                                
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><p>Plan</p></li>
+                                            <li><a href="#/report/plan/planningsumdetail">Planning Summary</a></li>
+                                             <li><a href="#/report/plan/componentdetail">Component Details</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+             <button class="btn btn-primary waves-effect w-md waves-light m-b-5 s-l-cn">Add Plan</button>
+        </div>
+        <h4 class="page-title">Plan</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card-box table-responsive">
+            <table id="datatablepl" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Plan Id</th>
+                        <th>Period Begin</th>
+                        <th>Period End</th>
+                        <th>Month</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                
+            </table>
+        </div>
+    </div>
+</div> 
+<!--<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h5 class="modal-title" id="myModalLabel">Offer status change</h5>
+                </div>
+                <div class="modal-body">
+
+                    
+                                    
+                                  <button class="btn  btn-success btn-outline btn-rounded" id="approvedOffer" data-dismiss="modal">Accept</button>
+                                  <button class="btn btn-danger btn-outline btn-rounded" id="rejectOffer" data-dismiss="modal">Reject</button> 
+
+                                            
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal" id="modalClose">Close</button>
+                </div>
+            </div>
+           
+        </div>
+        
+    </div>-->
+    <!-- /.modal -->
+        <script src="default_assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="default_assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+       <script src="assets/js/app/plan.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                PLAN.initPL();
+            });
+        </script>

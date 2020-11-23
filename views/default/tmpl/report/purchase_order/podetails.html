@@ -1,0 +1,136 @@
+ <!-- Navigation Bar-->
+                <header id="topnav">
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+                    </div>
+                    <div id="navigation">
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/purchase/dashboard"><i class="mdi mdi-invert-colors"></i> <span>Purchase</span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/purchase/requisition_purchase">Requisition Plan</a></li>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/purchase/purchase_enquiry">Enquiry</a></li>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/purchase/price_competitive">Price Competitive</a></li>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/purchase/purchase_order">Purchase Order</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 
+            </div> 
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+        </div>
+        <h4 class="page-title">List Of Purchase Order</h4>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="loginmessage"></div>
+            <div class="card-box">
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label >From*</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="frm_date" parsley-trigger="change" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >To*</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="to_date" parsley-trigger="change" required>
+                    </div>
+                    
+                    <!--<div class="form-group col-md-3">
+                        <label >Company*</label>
+                        <select type="text" class="form-control select2 select2-hidden-accessible" id="company_name"  required>
+                         <option value="">select</option>
+                         <%
+                                    for(var k in comp) {
+                                    %>
+                                    <option value="<%-comp[k].id%>"><%-comp[k].name%></option>
+                                        <%
+                                     }
+                                    %>
+                        
+                                </select>
+                    </div>-->
+                    <div class="form-group col-md-3">
+                        <label > Venddor*</label>
+                        <select type="text" class="select2 select2-multiple" multiple="multiple" multiple data-placeholder="Select Customer..." id="cus_name"  required>
+                         <option value="">All</option>
+                         <%
+                                    for(var k in cus) {
+                                    %>
+                                    <option value="<%-cus[k].id%>"><%-cus[k].company_name%></option>
+                                        <%
+                                     }
+                                    %>
+                        
+                                </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Status*</label>
+                        <select type="text" class="form-control select2 select2-hidden-accessible" id="status"  required>
+                            <option value="all">All</option>
+                            <%
+                            for(var k in status) {
+                            %>
+                            <option value="<%-status[k].po_status%>"><%-status[k].po_status%></option>
+                                <%
+                             }
+                            %>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >type*</label>
+                        <select type="text" class="form-control select2 select2-hidden-accessible" id="type"  >
+                         <option value="od">only details</option>
+                         <option value="ad">Item Wise(all details)</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label style="width: 100%;">&nbsp;</label>
+                       <button class="btn btn-primary waves-effect waves-light btn-p-OS-g">GO</button>
+                       <button class="btn btn-primary waves-effect waves-light btn-p-OS" >Print</button>
+                       <button class="btn btn-primary waves-effect waves-light btn-pdf" >PDF</button>
+                       <button class="btn btn-primary waves-effect waves-light btn-xl-OS" >XLS</button>
+                    </div>
+                    
+                </div>
+            </div>
+        <div id="itemWrap">
+            
+        </div>
+    </div><!-- end col -->
+</div>
+<script src="assets/js/app/report/purchase_order.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        RPORDER.initpoRprt();
+    });
+</script>

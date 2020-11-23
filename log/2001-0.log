@@ -1,0 +1,81 @@
+{"user":1,"type":"system login","time":"2001-01-01T00:07:52.830Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:04:46.993Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:09:11.601Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:12:19.806Z"}
+{"user":1,"type":"monthlyplansheet delete","time":"2001-01-01T00:12:49.905Z"}
+{"user":1,"type":"monthlyplansheet modification","time":"2001-01-01T00:14:09.410Z"}
+{"user":1,"type":"monthlyplansheet delete","time":"2001-01-01T00:15:50.050Z"}
+{"user":1,"type":"monthlyplansheet modification","time":"2001-01-01T00:16:08.159Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:06:40.535Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:04:42.221Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:04:36.967Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:28:22.579Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:37:51.591Z"}
+{"user":1,"type":"general settings updated","time":"2001-01-01T00:38:14.811Z","refer_id":3}
+{"user":1,"type":"general settings updated","time":"2001-01-01T00:38:44.283Z","refer_id":3}
+{"user":1,"type":"offer settings updated","time":"2001-01-01T00:39:13.047Z","refer_id":3}
+{"user":1,"type":"general settings updated","time":"2001-01-01T00:39:22.170Z","refer_id":3}
+{"user":1,"type":"system login","time":"2001-01-01T00:42:16.630Z"}
+{"user":1,"type":"general settings updated","time":"2001-01-01T00:42:34.190Z","refer_id":3}
+{"user":1,"type":"system login","time":"2001-01-01T00:47:13.143Z"}
+{"user":1,"type":"general settings updated","time":"2001-01-01T00:47:40.398Z","refer_id":3}
+{"user":1,"type":"system login","time":"2001-01-01T00:50:00.167Z"}
+{"user":1,"type":"general settings updated","time":"2001-01-01T00:50:23.996Z","refer_id":3}
+{"user":1,"type":"system login","time":"2001-01-01T00:52:52.343Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:19.612Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:16:24.097Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:41.834Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:06:02.593Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:27.751Z"}
+{"user":1,"type":"componemt name creation","time":"2001-01-01T00:06:09.254Z","refer_id":22}
+{"user":1,"type":"Component document creation","time":"2001-01-01T00:06:09.515Z","refer_id":65}
+{"user":1,"type":"system login","time":"2001-01-01T00:10:53.825Z"}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:11:05.420Z","refer":[{"id":28,"company":3,"autono":12,"fyear":"1920","vendor":"1","shipping":1,"enquiry_no":"ENQY/00012/1920","date":"2019-05-30T01:00:00.000Z","submission_date":"2019-05-28T01:00:00.000Z","drawing_no":"3","enquiry_note":"","enquiry_terms":"","total_amount":1792,"total_tax":0,"status":"active","creation_date":"2019-05-29T12:32:42.000Z","modification_date":"2019-05-29T12:32:42.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:11:08.801Z","refer":[{"id":27,"company":3,"autono":11,"fyear":"1920","vendor":"20","shipping":2,"enquiry_no":"ENQY/00011/1920","date":"2019-05-28T01:00:00.000Z","submission_date":"2019-05-26T01:00:00.000Z","drawing_no":"3","enquiry_note":"","enquiry_terms":"","total_amount":1815,"total_tax":0,"status":"active","creation_date":"2019-05-29T12:25:46.000Z","modification_date":"2019-05-29T12:25:46.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:11:17.573Z","refer":[{"id":26,"company":3,"autono":10,"fyear":"1920","vendor":"1,2","shipping":2,"enquiry_no":"ENQY/00010/1920","date":"2019-05-30T01:00:00.000Z","submission_date":"2019-05-24T01:00:00.000Z","drawing_no":"23","enquiry_note":"","enquiry_terms":"","total_amount":182,"total_tax":0,"status":"active","creation_date":"2019-05-29T12:20:24.000Z","modification_date":"2019-05-29T12:20:24.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:11:20.802Z","refer":[{"id":21,"company":3,"autono":7,"fyear":"1920","vendor":"19","shipping":2,"enquiry_no":"ENQY/00007/1920","date":"2019-05-28T01:00:00.000Z","submission_date":"2019-05-30T01:00:00.000Z","drawing_no":"008","enquiry_note":"","enquiry_terms":"","total_amount":13,"total_tax":0,"status":"active","creation_date":"2019-05-29T11:09:33.000Z","modification_date":"2019-05-29T11:09:33.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:11:24.046Z","refer":[{"id":20,"company":3,"autono":6,"fyear":"1920","vendor":"2,19","shipping":2,"enquiry_no":"ENQY/00006/1920","date":"2019-05-25T01:00:00.000Z","submission_date":"2019-05-25T01:00:00.000Z","drawing_no":"12","enquiry_note":"oo","enquiry_terms":"oo","total_amount":2063,"total_tax":0,"status":"active","creation_date":"2019-05-29T10:51:48.000Z","modification_date":"2019-05-29T10:51:48.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:11:27.203Z","refer":[{"id":18,"company":3,"autono":5,"fyear":"1920","vendor":"20","shipping":2,"enquiry_no":"ENQY/00005/1920","date":"2019-05-25T01:00:00.000Z","submission_date":"2019-05-23T01:00:00.000Z","drawing_no":"22","enquiry_note":"","enquiry_terms":"","total_amount":2336,"total_tax":0,"status":"active","creation_date":"2019-05-29T10:45:47.000Z","modification_date":"2019-05-29T10:45:47.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:11:32.123Z","refer":[{"id":16,"company":3,"autono":3,"fyear":"1920","vendor":"1,19","shipping":2,"enquiry_no":"ENQY/00003/1920","date":"2019-05-16T01:00:00.000Z","submission_date":"2019-05-16T01:00:00.000Z","drawing_no":"77","enquiry_note":"ss","enquiry_terms":"dd","total_amount":22184,"total_tax":0,"status":"active","creation_date":"2019-05-29T10:31:45.000Z","modification_date":"2019-05-29T10:31:45.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:11:36.942Z","refer":[{"id":17,"company":3,"autono":4,"fyear":"1920","vendor":"19","shipping":2,"enquiry_no":"ENQY/00004/1920","date":"2019-05-16T01:00:00.000Z","submission_date":"2019-05-25T01:00:00.000Z","drawing_no":"23","enquiry_note":"","enquiry_terms":"","total_amount":24,"total_tax":0,"status":"active","creation_date":"2019-05-29T10:43:48.000Z","modification_date":"2019-05-29T10:43:48.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:11:40.564Z","refer":[{"id":24,"company":3,"autono":8,"fyear":"1920","vendor":"1,20","shipping":2,"enquiry_no":"ENQY/00008/1920","date":"2019-05-30T01:00:00.000Z","submission_date":"2019-05-30T01:00:00.000Z","drawing_no":"99","enquiry_note":"","enquiry_terms":"","total_amount":1453,"total_tax":0,"status":"active","creation_date":"2019-05-29T12:03:55.000Z","modification_date":"2019-05-29T12:03:55.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:11:46.683Z","refer":[{"id":25,"company":3,"autono":9,"fyear":"1920","vendor":"1,20","shipping":2,"enquiry_no":"ENQY/00009/1920","date":"2019-05-30T01:00:00.000Z","submission_date":"2019-05-30T01:00:00.000Z","drawing_no":"12","enquiry_note":"","enquiry_terms":"","total_amount":1022,"total_tax":0,"status":"active","creation_date":"2019-05-29T12:18:40.000Z","modification_date":"2019-05-29T12:18:40.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:15:40.439Z","refer":[{"id":29,"company":3,"autono":13,"fyear":"1920","vendor":"2","shipping":1,"enquiry_no":"ENQY/00013/1920","date":"2019-05-16T01:00:00.000Z","submission_date":"2019-05-23T01:00:00.000Z","drawing_no":"123","enquiry_note":"","enquiry_terms":"","total_amount":1437,"total_tax":0,"status":"active","creation_date":"2019-05-29T12:35:13.000Z","modification_date":"2019-05-29T12:35:13.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase enquiry delete","time":"2001-01-01T00:15:44.148Z","refer":[{"id":30,"company":3,"autono":14,"fyear":"1920","vendor":"2","shipping":1,"enquiry_no":"ENQY/00014/1920","date":"2019-05-24T01:00:00.000Z","submission_date":"2019-05-25T01:00:00.000Z","drawing_no":"77","enquiry_note":"77","enquiry_terms":"44","total_amount":2181,"total_tax":0,"status":"active","creation_date":"2019-05-29T12:36:43.000Z","modification_date":"2019-05-29T12:36:43.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:20.515Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:13:26.222Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:04:51.000Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:11:27.375Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:06:25.509Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:20:29.437Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:10:30.996Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:06:07.424Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:39.234Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:15:43.916Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:06:09.322Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:06:17.850Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:06:34.799Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:54.530Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:06.842Z"}
+{"user":1,"type":"component mapping updated","time":"2001-01-01T00:05:29.816Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2001-01-01T00:05:29.817Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2001-01-01T00:05:29.820Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2001-01-01T00:05:29.822Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2001-01-01T00:05:29.823Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2001-01-01T00:05:29.834Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:23.724Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:57.580Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:07:13.947Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:06:55.317Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:08:55.259Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:23:40.573Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:10:35.049Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:43.194Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:07:33.036Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:04:50.472Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:06:18.463Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:49.531Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:04:55.555Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:09:53.115Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:07:19.011Z"}
+{"user":1,"type":"system login","time":"2001-01-01T00:05:06.990Z"}

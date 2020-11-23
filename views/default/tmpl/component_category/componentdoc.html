@@ -1,0 +1,112 @@
+<!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/product/dashboard"><i class="mdi mdi-texture"></i><span>Product</span> </a>
+                                <ul class="submenu">
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/prod_codification">Product </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/rawitem">Raw Item </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/serviceitem"> Service Item </a></li>
+                                </ul>
+                            </li>
+                             <li class="has-submenu">
+                                <a href="#/product/dashboard"><i class="mdi mdi-texture"></i><span>Master</span> </a>
+                                <ul class="submenu">
+                                    <li  data-permission="sales-component_category"><a href="#/product/componentcategory">Component Category</a></li>
+                                    <li  data-permission="sales-specification"><a href="#/product/prod_specification">Specification </a></li>
+                                    <li  data-permission="sales-prod_feature"><a href="#/product/prod_feature">Feature </a></li>
+                                    <li  data-permission="sales-prod_feature"><a href="#/product/unit"> Unit </a></li>
+                                    <li  data-permission="sales-prod_feature"><a href="#/product/hydro_test"> Hydro Test </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/forging"> Forging </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/opening_stock/openingstock"> Opening Stock </a></li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 s-n-bk">Back</button>
+            <% if(typeof row != 'undefined'){%>
+            <button class="btn btn-danger waves-effect w-md waves-light m-b-5 doc-dlt">Delete</button>
+            <% } %>
+        </div>
+        <h4 class="page-title">Component Category Document View</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="form-group">
+            <% if(typeof row != 'undefined'){%>
+        <embed src="images/component/<%-row.doc%>"  alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html" style="width: 100%;min-height: 750px;">
+            <input type="hidden" name="docid" id="docid" value="<%-row.id%>">
+            <% } else { %>
+            <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmSNew">
+            <div class="form-group col-md-6">
+                <label>Upload Document</label>
+                <input type="file" name="doc" id="component_doc" class="form-control" required="">
+            </div>
+            <input type="hidden" name="sid" id="sid" value="<%-sid%>">
+            <button class="btn btn-primary waves-effect waves-light" type="submit">
+                Submit
+            </button>
+            <button class="btn btn-secondary waves-effect waves-light m-l-5 s-n-bk">
+                Cancel
+            </button>
+        </form>
+            <% } %>
+       </div>
+    </div><!-- end col -->
+</div>
+
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/componentcategory.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        COMPONENT.initCCDV();
+    });
+</script>

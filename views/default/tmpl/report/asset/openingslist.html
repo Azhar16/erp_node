@@ -1,0 +1,63 @@
+<div class="card-box table-responsive" style="width: 100%;">
+    <h1 style="text-align: center;"><%-com.name%></h1>
+    <div style="text-align: center;"><%-com.address%>,<%-com.city%>,<%-com.state%>,<%-com.zip%></div>
+    <div style="text-align: center;"> Opening Details </div>  
+</div>
+<div class="card-box table-responsive">
+            <table id="datatable" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name Of Asset</th>
+                        <th>Asset depreciated Value as on 31/03/<%-cyear%><%-conststartyear%> for SLM purpose</th>
+                        <th>Book Value as at 01/04/<%-cyear%><%-startyear%></th>
+                        <th>Remaining useful life as on 01/04/<%-cyear%><%-startyear%></th>
+                        <th>If useful life   expired as at 01/04/<%-cyear%><%-conststartyear%></th>
+                        <th>If sold during FY <%-cyear%><%-startyear%> - <%-endyear%> ?</th>
+                        <th>Residual value as taken in fy <%-cyear%><%-conststartyear%> - <%-constendyear%></th>
+                        <th>Carrying Amount</th>
+                        <th>Retained Earnings w/o</th>
+                        <th>Dep Rate % WDV/SLM as per last year</th>
+                        <th>Dep for the Year</th>
+                        <th>Closing WDV as on 31/03/<%-cyear%><%-endyear%></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%
+                    var tot={t:0,d:0,v:0,dy:0,tt:0,dt:0,vt:0},pvyr='',advyr='',bkval=0,clsval=0,mthod='',dep=0,fnldep=0,rval=0,sarte=0,samount=0,sdate='',sprofit='',pamount='',assetfy='',curntfy=''; 
+                    for(var k in row){ 
+
+                    assetfy = row[k].fyear;
+                    var astYear = assetfy.toString().substring(0,2);
+                    var crntyear = fyear.toString().substring(0,2);
+                    var result = (crntyear - astYear);
+                    var remaning_life = (row[k].useful_life - result);
+                   
+                    %>
+                    <tr>
+                        <td><%-row[k].asset_name%></td>
+                        <td></td>
+                        <td><%-row[k].prevrate%></td>
+                        <td><%-row[k].remaning_life%></td>
+                        <td>no</td>
+                        <td><%-row[k].sale%></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><%-row[k].curdeprate%></td>
+                        <td><%-row[k].depval%></td>
+                        <td><%-row[k].nextrate%></td>
+                    </tr>
+                    <% } %>
+                </tbody>
+                <tfoot>
+                    
+                </tfoot>
+            </table>
+        </div>
+
+<script src="assets/js/app/report/asset.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        RASSET.initOpeningsCRprtL();
+    });
+</script>

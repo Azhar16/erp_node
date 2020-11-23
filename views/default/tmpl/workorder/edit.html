@@ -1,0 +1,322 @@
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/sales/dashboard"><i class="mdi mdi-invert-colors"></i> <span>Sales</span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/sales/enquiry">Enquiry</a></li>
+                                            <li class="userrole-cls" data-permission="sales-offer"><a href="#/sales/offer">Offer</a></li>
+                                            <li class="userrole-cls" data-permission ="sales-workorder"><a href="#/sales/workorder">Workorder</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span>Master</span> </a>
+
+                                <ul class="submenu">
+                                    <li><a href="#/salesagent"> Sales Agent </a></li>
+                                     <li><a href="#/sales/offer/product_list"> Sub Product </a></li>
+                                     <li><a href="#/sales/special_services"> Special Services </a></li>
+                                     <li><a href="#/sales/inspection"> Inspection </a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><a href="#/report/enquiry/enquirydetails">Enquiry </a></li>
+                                            <li><a href="#/report/offer/offerdetails">Offer</a></li>
+                                            <li><a href="#/report/workorder/workorderdetails">Workorder</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 s-n-bk">Back</button>
+        </div>
+        <h4 class="page-title">Work Order Edit</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmSNew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label>Work order No</label>
+                        <input type="text" id="workorder_no" name="workorder_no" class="form-control" placeholder="Work order number" parsley-trigger="change" required readonly="" value="<%-row.sa.wo_no%>">
+                        <label style="font-size: 10px;">Work order financial year will be change as per Work order date.</label>
+                    </div>
+                    <div class="form-group col-md-3 ui-widget">
+                        <label style="width: 100%;">Offer No </label>
+                        <input autocomplete="off" type="text" id="offer_no" parsley-trigger="change" required placeholder="Enter Offer Number" class="form-control" value="<%-row.su[0].offer_no%>"/>
+                        
+                    </div>
+                   <div class="form-group col-md-3">
+                        <label >Work Order date</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="wo_date" parsley-trigger="change" value="<%-row.sa.wo_date%>" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Order recived date</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="order_recive_date" value="<%-row.sa.order_recived_date%>" parsley-trigger="change" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Type Of Order</label>
+                        <select type="text" class="form-control" id="order_type"  >
+                            <option value="">select</option>
+                        <%
+                                    for(var k in ordertype) {
+                                    %>
+                                    <option <%if(row.sa.order_type== ordertype[k]){%>selected <%}%> value="<%-ordertype[k]%>"><%-ordertype[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <%
+                        if(typeof row.img[0] != 'undefined'){
+                        %>
+                       
+                       <input type="hidden" name="owo_doc" id="owo_doc" value="<%-row.img[0].doc%>"/>
+                       <input type="hidden" name="imgid" id="imgid" value="<%-row.img[0].id%>"/>
+                        <%
+                        }
+                            %>
+                       <label >Upload Document</label>
+                       <input type="file" class="form-control" id="wo_doc">
+                    </div>
+                    </div>
+            </div>
+            <div class="card-box">
+                            <h4 class="m-t-0 header-title">Order Details</h4>
+                            <div class="col-md-12">
+             <div class="form-row"> 
+
+                <div class="form-group col-md-3 ui-widget">
+                        <label style="width: 100%;"> Customer </label>
+                        <input autocomplete="off" type="text" id="customer" parsley-trigger="change"  placeholder="Enter a customer" class="form-control" data-id="<%-row.cus[0].id%>" value="<%-row.cus[0].name%>"/>
+                        
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >MTC issue for</label>
+                        <input type="text" class="form-control" placeholder="MTC Issue for" id="mtc_issue_for" parsley-trigger="change" value="<%-row.sa.mtc_issue_for%>" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Order No</label>
+                        <input type="text" class="form-control" placeholder="Order No" id="order_no" value="<%-row.sa.order_no%>" parsley-trigger="change" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Order Date</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="order_date" value="<%-row.sa.order_date%>" parsley-trigger="change" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Order Quantity</label>
+                        <input type="number" class="form-control" placeholder="Order quantity" id="order_quantity" value="<%-row.sa.order_quantity%>" parsley-trigger="change" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Order material value</label>
+                        <input type="text" class="form-control" placeholder="Order material value" id="order_material_value" parsley-trigger="change" value="<%-row.sa.order_material_value%>" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Over all CDD</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="over_all_cdd" value="<%-row.sa.over_all_cdd%>" parsley-trigger="change" >
+                    </div>
+                    <div class="form-group col-md-3 ui-widget">
+                        <label style="width: 100%;">Delevery At Site </label>
+                        <select class="form-control"  id="shipping" parsley-trigger="change" >
+                         <%
+                                    for(var k in row.sp) {
+                                    if(row.sp[k].id==row.sa.shipping){
+                                        row.cus[0].state=row.sp[k].state;
+                                    %>
+                                    <option selected="" value="<%-row.sp[k].id%>"><%-row.sp[k].label%></option>
+                                        <%
+                                    }
+                                    else{
+                                    %>
+                                    <option value="<%-row.sp[k].id%>"><%-row.sp[k].label%></option>
+                                        <%
+                                        }
+                                     }
+                                    %>
+                                    </select>
+                        
+                    </div>
+
+
+                </div>
+                </div>
+                 </div>
+
+                 <div class="card-box">
+                <h4 class="m-t-0 header-title">Tracking Points</h4>
+                <div class="col-md-12">
+                <div class="form-row"> 
+
+                    <div class="form-group col-md-3">
+                        <label >Formal Order</label>
+                        <select class="form-control" name="formal_order"
+                        id="formal_order" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(row.sa.formal_order== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(row.sa.formal_order== 'no'){%>selected <%}%> value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Ach. On</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="ach_date" value="<%-row.sa.ach_date%>" parsley-trigger="change" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Circulated On</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="circulated_date" value="<%-row.sa.circulated_date%>" parsley-trigger="change" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >P.R Status</label>
+                        <select class="form-control" name="pr_status"
+                        id="pr_status" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(row.sa.pr_status== 'aweets'){%>selected <%}%> value="aweets">Aweets</option>
+                            <option <%if(row.sa.pr_status== 'N/A'){%>selected <%}%> value="N/A">N/A</option>
+                            <option <%if(row.sa.pr_status== 'recived'){%>selected <%}%> value="recived">Recived</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-3 recived-date-cls" <%if(row.sa.pr_status != "recived"){ 
+                    %> 
+                    style="display: none;
+                       <% } %> ">
+                        <label >Recived On</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="recived_date" value="<%-row.sa.recived_date%>" parsley-trigger="change" >
+                    </div>
+
+                  
+        
+                </div>
+                </div>
+                </div>
+                <div class="card-box">
+                <h4 class="m-t-0 header-title">Credit Analysis</h4>
+                <div class="col-md-12">
+                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity" class="col-form-label">Sales Person</label>
+
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <label for="inputState" class="col-form-label">Amount(%)</label>
+
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label for="inputZip" class="col-form-label"></label>
+
+                                    </div>
+
+                            <div class="item-wrapper" style="width: 100%;">
+                                   <%
+                                    for(var k in row.sac) {
+                                     %>
+                                   <div class="col-md-12 clsfld" data-id='<%-row.sac[k].id%>'>
+                                    <div class="form-group col-md-6" style="float:left;">
+                                    <input type="text" autocomplete="off" class="form-control clsfldname" value="<%-row.sac[k].name%>" placeholder="Name" >
+                                    </div>
+                                    <div class="form-group col-md-5" style="float:left;">
+                                    <input type="text" class="form-control clsfldamt" value="<%-row.sac[k].amount%>" placeholder="0.00" value="0.00">
+                                    </div>
+                                    <div class="form-group col-md-1" style="float:left;">
+                                    <button class="btn btn-icon waves-effect waves-light btn-danger m-b-5 b-ss-r"> <i class="fa fa-remove"></i> </button>
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                    </div>
+                                    <%
+                                }
+                               %>
+                                </div>
+
+
+                </div>
+                </div>
+                </div>
+
+                   <div class="card-box">
+                     <div class="form-row"> 
+                      <div class="form-group text-right m-b-0" style="width: 100%">
+                        <input type="hidden" name="woid" id="woid" value="<%-woid%>">
+            <button class="btn btn-primary waves-effect waves-light" type="submit">
+                Submit
+            </button>
+            <button class="btn btn-secondary waves-effect waves-light m-l-5 s-n-bk">
+                Cancel
+            </button>
+        </div>
+    </div>
+</div>
+                
+            
+        </form>
+    </div><!-- end col -->
+</div>
+<script src="default_assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/workorder.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        WORKORDER.initWOE(<%-JSON.stringify(row.su[0])%>,<%-JSON.stringify(row.cus[0])%>);
+    });
+</script>

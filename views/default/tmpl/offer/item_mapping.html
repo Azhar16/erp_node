@@ -1,0 +1,197 @@
+<link href="default_assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        
+      
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/sales/dashboard"><i class="mdi mdi-invert-colors"></i> <span>Sales</span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/sales/enquiry">Enquiry</a></li>
+                                            <li class="userrole-cls" data-permission="sales-offer"><a href="#/sales/offer">Offer</a></li>
+                                            <li class="userrole-cls" data-permission ="sales-workorder"><a href="#/sales/workorder">Workorder</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span>Master</span> </a>
+
+                                <ul class="submenu">
+                                     <li><a href="#/salesagent"> Sales Agent </a></li>
+                                     <li><a href="#/sales/offer/product_list"> Sub Product </a></li>
+                                     <li><a href="#/sales/special_services"> Special Services </a></li>
+                                     <li><a href="#/sales/inspection"> Inspection </a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><a href="#/report/enquiry/enquirydetails">Enquiry </a></li>
+                                            <li><a href="#/report/offer/offerdetails">Offer</a></li>
+                                            <li><a href="#/report/workorder/workorderdetails">Workorder</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row hide-for-modal">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 i-n-b">Back</button>
+        </div>
+        <h4 class="page-title">Item Mapping</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmINew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+            <h4 class="m-t-0 header-title">Product</h4>
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                <label class="col-form-label"> Product </label>
+                </div>
+                <div class="form-group col-md-2">
+                    <label class="col-form-label">Component Name</label>
+                </div>
+                <div class="form-group col-md-2">
+                    <label class="col-form-label"> Feature </label>
+                </div>
+                <div class="form-group col-md-2">
+                    <label class="col-form-label"> Sub Feature </label>
+                </div>
+                <div class="form-group col-md-1">
+                    <label class="col-form-label">Quantity</label>
+                </div>
+               <div class="form-group col-md-1" >
+                    <label class="col-form-label"></label>
+                </div>
+                <div class="item-wrapper" style="width: 100%;">
+                  <%
+                  if(newmapping != ''){
+                  for(var k in newmapping){
+                  %>
+                <div class="data-row-wrap" data-id="<%-newmapping[k].item %>" data-cid="<%-mapping[k].id %>" data-pid="<%-newmapping[k].material%>" data-pfid="<%-mapping[k].ccnid%>">
+                <div class="col-md-4" style="float: left;">
+                <select class="form-control select2 select2-hidden-accessible i-r-material" name="material">
+                </select>
+                </div>
+                <div class="col-md-2" style="float: left;">
+                <input type="text" name="compt" class="form-control i-r-compnt" readonly="" value="<%-newmapping[k].component_name%>">
+                </div>
+                <div class="col-md-2" style="float: left;text-align: center;">
+                <input type="text" name="compt_ftre" class="form-control i-r-ftre" readonly="" value="<%-newmapping[k].pfname%>">
+                </div>
+                <div class="col-md-2" style="float: left;text-align: center;">
+                <input type="text" name="compt_sub_ftre" class="form-control i-r-sub-ftre" readonly="" value="<%-newmapping[k].psfname%>">
+                </div>
+                <div class="col-md-1" style="float: left;">
+                <input type="number" step=".01" class="form-control i-r-qnty" placeholder="Quantity" value="<%-newmapping[k].prod_quantity%>" readonly>
+                </div>
+                <input type="hidden"  class="form-control imapid" value="<%-newmapping[k].imid %>">
+                </div>
+                <div style="clear: both;"></div>
+                <% } 
+                }else{ 
+                for(var k in mapping){
+                %>
+                <div class="data-row-wrap" data-id="<%-mapping[k].item %>" data-cid="<%-mapping[k].id %>" data-pid="0" data-pfid="<%-mapping[k].ccnid%>" data-moc="<%-mapping[k].pr_parts%>" data-trim="<%-mapping[k].trim_parts%>" data-stem="<%-mapping[k].stem%>">
+                <div class="col-md-4" style="float: left;">
+                <select class="form-control select2 select2-hidden-accessible i-r-material" name="material">
+                </select>
+                </div>
+                <div class="col-md-2" style="float: left;">
+                <input type="text" name="compt" class="form-control i-r-compnt" readonly="" value="<%-mapping[k].component_name%>">
+                </div>
+                <div class="col-md-2" style="float: left;text-align: center;">
+                <input type="text" name="compt_ftre" class="form-control i-r-ftre" readonly="" value="<%-mapping[k].pfname%>">
+                </div>
+                <div class="col-md-2" style="float: left;text-align: center;">
+                <input type="text" name="compt_sub_ftre" class="form-control i-r-sub-ftre" readonly="" value="<%-mapping[k].psfname%>">
+                </div>
+                <div class="col-md-1" style="float: left;">
+                <input type="number" step=".01" class="form-control i-r-qnty" placeholder="Quantity" value="<%-mapping[k].prod_quantity%>" readonly>
+                </div>
+                </div>
+                <div style="clear: both;"></div>
+               <% } 
+                 }
+               %>
+                </div>
+                </div>
+                </div>
+                 <div class="card-box">
+                    <div class="form-group text-right m-b-0 col-md-12">
+                      <input type="hidden" name="ofrid" id="ofrid" value="<%-offer%>"/>
+                      <input type="hidden" name="ofritm" id="ofritm" value="<%-ofritm%>"/>
+                    <button class="btn btn-primary waves-effect waves-light" type="submit">
+                        Submit
+                    </button>
+                    <button class="btn btn-secondary waves-effect waves-light m-l-5 i-n-b hide-for-modal">
+                        Cancel
+                    </button>
+                </div>
+                </div>
+        </form>
+    </div><!-- end col -->
+</div>
+        <script src="default_assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="default_assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+       <script src="assets/js/app/offer.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                OFFER.initMPN();
+            });
+        </script>

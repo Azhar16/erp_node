@@ -1,0 +1,694 @@
+{"user":1,"type":"system login","time":"2019-09-03T05:47:01.549Z"}
+{"user":1,"type":"enquiry creation","time":"2019-09-03T06:15:10.194Z","refer_id":66}
+{"user":1,"type":"enquiry status acctepted","time":"2019-09-03T06:15:14.671Z","refer_id":"66"}
+{"user":1,"type":"system login","time":"2019-09-03T06:34:59.862Z"}
+{"user":1,"type":"system login","time":"2019-09-03T06:45:32.830Z"}
+{"user":1,"type":"system login","time":"2019-09-03T09:13:42.180Z"}
+{"user":1,"type":"system login","time":"2019-09-03T10:08:43.431Z"}
+{"user":1,"type":"enquiry creation","time":"2019-09-03T10:09:28.414Z","refer_id":67}
+{"user":1,"type":"enquiry status acctepted","time":"2019-09-03T10:09:34.020Z","refer_id":"67"}
+{"user":1,"type":"offer creation","time":"2019-09-03T10:10:33.814Z","refer_id":101}
+{"user":1,"type":"system login","time":"2019-09-03T11:45:41.498Z"}
+{"user":1,"type":"system login","time":"2019-09-03T13:35:52.929Z"}
+{"user":1,"type":"special service creation","time":"2019-09-03T13:40:30.666Z","refer_id":1}
+{"user":1,"type":"system login","time":"2019-09-03T13:42:07.485Z"}
+{"user":1,"type":"special service modification","time":"2019-09-03T13:42:24.152Z"}
+{"user":1,"type":"special service modification","time":"2019-09-03T13:42:30.281Z"}
+{"user":1,"type":"special service creation","time":"2019-09-03T13:43:57.540Z","refer_id":2}
+{"user":1,"type":"special service delete","time":"2019-09-03T13:44:01.184Z","refer":[{"id":2,"company":3,"service_name":"aa","service_no":11,"created_by":1,"modify_by":0,"creation_date":"2019-09-03T13:43:57.000Z","modification_date":"2019-09-03T13:43:57.000Z"}]}
+{"user":1,"type":"system login","time":"2019-09-03T14:06:19.705Z"}
+{"user":1,"type":"system login","time":"2019-09-03T14:08:08.634Z"}
+{"user":1,"type":"system login","time":"2019-09-03T14:09:39.697Z"}
+{"user":1,"type":"system login","time":"2019-09-03T14:10:37.723Z"}
+{"user":1,"type":"product Item specification creation","time":"2019-09-03T14:14:21.218Z","refer_id":1}
+{"user":1,"type":"product Item specification creation","time":"2019-09-03T14:14:30.098Z","refer_id":2}
+{"user":1,"type":"product Item specification creation","time":"2019-09-03T14:14:34.922Z","refer_id":3}
+{"user":1,"type":"product Item specification modification","time":"2019-09-03T14:14:40.524Z","refer_id":"3"}
+{"user":1,"type":"sub service delete","time":"2019-09-03T14:14:44.173Z","refer":[{"id":3,"special_service":1,"name":"33","no":22}]}
+{"user":1,"type":"special service creation","time":"2019-09-03T14:15:14.509Z","refer_id":3}
+{"user":1,"type":"system login","time":"2019-09-03T14:19:42.073Z"}
+{"user":1,"type":"system login","time":"2019-09-03T14:20:30.621Z"}
+{"user":1,"type":"product Item specification creation","time":"2019-09-03T14:21:03.532Z","refer_id":4}
+{"user":1,"type":"system login","time":"2019-09-04T05:42:33.812Z"}
+{"user":1,"type":"system login","time":"2019-09-04T07:56:20.844Z"}
+{"user":1,"type":"unit creation","time":"2019-09-04T07:57:57.348Z","refer_id":1}
+{"user":1,"type":"unit creation","time":"2019-09-04T07:58:02.970Z","refer_id":2}
+{"user":1,"type":"unit creation","time":"2019-09-04T07:58:08.829Z","refer_id":3}
+{"user":1,"type":"unit creation","time":"2019-09-04T07:58:13.213Z","refer_id":4}
+{"user":1,"type":"system login","time":"2019-09-04T09:06:17.514Z"}
+{"user":1,"type":"system login","time":"2019-09-04T09:07:29.467Z"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:08:58.701Z","refer_id":"124"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:09:03.298Z","refer_id":"123"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:09:07.732Z","refer_id":"122"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:09:25.191Z","refer_id":"121"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:09:30.037Z","refer_id":"120"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:09:35.801Z","refer_id":"119"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:09:49.847Z","refer_id":"118"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:09:55.470Z","refer_id":"117"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:10:00.828Z","refer_id":"116"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:10:24.466Z","refer_id":"121"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:10:33.504Z","refer_id":"118"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:10:43.114Z","refer_id":"115"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:11:04.404Z","refer_id":"114"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:11:08.915Z","refer_id":"113"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:11:13.587Z","refer_id":"112"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:11:18.117Z","refer_id":"111"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:11:22.605Z","refer_id":"110"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:11:28.129Z","refer_id":"109"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:11:32.960Z","refer_id":"108"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:11:37.149Z","refer_id":"107"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:11:42.359Z","refer_id":"106"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:11:46.942Z","refer_id":"105"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:12:04.003Z","refer_id":"104"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:12:08.465Z","refer_id":"103"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:12:13.264Z","refer_id":"102"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:12:25.355Z","refer_id":"101"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:12:30.137Z","refer_id":"100"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:12:39.444Z","refer_id":"99"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:12:44.195Z","refer_id":"98"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:12:56.749Z","refer_id":"97"}
+{"user":1,"type":"product Item specification modification","time":"2019-09-04T09:13:01.566Z","refer_id":"96"}
+{"user":1,"type":"system login","time":"2019-09-04T09:16:00.357Z"}
+{"user":1,"type":"system login","time":"2019-09-04T10:48:31.155Z"}
+{"user":1,"type":"system login","time":"2019-09-04T11:22:58.050Z"}
+{"user":1,"type":"system login","time":"2019-09-04T11:31:37.221Z"}
+{"user":1,"type":"system login","time":"2019-09-04T14:20:25.263Z"}
+{"user":1,"type":"system login","time":"2019-09-04T14:22:52.078Z"}
+{"user":1,"type":"system login","time":"2019-09-04T14:27:24.801Z"}
+{"user":1,"type":"offer creation","time":"2019-09-04T14:28:21.272Z","refer_id":102}
+{"user":1,"type":"offer creation","time":"2019-09-04T14:38:37.844Z","refer_id":103}
+{"user":1,"type":"system login","time":"2019-09-05T05:46:35.486Z"}
+{"user":1,"type":"enquiry creation","time":"2019-09-05T05:56:00.342Z","refer_id":68}
+{"user":1,"type":"enquiry status acctepted","time":"2019-09-05T05:56:05.453Z","refer_id":"68"}
+{"user":1,"type":"system login","time":"2019-09-05T07:00:04.808Z"}
+{"user":1,"type":"system login","time":"2019-09-05T07:01:08.930Z"}
+{"user":1,"type":"system login","time":"2019-09-05T07:07:30.527Z"}
+{"user":1,"type":"system login","time":"2019-09-05T07:15:37.534Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T07:17:37.247Z","refer_id":104}
+{"user":1,"type":"offer creation","time":"2019-09-05T07:17:37.599Z","refer_id":105}
+{"user":1,"type":"offer creation","time":"2019-09-05T07:23:38.949Z","refer_id":106}
+{"user":1,"type":"system login","time":"2019-09-05T07:30:44.459Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T07:34:45.025Z","refer_id":0}
+{"user":1,"type":"system login","time":"2019-09-05T07:36:40.172Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T07:39:32.762Z","refer_id":"104"}
+{"user":1,"type":"offer creation","time":"2019-09-05T07:42:37.142Z","refer_id":"104"}
+{"user":1,"type":"system login","time":"2019-09-05T07:45:35.670Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T07:46:42.495Z","refer_id":"104"}
+{"user":1,"type":"system login","time":"2019-09-05T07:49:43.902Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T07:50:21.844Z","refer_id":"104"}
+{"user":1,"type":"system login","time":"2019-09-05T07:53:50.991Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T07:54:52.400Z","refer_id":"104"}
+{"user":1,"type":"system login","time":"2019-09-05T07:59:31.813Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T08:00:22.631Z","refer_id":"104"}
+{"user":1,"type":"system login","time":"2019-09-05T08:04:37.222Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T08:06:26.302Z","refer_id":"104"}
+{"user":1,"type":"system login","time":"2019-09-05T08:18:09.157Z"}
+{"user":1,"type":"system login","time":"2019-09-05T08:20:49.504Z"}
+{"user":1,"type":"system login","time":"2019-09-05T08:23:02.619Z"}
+{"user":1,"type":"system login","time":"2019-09-05T08:24:38.996Z"}
+{"user":1,"type":"system login","time":"2019-09-05T08:25:17.035Z"}
+{"user":1,"type":"system login","time":"2019-09-05T08:44:11.572Z"}
+{"user":1,"type":"system login","time":"2019-09-05T08:53:56.392Z"}
+{"user":1,"type":"system login","time":"2019-09-05T08:59:26.847Z"}
+{"user":1,"type":"system login","time":"2019-09-05T09:34:10.310Z"}
+{"user":1,"type":"system login","time":"2019-09-05T09:36:53.960Z"}
+{"user":1,"type":"system login","time":"2019-09-05T09:38:00.392Z"}
+{"user":1,"type":"system login","time":"2019-09-05T10:24:02.734Z"}
+{"user":1,"type":"system login","time":"2019-09-05T10:54:27.139Z"}
+{"user":1,"type":"system login","time":"2019-09-05T11:09:25.969Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:19:04.597Z","refer_id":"104"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:25:18.647Z","refer_id":"104"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:28:53.180Z","refer_id":"104"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:30:15.003Z","refer_id":"104"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:31:12.342Z","refer_id":"104"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:32:01.414Z","refer_id":"104"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:32:01.888Z","refer_id":"104"}
+{"user":1,"type":"enquiry creation","time":"2019-09-05T11:34:24.494Z","refer_id":69}
+{"user":1,"type":"enquiry status acctepted","time":"2019-09-05T11:34:28.830Z","refer_id":"69"}
+{"user":1,"type":"system login","time":"2019-09-05T11:36:02.298Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:37:47.142Z","refer_id":107}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:39:38.719Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:44:07.191Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:52:11.292Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:52:19.467Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:52:19.845Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:54:32.280Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-05T11:56:12.294Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-05T12:04:54.661Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-05T12:34:28.585Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-05T13:22:11.303Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T13:26:24.005Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-05T13:37:57.050Z"}
+{"user":1,"type":"offer creation","time":"2019-09-05T13:38:56.937Z","refer_id":107}
+{"user":1,"type":"offer creation","time":"2019-09-05T13:41:49.533Z","refer_id":107}
+{"user":1,"type":"offer creation","time":"2019-09-05T14:10:38.022Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-05T14:25:16.806Z"}
+{"user":1,"type":"system login","time":"2019-09-06T05:52:18.570Z"}
+{"user":1,"type":"system login","time":"2019-09-06T05:55:47.705Z"}
+{"user":1,"type":"system login","time":"2019-09-06T07:33:06.645Z"}
+{"user":1,"type":"system login","time":"2019-09-06T07:53:13.073Z"}
+{"user":1,"type":"system login","time":"2019-09-06T10:51:34.125Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T10:54:46.884Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-06T10:56:45.885Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-06T10:59:05.827Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-06T10:59:48.169Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-06T11:03:04.051Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T12:00:19.316Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-06T12:00:21.790Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T12:44:02.280Z"}
+{"user":1,"type":"system login","time":"2019-09-06T12:50:02.307Z"}
+{"user":1,"type":"system login","time":"2019-09-06T13:06:15.555Z"}
+{"user":1,"type":"system login","time":"2019-09-06T13:08:54.730Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:10:50.303Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T13:20:20.312Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:21:26.735Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:22:36.063Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:25:09.342Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T13:32:44.436Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:33:56.274Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T13:35:08.705Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:35:55.921Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T13:42:02.555Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:43:41.021Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T13:45:44.032Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:46:23.423Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T13:48:33.458Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:48:57.233Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T13:51:47.370Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:52:19.245Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T13:53:09.956Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:53:33.320Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T13:57:04.806Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:57:40.593Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T13:59:04.173Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T13:59:41.379Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T14:03:14.501Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T14:03:50.211Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T14:06:08.128Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T14:06:41.155Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T14:07:39.143Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T14:08:06.746Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T14:16:17.352Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T14:16:58.494Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-06T14:17:25.688Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-06T14:17:48.321Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-06T14:30:35.144Z"}
+{"user":1,"type":"offer creation","time":"2019-09-06T14:31:49.156Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-06T14:32:20.796Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-06T14:35:10.006Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-09T07:08:04.476Z"}
+{"user":1,"type":"system login","time":"2019-09-09T07:15:43.016Z"}
+{"user":1,"type":"system login","time":"2019-09-09T07:19:19.058Z"}
+{"user":1,"type":"system login","time":"2019-09-09T07:24:40.544Z"}
+{"user":1,"type":"system login","time":"2019-09-09T07:38:02.707Z"}
+{"user":1,"type":"system login","time":"2019-09-09T07:48:10.477Z"}
+{"user":1,"type":"system login","time":"2019-09-09T09:09:14.545Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T09:12:07.618Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T09:12:44.078Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:36:35.495Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:39:20.025Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:39:20.744Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:39:21.493Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:42:21.082Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:42:21.792Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:42:22.594Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:44:31.870Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:44:33.088Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-09T10:47:56.007Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:49:05.041Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-09T10:55:12.718Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T10:55:47.121Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T11:13:33.431Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-09T12:09:30.693Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T12:28:12.385Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-09T12:34:39.620Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T12:35:58.546Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T12:36:50.278Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T12:37:15.272Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-09T12:43:08.366Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T12:44:16.170Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T12:44:25.090Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T12:44:27.587Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-09T13:31:37.861Z"}
+{"user":1,"type":"system login","time":"2019-09-09T13:38:20.199Z"}
+{"user":1,"type":"system login","time":"2019-09-09T13:40:13.848Z"}
+{"user":1,"type":"system login","time":"2019-09-09T13:45:55.777Z"}
+{"user":1,"type":"system login","time":"2019-09-09T13:47:47.511Z"}
+{"user":1,"type":"system login","time":"2019-09-09T13:48:51.610Z"}
+{"user":1,"type":"system login","time":"2019-09-09T13:51:52.085Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T13:52:44.408Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-09T13:53:35.537Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T13:55:56.152Z","refer_id":107}
+{"user":1,"type":"offer creation","time":"2019-09-09T13:58:55.399Z","refer_id":107}
+{"user":1,"type":"offer creation","time":"2019-09-09T14:06:55.016Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T14:07:17.212Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T14:07:51.500Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-09T14:48:50.825Z"}
+{"user":1,"type":"system login","time":"2019-09-09T14:50:49.048Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T14:52:11.896Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-09T14:58:41.034Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T14:59:06.805Z","refer_id":"107"}
+{"user":1,"type":"offer creation","time":"2019-09-09T15:00:27.831Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-09T15:14:08.098Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T15:14:30.406Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-09T15:16:30.437Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T15:17:29.637Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-09T18:03:17.835Z"}
+{"user":1,"type":"system login","time":"2019-09-09T18:36:32.114Z"}
+{"user":1,"type":"system login","time":"2019-09-09T18:42:09.920Z"}
+{"user":1,"type":"system login","time":"2019-09-09T18:44:39.668Z"}
+{"user":1,"type":"system login","time":"2019-09-09T19:11:00.741Z"}
+{"user":1,"type":"system login","time":"2019-09-09T19:15:11.706Z"}
+{"user":1,"type":"offer creation","time":"2019-09-09T19:15:44.625Z","refer_id":107}
+{"user":1,"type":"offer creation","time":"2019-09-09T19:16:48.764Z","refer_id":107}
+{"user":1,"type":"offer creation","time":"2019-09-09T19:19:19.690Z","refer_id":107}
+{"user":1,"type":"system login","time":"2019-09-09T19:52:07.154Z"}
+{"user":1,"type":"offer modification","time":"2019-09-09T19:55:25.693Z","refer_id":"107"}
+{"user":1,"type":"system login","time":"2019-09-10T05:58:49.064Z"}
+{"user":1,"type":"enquiry creation","time":"2019-09-10T05:59:24.088Z","refer_id":70}
+{"user":1,"type":"enquiry status acctepted","time":"2019-09-10T05:59:30.643Z","refer_id":"70"}
+{"user":1,"type":"system login","time":"2019-09-10T06:09:17.361Z"}
+{"user":1,"type":"system login","time":"2019-09-10T06:18:40.062Z"}
+{"user":1,"type":"offer status acctepted","time":"2019-09-10T06:18:50.159Z","refer_id":"107"}
+{"user":1,"type":"workorder creation","time":"2019-09-10T06:19:53.404Z","refer_id":69}
+{"user":1,"type":"system login","time":"2019-09-10T06:32:16.644Z"}
+{"user":1,"type":"system login","time":"2019-09-10T06:34:57.234Z"}
+{"user":1,"type":"system login","time":"2019-09-10T06:59:43.213Z"}
+{"user":1,"type":"system login","time":"2019-09-10T06:59:45.560Z"}
+{"user":1,"type":"system login","time":"2019-09-10T08:13:39.926Z"}
+{"user":1,"type":"system login","time":"2019-09-10T08:16:48.408Z"}
+{"user":1,"type":"system login","time":"2019-09-10T08:18:42.137Z"}
+{"user":1,"type":"system login","time":"2019-09-10T08:21:49.631Z"}
+{"user":1,"type":"system login","time":"2019-09-10T08:28:58.271Z"}
+{"user":1,"type":"workorder item modification","time":"2019-09-10T08:29:56.210Z","refer_id":"69"}
+{"user":1,"type":"system login","time":"2019-09-10T08:35:26.385Z"}
+{"user":1,"type":"system login","time":"2019-09-10T08:37:15.950Z"}
+{"user":1,"type":"workorder item modification","time":"2019-09-10T08:54:00.682Z","refer_id":"69"}
+{"user":1,"type":"workorder item modification","time":"2019-09-10T08:54:25.406Z","refer_id":"69"}
+{"user":1,"type":"system login","time":"2019-09-10T09:09:48.702Z"}
+{"user":1,"type":"system login","time":"2019-09-10T09:10:53.794Z"}
+{"user":1,"type":"workorder item modification","time":"2019-09-10T09:12:12.098Z","refer_id":"69"}
+{"user":1,"type":"workorder item modification","time":"2019-09-10T09:50:00.440Z","refer_id":"69"}
+{"user":1,"type":"offer creation","time":"2019-09-10T10:52:53.321Z","refer_id":104}
+{"user":1,"type":"offer creation","time":"2019-09-10T10:57:57.942Z","refer_id":104}
+{"user":1,"type":"system login","time":"2019-09-10T11:07:45.798Z"}
+{"user":1,"type":"offer creation","time":"2019-09-10T11:10:04.221Z","refer_id":104}
+{"user":1,"type":"system login","time":"2019-09-10T11:10:38.220Z"}
+{"user":1,"type":"offer creation","time":"2019-09-10T11:11:05.453Z","refer_id":104}
+{"user":1,"type":"system login","time":"2019-09-10T11:13:40.963Z"}
+{"user":1,"type":"offer creation","time":"2019-09-10T11:14:08.242Z","refer_id":104}
+{"user":1,"type":"system login","time":"2019-09-10T11:19:17.561Z"}
+{"user":1,"type":"offer creation","time":"2019-09-10T11:20:58.188Z","refer_id":108}
+{"user":1,"type":"system login","time":"2019-09-10T11:33:38.095Z"}
+{"user":1,"type":"system login","time":"2019-09-10T11:36:07.659Z"}
+{"user":1,"type":"system login","time":"2019-09-10T11:38:55.901Z"}
+{"user":1,"type":"system login","time":"2019-09-10T11:41:17.513Z"}
+{"user":1,"type":"system login","time":"2019-09-10T11:50:37.506Z"}
+{"user":1,"type":"offer creation","time":"2019-09-10T11:52:18.361Z","refer_id":109}
+{"user":1,"type":"system login","time":"2019-09-10T11:57:27.706Z"}
+{"user":1,"type":"offer creation","time":"2019-09-10T12:00:43.069Z","refer_id":110}
+{"user":1,"type":"system login","time":"2019-09-10T12:03:29.348Z"}
+{"user":1,"type":"offer creation","time":"2019-09-10T12:05:40.023Z","refer_id":111}
+{"user":1,"type":"system login","time":"2019-09-10T12:43:15.978Z"}
+{"user":1,"type":"offer creation","time":"2019-09-10T12:44:28.172Z","refer_id":107}
+{"user":1,"type":"workorder creation","time":"2019-09-10T12:46:26.061Z","refer_id":70}
+{"user":1,"type":"system login","time":"2019-09-10T12:49:16.315Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-10T12:50:02.238Z","refer_id":71}
+{"user":1,"type":"system login","time":"2019-09-10T12:51:28.535Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-10T12:52:11.577Z","refer_id":72}
+{"user":1,"type":"system login","time":"2019-09-10T12:54:49.586Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-10T12:55:25.043Z","refer_id":73}
+{"user":1,"type":"system login","time":"2019-09-10T13:10:16.955Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-10T13:11:00.290Z","refer_id":74}
+{"user":1,"type":"system login","time":"2019-09-10T13:15:07.956Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-10T13:16:28.995Z","refer_id":75}
+{"user":1,"type":"workorder creation","time":"2019-09-10T13:21:55.332Z","refer_id":76}
+{"user":1,"type":"system login","time":"2019-09-10T13:43:27.824Z"}
+{"user":1,"type":"system login","time":"2019-09-10T15:51:40.857Z"}
+{"user":1,"type":"offer modification","time":"2019-09-10T16:08:26.623Z","refer_id":"107"}
+{"user":1,"type":"enquiry creation","time":"2019-09-10T16:28:58.395Z","refer_id":70}
+{"user":1,"type":"enquiry status acctepted","time":"2019-09-10T16:29:11.132Z","refer_id":"70"}
+{"user":1,"type":"system login","time":"2019-09-10T16:39:22.471Z"}
+{"user":1,"type":"offer creation","time":"2019-09-10T16:42:15.569Z","refer_id":108}
+{"user":1,"type":"offer creation","time":"2019-09-10T16:51:21.464Z","refer_id":108}
+{"user":1,"type":"offer creation","time":"2019-09-10T17:19:46.075Z","refer_id":109}
+{"user":1,"type":"system login","time":"2019-09-11T05:50:27.232Z"}
+{"user":1,"type":"system login","time":"2019-09-11T06:21:59.307Z"}
+{"user":1,"type":"system login","time":"2019-09-11T06:22:43.114Z"}
+{"user":1,"type":"system login","time":"2019-09-11T06:27:15.985Z"}
+{"user":1,"type":"workorder item modification","time":"2019-09-11T06:28:09.991Z","refer_id":"76"}
+{"user":1,"type":"enquiry modification","time":"2019-09-11T06:35:23.479Z","refer_id":"70"}
+{"user":1,"type":"system login","time":"2019-09-11T06:43:45.741Z"}
+{"user":1,"type":"system login","time":"2019-09-11T06:47:04.149Z"}
+{"user":1,"type":"system login","time":"2019-09-11T06:53:05.626Z"}
+{"user":1,"type":"enquiry creation","time":"2019-09-11T06:53:49.274Z","refer_id":71}
+{"user":1,"type":"system login","time":"2019-09-11T06:56:01.915Z"}
+{"user":1,"type":"system login","time":"2019-09-11T06:58:04.232Z"}
+{"user":1,"type":"system login","time":"2019-09-11T06:59:13.505Z"}
+{"user":1,"type":"enquiry modification","time":"2019-09-11T06:59:40.304Z","refer_id":"71"}
+{"user":1,"type":"offer creation","time":"2019-09-11T08:56:38.031Z","refer_id":112}
+{"user":1,"type":"system login","time":"2019-09-11T09:17:38.323Z"}
+{"user":1,"type":"workorder item modification","time":"2019-09-11T09:18:14.831Z","refer_id":"76"}
+{"user":1,"type":"workorder item modification","time":"2019-09-11T09:18:45.368Z","refer_id":"76"}
+{"user":1,"type":"offer status acctepted","time":"2019-09-11T09:21:02.924Z","refer_id":"112"}
+{"user":1,"type":"workorder creation","time":"2019-09-11T09:22:00.524Z","refer_id":77}
+{"user":1,"type":"workorder item modification","time":"2019-09-11T09:22:58.562Z","refer_id":"77"}
+{"user":1,"type":"workorder item modification","time":"2019-09-11T09:23:34.877Z","refer_id":"77"}
+{"user":1,"type":"customer modification","time":"2019-09-11T09:31:58.446Z","refer_id":"1"}
+{"user":1,"type":"customer modification","time":"2019-09-11T09:36:26.364Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:08:53.806Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:08:53.886Z","refer_id":"5"}
+{"user":1,"type":"system login","time":"2019-09-11T10:11:09.736Z"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:11:24.354Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:11:24.407Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:13:56.419Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:14:07.603Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:14:14.664Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:14:29.387Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:14:29.424Z","refer_id":"5"}
+{"user":1,"type":"system login","time":"2019-09-11T10:17:24.131Z"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:17:52.736Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T10:21:51.099Z","refer_id":"5"}
+{"user":1,"type":"system login","time":"2019-09-11T11:16:51.568Z"}
+{"user":1,"type":"customer modification","time":"2019-09-11T11:17:31.004Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T11:17:31.112Z","refer_id":"5"}
+{"user":1,"type":"system login","time":"2019-09-11T11:23:42.089Z"}
+{"user":1,"type":"customer modification","time":"2019-09-11T11:24:26.039Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T11:36:25.805Z","refer_id":"5"}
+{"user":1,"type":"customer modification","time":"2019-09-11T11:36:25.987Z","refer_id":"5"}
+{"user":1,"type":"system login","time":"2019-09-11T11:47:22.371Z"}
+{"user":1,"type":"customer creation","time":"2019-09-11T11:48:07.242Z","refer_id":832}
+{"user":1,"type":"customer modification","time":"2019-09-11T11:48:24.975Z","refer_id":"832"}
+{"user":1,"type":"customer modification","time":"2019-09-11T11:48:25.056Z","refer_id":"832"}
+{"user":1,"type":"cusromer delete","time":"2019-09-11T11:48:42.753Z","refer_id":"832"}
+{"user":1,"type":"system login","time":"2019-09-11T11:49:51.335Z"}
+{"user":1,"type":"system login","time":"2019-09-11T11:59:30.763Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:08:24.664Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:10:00.283Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:16:55.666Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:18:03.151Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:18:59.288Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:20:37.154Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:29:31.866Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:30:56.558Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:35:04.121Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:36:42.113Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:38:31.838Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:39:29.014Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:41:04.395Z"}
+{"user":1,"type":"system login","time":"2019-09-11T12:42:53.347Z"}
+{"user":1,"type":"system login","time":"2019-09-11T13:10:36.820Z"}
+{"user":1,"type":"system login","time":"2019-09-11T13:54:22.205Z"}
+{"user":1,"type":"system login","time":"2019-09-11T13:57:04.283Z"}
+{"user":1,"type":"material creation","time":"2019-09-11T13:57:21.506Z","refer_id":1}
+{"user":1,"type":"material creation","time":"2019-09-11T13:58:04.729Z","refer_id":2}
+{"user":1,"type":"material modification","time":"2019-09-11T13:58:11.694Z","refer_id":"2"}
+{"user":1,"type":"material modification","time":"2019-09-11T14:02:44.731Z","refer_id":"2"}
+{"user":1,"type":"material modification","time":"2019-09-11T14:02:55.772Z","refer_id":"2"}
+{"user":1,"type":"material creation","time":"2019-09-11T14:03:03.865Z","refer_id":3}
+{"user":1,"type":"system login","time":"2019-09-11T14:04:29.124Z"}
+{"user":1,"type":"Material delete","time":"2019-09-11T14:04:59.003Z","refer":[{"id":3,"company":3,"product_feature":20,"name":"dd","code":"dd","showing":"no"}]}
+{"user":1,"type":"material creation","time":"2019-09-11T14:15:32.259Z","refer_id":4}
+{"user":1,"type":"system login","time":"2019-09-11T14:18:28.105Z"}
+{"user":1,"type":"system login","time":"2019-09-11T14:19:46.961Z"}
+{"user":1,"type":"material creation","time":"2019-09-11T14:24:37.439Z","refer_id":5}
+{"user":1,"type":"material creation","time":"2019-09-11T14:25:02.865Z","refer_id":6}
+{"user":1,"type":"material creation","time":"2019-09-11T14:26:09.365Z","refer_id":7}
+{"user":1,"type":"material creation","time":"2019-09-11T14:26:32.284Z","refer_id":8}
+{"user":1,"type":"system login","time":"2019-09-11T14:29:14.356Z"}
+{"user":1,"type":"system login","time":"2019-09-11T14:31:18.286Z"}
+{"user":1,"type":"system login","time":"2019-09-11T14:42:05.743Z"}
+{"user":1,"type":"system login","time":"2019-09-11T14:43:41.319Z"}
+{"user":1,"type":"system login","time":"2019-09-11T14:44:27.046Z"}
+{"user":1,"type":"material modification","time":"2019-09-11T14:45:37.653Z","refer_id":"2"}
+{"user":1,"type":"material modification","time":"2019-09-11T14:45:55.471Z","refer_id":"1"}
+{"user":1,"type":"system login","time":"2019-09-11T16:34:47.067Z"}
+{"user":1,"type":"system login","time":"2019-09-11T18:33:21.486Z"}
+{"user":1,"type":"system login","time":"2019-09-11T18:39:52.047Z"}
+{"user":1,"type":"system login","time":"2019-09-11T18:41:39.528Z"}
+{"user":1,"type":"system login","time":"2019-09-11T18:44:37.137Z"}
+{"user":1,"type":"material creation","time":"2019-09-11T18:58:53.845Z","refer_id":4}
+{"user":1,"type":"material creation","time":"2019-09-11T18:58:53.884Z","refer_id":5}
+{"user":1,"type":"Material delete","time":"2019-09-11T18:59:09.988Z","refer":[{"id":5,"company":3,"product_feature":22,"name":"316","code":"316","short_code":"1","showing":"no"}]}
+{"user":1,"type":"material creation","time":"2019-09-11T18:59:42.561Z","refer_id":6}
+{"user":1,"type":"offer creation","time":"2019-09-11T19:00:24.437Z","refer_id":109}
+{"user":1,"type":"offer creation","time":"2019-09-11T19:00:27.113Z","refer_id":109}
+{"user":1,"type":"offer creation","time":"2019-09-11T19:00:28.499Z","refer_id":109}
+{"user":1,"type":"offer creation","time":"2019-09-11T19:00:44.073Z","refer_id":109}
+{"user":1,"type":"offer creation","time":"2019-09-11T19:05:28.444Z","refer_id":109}
+{"user":1,"type":"system login","time":"2019-09-11T19:26:54.635Z"}
+{"user":1,"type":"system login","time":"2019-09-12T06:08:30.491Z"}
+{"user":1,"type":"system login","time":"2019-09-12T06:44:45.131Z"}
+{"user":1,"type":"offer creation","time":"2019-09-12T06:59:50.239Z","refer_id":112}
+{"user":1,"type":"system login","time":"2019-09-12T07:01:45.304Z"}
+{"user":1,"type":"offer creation","time":"2019-09-12T07:02:06.063Z","refer_id":112}
+{"user":1,"type":"offer modification","time":"2019-09-12T07:21:17.485Z","refer_id":"112"}
+{"user":1,"type":"offer creation","time":"2019-09-12T07:22:15.305Z","refer_id":112}
+{"user":1,"type":"offer creation","time":"2019-09-12T07:30:05.458Z","refer_id":112}
+{"user":1,"type":"system login","time":"2019-09-12T07:41:09.403Z"}
+{"user":1,"type":"system login","time":"2019-09-12T07:50:22.558Z"}
+{"user":1,"type":"component name delete","time":"2019-09-12T08:03:25.980Z","refer_id":"19"}
+{"user":1,"type":"component name delete","time":"2019-09-12T08:03:35.270Z","refer_id":"17"}
+{"user":1,"type":"system login","time":"2019-09-12T08:27:24.773Z"}
+{"user":1,"type":"system login","time":"2019-09-12T08:29:15.291Z"}
+{"user":1,"type":"system login","time":"2019-09-12T08:31:08.323Z"}
+{"user":1,"type":"material creation","time":"2019-09-12T08:32:04.733Z","refer_id":1}
+{"user":1,"type":"material creation","time":"2019-09-12T08:32:56.198Z","refer_id":2}
+{"user":1,"type":"material modification","time":"2019-09-12T08:33:09.734Z","refer_id":"1"}
+{"user":1,"type":"material creation","time":"2019-09-12T08:33:40.080Z","refer_id":3}
+{"user":1,"type":"material creation","time":"2019-09-12T08:33:56.138Z","refer_id":4}
+{"user":1,"type":"Material delete","time":"2019-09-12T08:34:04.597Z","refer":[{"id":4,"company":3,"component_category_name":15,"name":"ASTM A182 F3045","code":"F304","short_code":"ALLOY STEEL","showing":"no"}]}
+{"user":1,"type":"material creation","time":"2019-09-12T08:35:10.033Z","refer_id":5}
+{"user":1,"type":"material modification","time":"2019-09-12T08:35:16.202Z","refer_id":"5"}
+{"user":1,"type":"system login","time":"2019-09-12T08:38:12.586Z"}
+{"user":1,"type":"material creation","time":"2019-09-12T08:42:52.536Z","refer_id":6}
+{"user":1,"type":"material creation","time":"2019-09-12T08:43:08.690Z","refer_id":7}
+{"user":1,"type":"material creation","time":"2019-09-12T08:43:26.497Z","refer_id":8}
+{"user":1,"type":"material creation","time":"2019-09-12T08:43:42.448Z","refer_id":9}
+{"user":1,"type":"material creation","time":"2019-09-12T08:45:07.392Z","refer_id":10}
+{"user":1,"type":"material creation","time":"2019-09-12T08:45:58.122Z","refer_id":11}
+{"user":1,"type":"material creation","time":"2019-09-12T08:46:26.820Z","refer_id":12}
+{"user":1,"type":"material creation","time":"2019-09-12T08:46:57.745Z","refer_id":13}
+{"user":1,"type":"material creation","time":"2019-09-12T08:47:10.965Z","refer_id":14}
+{"user":1,"type":"material creation","time":"2019-09-12T08:47:30.092Z","refer_id":15}
+{"user":1,"type":"material creation","time":"2019-09-12T08:47:43.249Z","refer_id":16}
+{"user":1,"type":"system login","time":"2019-09-12T08:50:19.384Z"}
+{"user":1,"type":"system login","time":"2019-09-12T08:55:45.570Z"}
+{"user":1,"type":"system login","time":"2019-09-12T09:00:29.469Z"}
+{"user":1,"type":"system login","time":"2019-09-12T09:01:20.007Z"}
+{"user":1,"type":"offer creation","time":"2019-09-12T09:02:39.524Z","refer_id":112}
+{"user":1,"type":"offer creation","time":"2019-09-12T09:06:03.742Z","refer_id":112}
+{"user":1,"type":"system login","time":"2019-09-12T09:07:57.637Z"}
+{"user":1,"type":"offer creation","time":"2019-09-12T09:15:11.559Z","refer_id":112}
+{"user":1,"type":"material modification","time":"2019-09-12T09:15:57.594Z","refer_id":"15"}
+{"user":1,"type":"material modification","time":"2019-09-12T09:16:17.113Z","refer_id":"11"}
+{"user":1,"type":"material modification","time":"2019-09-12T09:17:46.741Z","refer_id":"16"}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:18:37.233Z","refer_id":7}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:18:37.248Z","refer_id":8}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:18:37.301Z","refer_id":9}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:18:37.315Z","refer_id":10}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:18:37.318Z","refer_id":11}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:18:37.321Z","refer_id":12}
+{"user":1,"type":"system login","time":"2019-09-12T09:33:24.363Z"}
+{"user":1,"type":"system login","time":"2019-09-12T09:38:03.855Z"}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:39:42.048Z","refer_id":1}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:39:42.083Z","refer_id":2}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:39:42.086Z","refer_id":3}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:39:42.112Z","refer_id":4}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:39:42.116Z","refer_id":5}
+{"user":1,"type":"mapping creating","time":"2019-09-12T09:39:42.138Z","refer_id":6}
+{"user":1,"type":"offer creation","time":"2019-09-12T10:14:42.529Z","refer_id":112}
+{"user":1,"type":"offer creation","time":"2019-09-12T10:15:38.844Z","refer_id":112}
+{"user":1,"type":"mapping creating","time":"2019-09-12T10:17:03.502Z","refer_id":7}
+{"user":1,"type":"mapping creating","time":"2019-09-12T10:17:03.531Z","refer_id":8}
+{"user":1,"type":"mapping creating","time":"2019-09-12T10:17:03.549Z","refer_id":9}
+{"user":1,"type":"system login","time":"2019-09-12T10:32:41.198Z"}
+{"user":1,"type":"system login","time":"2019-09-12T10:36:21.286Z"}
+{"user":1,"type":"system login","time":"2019-09-12T10:38:27.429Z"}
+{"user":1,"type":"system login","time":"2019-09-12T11:19:30.850Z"}
+{"user":1,"type":"system login","time":"2019-09-12T11:22:52.870Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-12T11:23:37.984Z","refer_id":78}
+{"user":1,"type":"system login","time":"2019-09-12T11:27:31.157Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-12T11:27:56.227Z","refer_id":79}
+{"user":1,"type":"system login","time":"2019-09-12T11:30:12.621Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-12T11:30:41.712Z","refer_id":80}
+{"user":1,"type":"system login","time":"2019-09-12T13:03:21.596Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-12T13:04:17.457Z","refer_id":81}
+{"user":1,"type":"system login","time":"2019-09-12T13:06:16.533Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-12T13:07:01.734Z","refer_id":82}
+{"user":1,"type":"system login","time":"2019-09-12T13:09:23.246Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-12T13:09:54.842Z","refer_id":83}
+{"user":1,"type":"system login","time":"2019-09-12T13:15:25.234Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-12T13:15:50.121Z","refer_id":84}
+{"user":1,"type":"system login","time":"2019-09-12T13:44:06.314Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-12T13:44:50.439Z","refer_id":85}
+{"user":1,"type":"system login","time":"2019-09-12T14:05:02.548Z"}
+{"user":1,"type":"system login","time":"2019-09-12T14:07:24.215Z"}
+{"user":1,"type":"system login","time":"2019-09-12T14:12:07.706Z"}
+{"user":1,"type":"system login","time":"2019-09-12T14:14:06.307Z"}
+{"user":1,"type":"system login","time":"2019-09-12T14:18:51.136Z"}
+{"user":1,"type":"system login","time":"2019-09-12T14:28:07.586Z"}
+{"user":1,"type":"system login","time":"2019-09-12T14:33:10.869Z"}
+{"user":1,"type":"system login","time":"2019-09-12T14:45:03.029Z"}
+{"user":1,"type":"system login","time":"2019-09-12T14:46:22.055Z"}
+{"user":1,"type":"system login","time":"2019-09-13T05:12:06.631Z"}
+{"user":1,"type":"system login","time":"2019-09-13T06:24:44.556Z"}
+{"user":1,"type":"mapping updating","time":"2019-09-13T06:25:54.007Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"mapping updating","time":"2019-09-13T06:25:54.027Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"mapping updating","time":"2019-09-13T06:25:54.050Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"mapping updating","time":"2019-09-13T06:25:54.054Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"mapping updating","time":"2019-09-13T06:25:54.056Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"mapping updating","time":"2019-09-13T06:25:54.058Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"system login","time":"2019-09-13T06:47:21.123Z"}
+{"user":1,"type":"customer shipping creation","time":"2019-09-13T06:48:03.659Z","refer_id":337}
+{"user":1,"type":"customer shipping creation","time":"2019-09-13T06:48:21.248Z","refer_id":338}
+{"user":1,"type":"enquiry creation","time":"2019-09-13T06:48:40.178Z","refer_id":72}
+{"user":1,"type":"enquiry status acctepted","time":"2019-09-13T06:49:57.512Z","refer_id":"72"}
+{"user":1,"type":"Offer Summary creation","time":"2019-09-13T06:50:23.989Z","refer_id":113}
+{"user":1,"type":"offer status acctepted","time":"2019-09-13T06:50:41.208Z","refer_id":"113"}
+{"user":1,"type":"workorder creation","time":"2019-09-13T06:51:07.532Z","refer_id":86}
+{"user":1,"type":"workorder item modification","time":"2019-09-13T06:53:45.378Z","refer_id":"86"}
+{"user":1,"type":"workorder item modification","time":"2019-09-13T06:57:12.764Z","refer_id":"86"}
+{"user":1,"type":"workorder item modification","time":"2019-09-13T06:57:12.964Z","refer_id":"86"}
+{"user":1,"type":"system login","time":"2019-09-13T07:42:27.343Z"}
+{"user":1,"type":"workorder item modification","time":"2019-09-13T07:45:03.833Z","refer_id":"86"}
+{"user":1,"type":"workorder item modification","time":"2019-09-13T07:46:18.012Z","refer_id":"86"}
+{"user":1,"type":"workorder item modification","time":"2019-09-13T07:47:39.553Z","refer_id":"86"}
+{"user":1,"type":"system login","time":"2019-09-13T08:03:52.713Z"}
+{"user":1,"type":"system login","time":"2019-09-13T08:14:14.898Z"}
+{"user":1,"type":"system login","time":"2019-09-13T08:20:42.126Z"}
+{"user":1,"type":"system login","time":"2019-09-13T08:22:10.710Z"}
+{"user":1,"type":"system login","time":"2019-09-13T08:35:27.895Z"}
+{"user":1,"type":"system login","time":"2019-09-13T08:38:07.929Z"}
+{"user":1,"type":"system login","time":"2019-09-13T08:39:27.808Z"}
+{"user":1,"type":"system login","time":"2019-09-13T08:40:12.978Z"}
+{"user":1,"type":"system login","time":"2019-09-13T08:46:24.651Z"}
+{"user":1,"type":"system login","time":"2019-09-13T08:47:45.627Z"}
+{"user":1,"type":"system login","time":"2019-09-13T09:46:01.552Z"}
+{"user":1,"type":"system login","time":"2019-09-13T09:49:20.669Z"}
+{"user":1,"type":"customer shipping creation","time":"2019-09-13T10:02:05.461Z","refer_id":339}
+{"user":1,"type":"system login","time":"2019-09-13T10:25:17.860Z"}
+{"user":1,"type":"customer shipping modification","time":"2019-09-13T10:27:45.384Z","refer_id":"5"}
+{"user":1,"type":"customer shipping modification","time":"2019-09-13T10:27:45.401Z","refer_id":"5"}
+{"user":1,"type":"system login","time":"2019-09-13T10:35:37.927Z"}
+{"user":1,"type":"system login","time":"2019-09-13T10:43:57.246Z"}
+{"user":1,"type":"workorder creation","time":"2019-09-13T10:46:09.926Z","refer_id":87}
+{"user":1,"type":"workorder creation","time":"2019-09-13T10:46:46.608Z","refer_id":88}
+{"user":1,"type":"workorder creation","time":"2019-09-13T10:47:51.413Z","refer_id":89}
+{"user":1,"type":"system login","time":"2019-09-13T10:49:52.484Z"}
+{"user":1,"type":"workorder modification","time":"2019-09-13T10:50:31.729Z","refer_id":"86"}
+{"user":1,"type":"workorder modification","time":"2019-09-13T10:55:52.297Z","refer_id":"86"}
+{"user":1,"type":"workorder modification","time":"2019-09-13T10:56:21.825Z","refer_id":"86"}
+{"user":1,"type":"offer creation","time":"2019-09-13T11:11:51.567Z","refer_id":104}
+{"user":1,"type":"system login","time":"2019-09-13T11:13:44.728Z"}
+{"user":1,"type":"offer creation","time":"2019-09-13T11:14:29.484Z","refer_id":104}
+{"user":1,"type":"offer creation","time":"2019-09-13T11:19:34.851Z","refer_id":104}
+{"user":1,"type":"system login","time":"2019-09-13T13:10:40.142Z"}
+{"user":1,"type":"system login","time":"2019-09-14T11:56:37.602Z"}
+{"user":1,"type":"system login","time":"2019-09-15T05:28:54.743Z"}
+{"user":1,"type":"system login","time":"2019-09-15T07:06:04.755Z"}
+{"user":1,"type":"customer shipping creation","time":"2019-09-15T08:39:03.126Z","refer_id":28}
+{"user":1,"type":"system login","time":"2019-09-15T09:20:34.074Z"}
+{"user":1,"type":"system login","time":"2019-09-15T09:25:57.003Z"}
+{"user":1,"type":"workorder techno commercial creation","time":"2019-09-15T09:28:53.402Z","refer_id":"68"}
+{"user":1,"type":"system login","time":"2019-09-15T10:05:36.149Z"}
+{"user":1,"type":"system login","time":"2019-09-15T10:21:34.579Z"}
+{"user":1,"type":"system login","time":"2019-09-15T10:23:36.251Z"}
+{"user":1,"type":"system login","time":"2019-09-15T11:24:09.040Z"}
+{"user":1,"type":"workorder techno commercial creation","time":"2019-09-15T11:48:33.290Z","refer_id":"7"}
+{"user":1,"type":"workorder techno commercial creation","time":"2019-09-15T11:49:56.707Z","refer_id":"7"}
+{"user":1,"type":"system login","time":"2019-09-17T06:14:23.531Z"}
+{"user":1,"type":"system login","time":"2019-09-17T06:17:35.153Z"}
+{"user":1,"type":"system login","time":"2019-09-17T06:20:09.158Z"}
+{"user":1,"type":"system login","time":"2019-09-17T06:21:32.464Z"}
+{"user":1,"type":"offer creation","time":"2019-09-17T06:23:40.136Z","refer_id":104}
+{"user":1,"type":"system login","time":"2019-09-17T06:27:07.878Z"}
+{"user":1,"type":"offer creation","time":"2019-09-17T06:27:39.862Z","refer_id":104}
+{"user":1,"type":"system login","time":"2019-09-17T06:36:12.127Z"}
+{"user":1,"type":"system login","time":"2019-09-17T07:21:17.780Z"}
+{"user":1,"type":"system login","time":"2019-09-17T07:34:33.437Z"}
+{"user":1,"type":"system login","time":"2019-09-17T08:28:20.505Z"}
+{"user":1,"type":"system login","time":"2019-09-17T09:14:12.939Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:14:34.894Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:14:34.899Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:14:34.902Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:14:34.903Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:14:34.905Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:14:34.906Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:14:34.908Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:14:34.910Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:14:34.918Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:14:34.919Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:18:54.752Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:18:54.754Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:18:54.755Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:18:54.756Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:18:54.762Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:18:54.760Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:18:54.764Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:18:54.765Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:18:54.766Z"}
+{"user":1,"type":"product codification modification","time":"2019-09-17T09:18:54.767Z"}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:19:18.401Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:19:18.420Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:19:18.423Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:19:18.435Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:19:18.436Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"product Item specification modification","time":"2019-09-17T09:20:32.064Z","refer_id":"65"}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:20:44.608Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:20:44.627Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:20:44.649Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:20:44.651Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:20:44.653Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:21:21.104Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:21:21.155Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:21:21.158Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:21:21.167Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-09-17T09:21:21.170Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"system login","time":"2019-09-17T09:25:39.502Z"}
+{"user":1,"type":"system login","time":"2019-09-17T10:34:43.781Z"}
+{"user":1,"type":"system login","time":"2019-09-17T10:37:15.222Z"}
+{"user":1,"type":"currency updated","time":"2019-09-17T10:38:51.108Z","refer_id":3}
+{"user":1,"type":"currency updated","time":"2019-09-17T10:40:31.509Z","refer_id":3}
+{"user":1,"type":"system login","time":"2019-09-17T11:19:55.252Z"}
+{"user":1,"type":"system login","time":"2019-09-17T11:22:00.022Z"}
+{"user":1,"type":"system login","time":"2019-09-17T11:46:04.338Z"}
+{"user":1,"type":"system login","time":"2019-09-17T11:48:19.232Z"}
+{"user":1,"type":"system login","time":"2019-09-17T11:53:35.943Z"}
+{"user":1,"type":"offer modification","time":"2019-09-17T11:54:25.931Z","refer_id":"112"}
+{"user":1,"type":"system login","time":"2019-09-17T12:04:07.939Z"}
+{"user":1,"type":"system login","time":"2019-09-17T13:08:16.602Z"}
+{"user":1,"type":"system login","time":"2019-09-17T13:17:09.043Z"}
+{"user":1,"type":"system login","time":"2019-09-17T13:18:49.157Z"}
+{"user":1,"type":"system login","time":"2019-09-17T13:20:44.781Z"}
+{"user":1,"type":"inspection creation","time":"2019-09-17T13:20:56.110Z","refer_id":93}
+{"user":1,"type":"inspection creation","time":"2019-09-17T13:21:03.433Z","refer_id":94}
+{"user":1,"type":"inspection delete","time":"2019-09-17T13:21:07.477Z","refer_id":"94"}
+{"user":1,"type":"inspection creation","time":"2019-09-17T13:22:02.369Z","refer_id":95}
+{"user":1,"type":"system login","time":"2019-09-17T13:27:24.096Z"}
+{"user":1,"type":"inspection modification","time":"2019-09-17T13:27:44.338Z","refer_id":"93"}
+{"user":1,"type":"inspection delete","time":"2019-09-17T13:27:49.604Z","refer_id":"93"}
+{"user":1,"type":"system login","time":"2019-09-17T13:44:45.349Z"}
+{"user":1,"type":"system login","time":"2019-09-17T13:46:37.334Z"}
+{"user":1,"type":"system login","time":"2019-09-17T14:21:05.258Z"}
+{"user":1,"type":"customer shipping creation","time":"2019-09-17T14:22:22.857Z","refer_id":340}
+{"user":1,"type":"enquiry creation","time":"2019-09-17T14:22:43.778Z","refer_id":73}
+{"user":1,"type":"enquiry status acctepted","time":"2019-09-17T14:22:57.588Z","refer_id":"73"}
+{"user":1,"type":"offer creation","time":"2019-09-17T14:24:26.467Z","refer_id":114}
+{"user":1,"type":"Offer document creation","time":"2019-09-17T14:24:27.005Z","refer_id":92}
+{"user":1,"type":"system login","time":"2019-09-17T14:33:06.328Z"}
+{"user":1,"type":"Enquiry document creation","time":"2019-09-17T14:35:55.636Z","refer_id":93}
+{"user":1,"type":"Document delete","time":"2019-09-17T15:01:34.425Z","refer":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"","protocol41":true,"changedRows":0}}
+{"user":1,"type":"Offer document creation","time":"2019-09-17T15:01:55.504Z","refer_id":94}
+{"user":1,"type":"Enquiry document creation","time":"2019-09-17T15:03:05.769Z","refer_id":95}
+{"user":1,"type":"system login","time":"2019-09-18T05:30:41.900Z"}
+{"user":1,"type":"system login","time":"2019-09-18T05:38:33.479Z"}
+{"user":1,"type":"system login","time":"2019-09-18T05:39:25.803Z"}
+{"user":1,"type":"system login","time":"2019-09-18T05:45:55.863Z"}
+{"user":1,"type":"system login","time":"2019-09-18T05:48:53.956Z"}
+{"user":1,"type":"system login","time":"2019-09-18T05:49:37.557Z"}
+{"user":1,"type":"enquiry creation","time":"2019-09-18T06:04:47.084Z","refer_id":74}
+{"user":1,"type":"enquiry status acctepted","time":"2019-09-18T06:04:52.297Z","refer_id":"74"}
+{"user":1,"type":"offer creation","time":"2019-09-18T06:05:57.223Z","refer_id":115}
+{"user":1,"type":"system login","time":"2019-09-25T11:10:45.593Z"}
+{"user":1,"type":"system login","time":"2019-09-25T11:18:00.768Z"}

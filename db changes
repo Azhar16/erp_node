@@ -1,0 +1,63 @@
+03/09/2019
+
+offer_item
+
+ALTER TABLE `offer_item` DROP `sub_item`;
+
+ALTER TABLE `offer_item` ADD `trim_parts` INT(11) NOT NULL COMMENT 'foreign key of prod_specification_item table' AFTER `item`, ADD `pr_parts` INT(11) NOT NULL COMMENT 'foreign key of prod_specification_item table' AFTER `trim_parts`, ADD `stem` INT(11) NOT NULL COMMENT 'foreign key of prod_specification_item table' AFTER `pr_parts`;
+
+
+ALTER TABLE `offer_item` ADD `item_code` VARCHAR(30) NOT NULL AFTER `item_mapping_status`, ADD `special_description` VARCHAR(200) NOT NULL AFTER `item_code`, ADD `hydraulic_body` VARCHAR(15) NOT NULL AFTER `special_description`, ADD `hydraulic_seat` VARCHAR(15) NOT NULL AFTER `hydraulic_body`, ADD `pneumatic_seat` VARCHAR(15) NOT NULL AFTER `hydraulic_seat`, ADD `hydroback_seat` VARCHAR(15) NOT NULL AFTER `pneumatic_seat`, ADD `inspection` INT(11) NOT NULL AFTER `hydroback_seat`;
+
+
+ALTER TABLE `offer_item` ADD `special_service` VARCHAR(30) NOT NULL COMMENT 'foreign key of special_service and sub_special_service table' AFTER `inspection`;
+
+
+ALTER TABLE `offer` ADD `ld_clause` VARCHAR(500) NOT NULL AFTER `fyear`;
+
+
+ALTER TABLE `prod_unit` ADD `numbering` INT(11) NOT NULL AFTER `name`;
+
+
+ALTER TABLE `workorder_technocommercial` ADD `shipping` INT(11) NOT NULL COMMENT 'foreign key of customer_shipping table' AFTER `workorder`;
+
+
+
+
+ALTER TABLE `workorder_item` ADD `trim_parts` INT(11) NOT NULL COMMENT 'foreign key of prod_specification_item table' AFTER `item_mapping_status`, ADD `pr_parts` INT(11) NOT NULL COMMENT 'foreign key of prod_specification_item table' AFTER `trim_parts`, ADD `stem` INT(11) NOT NULL COMMENT 'foreign key of prod_specification_item table' AFTER `pr_parts`, ADD `item_code` VARCHAR(30) NOT NULL AFTER `stem`, ADD `special_description` VARCHAR(200) NOT NULL AFTER `item_code`, ADD `hydraulic_body` VARCHAR(15) NOT NULL AFTER `special_description`, ADD `hydraulic_seat` VARCHAR(15) NOT NULL AFTER `hydraulic_body`, ADD `pneumatic_seat` VARCHAR(15) NOT NULL AFTER `hydraulic_seat`, ADD `hydroback_seat` VARCHAR(15) NOT NULL AFTER `pneumatic_seat`, ADD `inspection` INT(11) NOT NULL AFTER `hydroback_seat`, ADD `standard` VARCHAR(30) NOT NULL AFTER `inspection`, ADD `enq_serial_no` VARCHAR(30) NOT NULL AFTER `standard`;
+
+ALTER TABLE `workorder_item` CHANGE `profit` `discount_numeric` DECIMAL(8,2) NOT NULL;
+
+
+ALTER TABLE `workorder_item` ADD `loa_serial_no` VARCHAR(20) NOT NULL AFTER `enq_serial_no`, ADD `po_serial_no` VARCHAR(20) NOT NULL AFTER `loa_serial_no`;
+
+
+ALTER TABLE `prod_specification_item` ADD `showing_status` ENUM('mapping','no') NULL DEFAULT 'no' AFTER `short_code`;
+
+
+new table material_master
+
+ALTER TABLE `material_master` ADD `short_code` VARCHAR(50) NOT NULL AFTER `code`;
+
+ALTER TABLE `material_master` CHANGE `product_feature` `component_category_name` INT(11) NOT NULL COMMENT 'foreign key of component_category_name table';
+
+ALTER TABLE `component_sub_mapping` ADD `offer_item` INT(11) NOT NULL COMMENT 'foreign key of offer_item table' AFTER `offer`;
+
+ALTER TABLE `component_sub_mapping` ADD `offer` INT(11) NOT NULL COMMENT 'foreign key of offer table' AFTER `item`;
+
+new table workorder_mapping
+
+new table inspection
+
+new table acknowledgement_shipping
+
+ALTER TABLE `offer` ADD `submit_status` ENUM('full','no') NOT NULL DEFAULT 'no' AFTER `sales_agent`;
+
+ALTER TABLE `component_mapping_details` ADD `joint` VARCHAR(50) NOT NULL AFTER `ends_out`;
+
+ALTER TABLE `offer` ADD `currency` VARCHAR(20) NOT NULL AFTER `ld_clause`, ADD `currency_value` DECIMAL(8,2) NOT NULL AFTER `currency`;
+
+
+ALTER TABLE `inspection` ADD `status` ENUM('active','delete') NOT NULL DEFAULT 'active' AFTER `label`, ADD `created_by` INT(11) NOT NULL AFTER `status`, ADD `creation_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `created_by`, ADD `modify_by` INT(11) NOT NULL AFTER `creation_date`, ADD `modification_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `modify_by`;
+
+

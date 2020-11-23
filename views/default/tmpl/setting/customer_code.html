@@ -1,0 +1,367 @@
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Settings </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#/configuration/settings">General settings</a></li>
+                                    <li><a href="#/configuration/settings/currency"> Currency Master </a></li>
+                                    <li><a href="#/configuration/user">Users & Roles </a></li>
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+                <!-- end page title end breadcrumb -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+
+        </div>
+        <h4 class="page-title">Offer Settings</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" id="frmOfferSettings">
+
+            <div class="card-box">
+                <div class="row">
+                    <div class="loginmessage"></div>
+                    <div class="col-md-12">
+                        <div class="p-20">
+                            <div class="form-group row">
+                                <label >Custom Note</label>
+                                <textarea class="form-control" rows="5" id="offer_custome_note"><%-settings['offer_custom_note']%></textarea>
+                            </div>
+                            <h4 class="m-t-0 header-title">Offer Id Formating</h4>
+                            <div class="col-md-12">
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Prefix</label>
+                                    <input type="text" class="form-control" id="prefix" value="<%-settings['sales_offer_pre']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Center</label>
+                                    <input type="text" class="form-control" id="center" value="<%-settings['sales_offer_cen']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Sufix</label>
+                                    <input type="text" class="form-control" id="sufix" value="<%-settings['sales_offer_su']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Divider</label>
+                                    <select class="form-control" id="divider">
+                                        <option <%if(settings['sales_offer_div']==''){%>selected <%}%> value=""></option>
+                                        <option <%if(settings['sales_offer_div']=='/'){%>selected <%}%> value="/">/</option>
+                                        <option <%if(settings['sales_offer_div']=='-'){%>selected <%}%> value="-">-</option>
+                                        <option <%if(settings['sales_offer_div']=='_'){%>selected <%}%> value="_">_</option>
+                                        <option <%if(settings['sales_offer_div']=='#'){%>selected <%}%> value="#">#</option>
+                                    </select>
+                                    <label style="font-size: 10px;">Divider will appear in each part.</label>
+                                </div>
+                            </div>
+                            <h4 class="m-t-0 header-title">Enquiry Id Formating</h4>
+                            <div class="col-md-12">
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Prefix</label>
+                                    <input type="text" class="form-control" id="enquiry_prefix" value="<%-settings['enquiry_pre']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Center</label>
+                                    <input type="text" class="form-control" id="enquiry_center" value="<%-settings['enquiry_cen']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Sufix</label>
+                                    <input type="text" class="form-control" id="enquiry_sufix" value="<%-settings['enquiry_su']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Divider</label>
+                                    <select class="form-control" id="enquiry_divider">
+                                        <option <%if(settings['enquiry_div']==''){%>selected <%}%> value=""></option>
+                                        <option <%if(settings['enquiry_div']=='/'){%>selected <%}%> value="/">/</option>
+                                        <option <%if(settings['enquiry_div']=='-'){%>selected <%}%> value="-">-</option>
+                                        <option <%if(settings['enquiry_div']=='_'){%>selected <%}%> value="_">_</option>
+                                        <option <%if(settings['enquiry_div']=='#'){%>selected <%}%> value="#">#</option>
+                                    </select>
+                                    <label style="font-size: 10px;">Divider will appear in each part.</label>
+                                </div>
+                            </div>
+
+                            <h4 class="m-t-0 header-title">Work Order Id Formating</h4>
+                            <div class="col-md-12">
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Prefix</label>
+                                    <input type="text" class="form-control" id="wo_prefix" value="<%-settings['wo_pre']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Center</label>
+                                    <input type="text" class="form-control" id="wo_center" value="<%-settings['wo_cen']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Sufix</label>
+                                    <input type="text" class="form-control" id="wo_sufix" value="<%-settings['wo_su']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Divider</label>
+                                    <select class="form-control" id="wo_divider">
+                                        <option <%if(settings['wo_div']==''){%>selected <%}%> value=""></option>
+                                        <option <%if(settings['wo_div']=='/'){%>selected <%}%> value="/">/</option>
+                                        <option <%if(settings['wo_div']=='-'){%>selected <%}%> value="-">-</option>
+                                        <option <%if(settings['wo_div']=='_'){%>selected <%}%> value="_">_</option>
+                                        <option <%if(settings['wo_div']=='#'){%>selected <%}%> value="#">#</option>
+                                    </select>
+                                    <label style="font-size: 10px;">Divider will appear in each part.</label>
+                                </div>
+                            </div>
+
+                            <h4 class="m-t-0 header-title">Plan Id Formating</h4>
+                            <div class="col-md-12">
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Prefix</label>
+                                    <input type="text" class="form-control" id="plan_prefix" value="<%-settings['plan_pre']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Center</label>
+                                    <input type="text" class="form-control" id="plan_center" value="<%-settings['plan_cen']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Sufix</label>
+                                    <input type="text" class="form-control" id="plan_sufix" value="<%-settings['plan_su']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Divider</label>
+                                    <select class="form-control" id="plan_divider">
+                                        <option <%if(settings['plan_div']==''){%>selected <%}%> value=""></option>
+                                        <option <%if(settings['plan_div']=='/'){%>selected <%}%> value="/">/</option>
+                                        <option <%if(settings['plan_div']=='-'){%>selected <%}%> value="-">-</option>
+                                        <option <%if(settings['plan_div']=='_'){%>selected <%}%> value="_">_</option>
+                                        <option <%if(settings['plan_div']=='#'){%>selected <%}%> value="#">#</option>
+                                    </select>
+                                    <label style="font-size: 10px;">Divider will appear in each part.</label>
+                                </div>
+                            </div>
+
+                            <h4 class="m-t-0 header-title">Amendment Formating</h4>
+                            <div class="col-md-12">
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Prefix</label>
+                                    <input type="text" class="form-control" id="amendment_prefix" value="<%-settings['amendment_pre']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Center</label>
+                                    <input type="text" class="form-control" id="amendment_center" value="<%-settings['amendment_cen']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Sufix</label>
+                                    <input type="text" class="form-control" id="amendment_sufix" value="<%-settings['amendment_su']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Divider</label>
+                                    <select class="form-control" id="amendment_divider">
+                                        <option <%if(settings['amendment_div']==''){%>selected <%}%> value=""></option>
+                                        <option <%if(settings['amendment_div']=='/'){%>selected <%}%> value="/">/</option>
+                                        <option <%if(settings['amendment_div']=='-'){%>selected <%}%> value="-">-</option>
+                                        <option <%if(settings['amendment_div']=='_'){%>selected <%}%> value="_">_</option>
+                                        <option <%if(settings['amendment_div']=='#'){%>selected <%}%> value="#">#</option>
+                                    </select>
+                                    <label style="font-size: 10px;">Divider will appear in each part.</label>
+                                </div>
+                            </div>
+                            <h4 class="m-t-0 header-title"> Assets Formating </h4>
+                            <div class="col-md-12">
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Prefix</label>
+                                    <input type="text" class="form-control" id="asset_prefix" value="<%-settings['asset_pre']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Center</label>
+                                    <input type="text" class="form-control" id="asset_center" value="<%-settings['asset_cen']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Sufix</label>
+                                    <input type="text" class="form-control" id="asset_sufix" value="<%-settings['asset_su']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Divider</label>
+                                    <select class="form-control" id="asset_divider">
+                                        <option <%if(settings['asset_div']==''){%>selected <%}%> value=""></option>
+                                        <option <%if(settings['asset_div']=='/'){%>selected <%}%> value="/">/</option>
+                                        <option <%if(settings['asset_div']=='-'){%>selected <%}%> value="-">-</option>
+                                        <option <%if(settings['asset_div']=='_'){%>selected <%}%> value="_">_</option>
+                                        <option <%if(settings['asset_div']=='#'){%>selected <%}%> value="#">#</option>
+                                    </select>
+                                    <label style="font-size: 10px;">Divider will appear in each part.</label>
+                                </div>
+                            </div>
+                            <h4 class="m-t-0 header-title"> Purchase Order Formating </h4>
+                            <div class="col-md-12">
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Prefix</label>
+                                    <input type="text" class="form-control" id="po_prefix" value="<%-settings['porder_pre']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Center</label>
+                                    <input type="text" class="form-control" id="po_center" value="<%-settings['porder_cen']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Sufix</label>
+                                    <input type="text" class="form-control" id="po_sufix" value="<%-settings['porder_su']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Divider</label>
+                                    <select class="form-control" id="po_divider">
+                                        <option <%if(settings['porder_div']==''){%>selected <%}%> value=""></option>
+                                        <option <%if(settings['porder_div']=='/'){%>selected <%}%> value="/">/</option>
+                                        <option <%if(settings['porder_div']=='-'){%>selected <%}%> value="-">-</option>
+                                        <option <%if(settings['porder_div']=='_'){%>selected <%}%> value="_">_</option>
+                                        <option <%if(settings['porder_div']=='#'){%>selected <%}%> value="#">#</option>
+                                    </select>
+                                    <label style="font-size: 10px;">Divider will appear in each part.</label>
+                                </div>
+                            </div>
+
+                            <h4 class="m-t-0 header-title"> Purchase Enquiry Formating </h4>
+                            <div class="col-md-12">
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Prefix</label>
+                                    <input type="text" class="form-control" id="pe_prefix" value="<%-settings['penquiry_pre']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Center</label>
+                                    <input type="text" class="form-control" id="pe_center" value="<%-settings['penquiry_cen']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Sufix</label>
+                                    <input type="text" class="form-control" id="pe_sufix" value="<%-settings['penquiry_su']%>">
+                                    <label style="font-size: 10px;">Put AI for auto number, FYEAR for current financial year.</label>
+                                </div>
+                                <div class="form-group col-md-3" style="float: left;">
+                                    <label >Divider</label>
+                                    <select class="form-control" id="pe_divider">
+                                        <option <%if(settings['penquiry_div']==''){%>selected <%}%> value=""></option>
+                                        <option <%if(settings['penquiry_div']=='/'){%>selected <%}%> value="/">/</option>
+                                        <option <%if(settings['penquiry_div']=='-'){%>selected <%}%> value="-">-</option>
+                                        <option <%if(settings['penquiry_div']=='_'){%>selected <%}%> value="_">_</option>
+                                        <option <%if(settings['penquiry_div']=='#'){%>selected <%}%> value="#">#</option>
+                                    </select>
+                                    <label style="font-size: 10px;">Divider will appear in each part.</label>
+                                </div>
+                            </div>
+                            <h4 class="m-t-0 header-title">Offer Additional fields</h4>
+                            <div>
+                                <div class="form-row d-s-s-af" >
+                                    <div class="form-group col-md-4">
+                                        <label for="inputCity" class="col-form-label">Name</label>
+
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputState" class="col-form-label">Code</label>
+
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputState" class="col-form-label">Amount(%)</label>
+
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputZip" class="col-form-label">Account</label>
+
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label for="inputZip" class="col-form-label"></label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-info btn-bordred waves-effect w-md waves-light m-b-5 b-ss-aa">Add</button>
+                            </div>
+                            <h4 class="m-t-0 header-title"> Offer Terms & Conditions</h4>
+                                <div class="form-row d-s-term-af" >
+                                    <div class="form-group col-md-4">
+                                        <label for="inputCity" class="col-form-label">Name</label>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputCity" class="col-form-label">Message</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                <button type="button" class="btn btn-info btn-bordred waves-effect w-md waves-light m-b-5 b-term-c">Add</button>
+                            </div>
+
+                            <div class="form-group text-right m-b-0">
+                                <button class="btn btn-primary waves-effect waves-light" type="submit">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div><!-- end col -->
+</div>
+<script src="default_assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+<script src="assets/js/app/settings.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        SETTINGS.initS(<%-JSON.stringify(acc)%>,<%-JSON.stringify(row)%>,<%-JSON.stringify(termrow)%>);
+    });
+</script>

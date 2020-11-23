@@ -1,0 +1,248 @@
+<style>
+    @media all{
+   .printed-div{
+       display:none;
+   }
+}
+@media print{
+   .printed-div{
+       display:block;
+   }
+   .logo-print{
+       width:90%;
+       display: list-item;
+       list-style-image: url(images/company/<%-com.logo%>);
+       list-style-position: inside;
+   }
+}
+</style>
+<div class="card-box table-responsive" style="width: 100%;">
+    
+    <div style="width: 10%;float: left;    padding-top: 20px;">
+        <div class="printed-div"><div class="logo-print"></div></div>
+        <%
+        if(com.logo!=''){
+        %>
+        <img class="show-logo" src="images/company/<%-com.logo%>" />
+        <%
+        }
+        %>
+    </div>
+    <div style="width: 83%;float: right;">
+        <h1 style="    margin: 0px;"><%-com.name%></h1>
+        <%
+        if(com.iso!=''){
+        %>
+        <div style="font-size: 12px;"><%-com.iso%></div>
+        <%
+        }
+        %>
+        <div style="font-size: 12px;">Registered Office<%if(com.address!=''){%><%-com.address%>, <%}%><%if(com.city!=''){%><%-com.city%> <%}%><%if(com.zip!=''){%> - <%-com.zip%>, <%}%><%if(com.state!=''){%><%-com.state%>. <%}%><%if(com.ph!=''){%>Phone : <%-com.ph%><%}%></div>
+        <div style="font-size: 12px;"><%if(com.fax!=''){%>Fax : <%-com.fax%>, <%}%><%if(com.email!=''){%>Email : <%-com.email%>, <%}%><%if(com.web!=''){%> Website : <%-com.web%> <%}%></div>
+        <%
+        if(com.faddress!=''){
+        %>
+        <div style="font-size: 12px;"><%-com.faddress%></div>
+        <%
+        }
+        %>
+    </div>
+    <div style="clear: both;"></div>
+<h5 style="text-align: center;text-decoration: underline;margin: 10px;">OFFER INVOICE</h5>
+<table style="width: 100%;border: 1px solid #354650;font-size: 10px;">
+    <tr>
+        <td style="width: 50%;padding: 5px 0px 5px 5px;">
+            <div style="width: 40%;float: left;">Offer No :</div>
+            <div style="width: 60%;float: left;font-size: 14px;font-weight: bold;"><%-offer.offer_no %></div>
+            <div style="width: 40%;float: left;">Date :</div>
+            <div style="width: 60%;float: left;font-size: 12px;font-weight: bold;"><%-offer.offer_date %></div>
+            <div style="clear: both;"></div>
+            <div style="width: 40%;float: left;">State :</div>
+            <div style="width: 60%;float: left;font-size: 12px;"><%-com.state %></div>
+        </td>
+        <td style="width: 50%;border-left: 1px solid #354650;padding: 5px 0px 5px 5px;font-size: 14px;font-weight: bold;">
+            <div style="width: 30%;float: left;margin-top: 5px;">GSTIN NO :</div>
+            <div style="width: 70%;float: left;margin-top: 5px;"><%-com.gst %></div>
+            <div style="width: 30%;float: left;margin-top: 5px;">I.T. PAN NO :</div>
+            <div style="width: 70%;float: left;margin-top: 5px;"><%-com.pan %></div>
+            <div style="width: 30%;float: left;margin-top: 5px;">CIN NO :</div>
+            <div style="width: 70%;float: left;margin-top: 5px;"><%-com.cin %></div>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 50%;padding: 5px 0px 5px 5px;border-top:  1px solid #354650;">
+            <div style="width: 100%;margin-bottom: 10px;">Name & Address of Customer :</div>
+            <div style="width: 100%;font-weight: bold;"><%-offer.company_name %></div>
+            <div style="width: 100%;font-weight: bold;"><%-offer.address %></div>
+            <div style="width: 100%;font-weight: bold;"><% if(offer.city!=''){ %><%-offer.city %>,<%} %><%-offer.state %>, Pin-<%-offer.zip %></div>
+            <div style="width: 100%;font-weight: bold;margin-top: 10px;">GSTIN NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%-offer.gst %></div>
+        </td>
+        <td style="width: 50%;border-left: 1px solid #354650;padding: 5px 0px 5px 5px;border-top:  1px solid #354650;">
+            <div style="width: 40%;float: left;">Vendor Code :</div>
+            <div style="width: 60%;float: left;"><%-offer.code %></div>
+            <div style="clear: both;"></div>
+            <div style="width: 40%;float: left;">Payment Terms :</div>
+            <div style="width: 60%;font-weight: bold;float: left;"><%-offer.offer_term_note %></div>
+        </td>
+    </tr>
+    <!--<tr>
+        <td style="padding: 5px 0px 5px 5px;border-top:  1px solid #354650;" colspan="2">
+            <div style="width: 90%;text-align:  right;">Currency :&nbsp;&nbsp;&nbsp;&nbsp;<%-offer.currency%></div>
+        </td>
+    </tr>-->
+    <tr>
+        <td style="padding: 0px;" colspan="2">
+            <table  style="width: 100%;font-size: 10px;" cellspacing='0' >
+            <tr >
+                <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:5%;">Sl NO</td>
+                <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:27%;">Description & Specification of Goods</td>
+                <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:10%;">HSN Code</td>
+                <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:8%;">Quantity</td>
+                <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:8%;">UOM</td>
+                <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:8%;">Rate Per Unit</td>
+                <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:8%;">Discount(%)</td>
+                <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:6%;">GST(%)</td>
+                <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:8%;">GST Amount</td>
+                <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;padding: .75rem;width:12%;">Total Value</td>
+            </tr>
+            <%
+            var tot={q:0,v:0,d:0,tv:0,tx:0};
+                    for(var k in si) {
+                    var tv=parseFloat(si[k].quantity)*parseFloat(si[k].rate);
+                    tot.q +=parseFloat(si[k].quantity);
+                    tot.d += (tv*parseFloat(si[k].discount))/100;
+                    tot.tv +=parseFloat(si[k].final_amount);
+                    tot.tx +=parseFloat(si[k].tax_amount);
+                    %>
+            <tr >
+                <td style="text-align: center;border-right: 1px solid #354650;padding:.15rem .75rem;"><%-(parseInt(k)+1)%></td>
+                <td style="text-align: center;border-right: 1px solid #354650;padding:.15rem .75rem;"><%-si[k].code%> - <%-si[k].specification%></td>
+                <td style="text-align: center;border-right: 1px solid #354650;padding:.15rem .75rem;"><%-si[k].hsn_code%></td>
+                <td style="text-align: center;border-right: 1px solid #354650;padding:.15rem .75rem;"><%-si[k].quantity.toFixed(2)%></td>
+                <td style="text-align: center;border-right: 1px solid #354650;padding:.15rem .75rem;"><%-si[k].unit%></td>
+                <td style="text-align: right;border-right: 1px solid #354650;padding:.15rem .75rem;"><%-si[k].rate.toFixed(2)%></td>
+                <td style="text-align: right;border-right: 1px solid #354650;padding:.15rem .75rem;"><%-si[k].discount.toFixed(2)%></td>
+                <td style="text-align: right;border-right: 1px solid #354650;padding:.15rem .75rem;"><%-si[k].tax.toFixed(2)%></td>
+                <td style="text-align: right;border-right: 1px solid #354650;padding:.15rem .75rem;"><%-si[k].tax_amount.toFixed(2)%></td>
+                <td style="text-align: right;padding:.15rem .75rem;width:12%;"><%-si[k].final_amount.toFixed(2)%></td>
+            </tr>
+            <%
+            }
+            %>
+            <tr >
+                <td style="text-align: right;border-top: 1px solid #354650;padding: .75rem;" colspan="3">Total:</td>
+                <td style="text-align: center;border-top: 1px solid #354650;padding: .75rem;"><%-tot.q.toFixed(2)%></td>
+                <td style="text-align: right;border-top: 1px solid #354650;padding: .75rem;" colspan="2">&nbsp;</td>
+                <td style="text-align: right;border-top: 1px solid #354650;padding: .75rem;" ><%-tot.d.toFixed(2)%></td>
+                <td style="text-align: right;border-top: 1px solid #354650;padding: .75rem;" >&nbsp;</td>
+                <td style="text-align: right;border-top: 1px solid #354650;padding: .75rem;" ><%-tot.tx.toFixed(2)%></td>
+                <td style="text-align: right;border-top: 1px solid #354650;padding: .75rem;" ><%-tot.tv.toFixed(2)%></td>
+            </tr>
+    </table>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 5px 0px 5px 5px;border-top:  1px solid #354650;border-right:  1px solid #354650;">
+            <table  style="width: 100%;font-size: 10px;" cellspacing='0'>
+                <th style="text-align: right;"> Offer term & conditions </th>
+                <%for(var k in ofrotc){
+                if(ofrotc[k].message != ''){
+                %>
+                <tr>
+                    <td colspan="2" style="padding: 5px 0px 5px 5px;border-top:  1px solid #354650;">
+                        <div style="clear: both;"></div>
+                        <div style="float: left;"><%-ofrotc[k].name%> :</div>
+                        <div style="text-align: center"><%-ofrotc[k].message%></div>
+                        <!--<div style="width: 40%;float: left;">Electronic Reference Number :</div>
+                        <div style="width: 60%;float: left;"><%-offer.reference_no %></div>-->
+                        <div style="clear: both;"></div>
+                    </td>
+                </tr>
+                 <% 
+                    }
+                  } 
+                 %>
+                <tr >
+                    <td colspan="2" style="padding: 5px 0px 5px 5px;border-top:  1px solid #354650;border-bottom:  1px solid #354650;">
+                        Certified that particulars given above are true and correct.
+                    </td>
+                </tr>
+                <tr >
+                    <td style="width:50%;padding: 5px 0px 5px 5px;border-right:  1px solid #354650;">
+                        <%
+                        if(bank.length>0){
+                        %>
+                        <div style="width: 100%;font-weight: bold;margin: 10px 0px;">Bank Details</div>
+                        <div style="width: 40%;float: left;">Bank Name</div>
+                        <div style="width: 60%;float: left;"><%-bank[0].name%></div>
+                        <div style="clear: both;"></div>
+                        <div style="width: 100%;"><%-bank[0].address%></div>
+                        <div style="width: 40%;float: left;">Account No</div>
+                        <div style="width: 60%;float: left;"><%-bank[0].acc_no%></div>
+                        <div style="clear: both;"></div>
+                        <div style="width: 40%;float: left;">IFSC Code</div>
+                        <div style="width: 60%;float: left;"><%-bank[0].ifsc%></div>
+                        <div style="clear: both;"></div>
+                        <%
+                        }
+                        %>
+                    </td>
+                    <td style="width:50%;padding: 5px 0px 5px 5px;">
+                        <div style="width: 100%;margin: 10px 0px;text-align: center;">Authenticated by</div>
+                        <div style="width: 100%;font-weight: bold;text-align: center;">For <%-com.name%></div>
+                        <div style="width: 100%;margin: 10px 0px;text-align: center;min-height: 50px;">&nbsp;</div>
+                        <div style="width: 100%;text-align: center;">(Authorised Signatory) </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 5px 0px 5px 5px;border-top:  1px solid #354650;">
+            <table  style="width: 100%;font-size: 10px;" cellspacing='0' >
+                <%
+                        for(var k in sa) {
+                        var ttot=parseFloat(sa[k].amount)+parseFloat(sa[k].tax_amount);
+                        tot.tv +=ttot;
+                        tot.tx +=parseFloat(sa[k].tax_amount);
+                        %>
+                <tr >
+                    <td style="padding: .15rem .75rem;" colspan="2">Add <%-sa[k].name%></td>
+                    <td style="text-align: right;padding: .75rem;" ><%-sa[k].amount.toFixed(2)%></td>
+                    <td style="text-align: right;padding: .75rem;width:12%;" ><%-sa[k].tax.toFixed(2)%></td>
+                    <td style="text-align: right;padding: .75rem;width:16%;" ><%-sa[k].tax_amount.toFixed(2)%></td>
+                    <td style="text-align: right;padding: .75rem;width:24%;" ><%-ttot.toFixed(2)%></td>
+                </tr>
+                <%
+                }
+                %>
+                <tr>
+                    <td style="padding: .75rem;" colspan="4">Total:</td>
+                    <td style="text-align: right;padding: .75rem;" ><%-tot.tx.toFixed(2)%></td>
+                    <td style="text-align: right;padding: .75rem;" ><%-tot.tv.toFixed(2)%></td>
+                </tr>
+                <tr >
+                    <td style=" padding: .15rem .75rem;text-align: center" >&nbsp;</td>
+                    <td style=" padding: .15rem .75rem;text-align: center"  >CGST @ <%-(tot.tx/2).toFixed(2)%></td>
+                    <td style=" padding: .15rem .75rem;text-align: center"  >SGST @ <%-(tot.tx/2).toFixed(2)%></td>
+                    <td style=" padding: .15rem .75rem;text-align: center"  >IGST @ 0.00</td>
+                    <td style=" padding: .15rem .75rem;text-align: center" colspan="2" >&nbsp;</td>
+                </tr>
+                <tr >
+                    <td style="padding: .75rem .75rem .15rem .75rem; " colspan="5">Total :</td>
+                    <td style="text-align: right;padding: .75rem .75rem .15rem .75rem;" ><%-tot.tv.toFixed(2)%></td>
+                </tr>
+                <tr >
+                    <td style="padding: .75rem .75rem .15rem .75rem; " colspan="5">Rounded off :</td>
+                    <td style="text-align: right;padding: .75rem .75rem .15rem .75rem;" ><%-(offer.total_amount-tot.tv).toFixed(2)%></td>
+                </tr>
+                <tr >
+                    <td style="padding: .75rem .75rem .15rem .75rem;font-weight: bold; " colspan="5">Total Invoice Value :</td>
+                    <td style="text-align: right;padding: .75rem .75rem .15rem .75rem;font-weight: bold;font-size: 14px;" ><%-offer.total_amount.toFixed(2)%></td>
+                </tr>
+                <tr>
+                    <td style="padding: .15rem .75rem;text-transform: capitalize;border-top: 1px solid #354650;" colspan="6" ><%-amountToWord(offer.total_amount)%></td>
+                </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</div>

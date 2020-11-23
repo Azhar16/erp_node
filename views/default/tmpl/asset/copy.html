@@ -1,0 +1,215 @@
+
+         <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/asset/dashboard"><i class="mdi mdi-view-list"></i> <span> Asset </span></a>
+                                <ul class="submenu">
+                                    <li  data-permission="sales-plan"><a href="#/asset/asset"> Assets </a></li>
+                                    <li  data-permission="sales-plan"><a href="#/asset/acure_asset"> Additions </a></li>
+                                    <li  data-permission="sales-plan"><a href="#/asset/asset_sale"> Sale Asset </a></li>
+                                    <!--<li  data-permission="sales-plan"><a href="#/asset/issue_asset"> Issue Assets </a></li>
+                                    <li  data-permission="sales-plan"><a href="#/asset/return_asset"> Return Assets </a></li>-->
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/asset/dashboard"><i class="mdi mdi-view-list"></i> <span> Master </span></a>
+
+                                <ul class="submenu">
+                                    <li  data-permission="sales-plan"><a href="#/asset/assettype"> Assets Type </a></li>
+                                     <li  data-permission="sales-plan"><a href="#/asset/depapp/depreciation"> Depreciation </a></li>
+                                     <li  data-permission="sales-plan"><a href="#/asset/asset_rate/assetrate"> Asset Rate </a></li>
+                                     <li  data-permission="sales-plan"><a href="#/asset/assetpartner"> Asset Partner </a></li>
+                                     <li  data-permission="sales-plan"><a href="#/asset/assetpartner/alocation"> Asset Location </a></li>
+                                </ul>
+                            </li>
+                           <li class="has-submenu">
+                                <a href="#/asset/dashboard"><i class="mdi mdi-view-list"></i> <span> Report </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#/report/asset/depincometaxdetails"> Depreciation Income Tax </a></li>
+                                    <li><a href="#/report/asset/depcompanytaxdetails"> Depreciation Company Tax </a></li>
+                                    <li><a href="#/report/asset/addtionsdetails"> Additions </a></li>
+                                    <li><a href="#/report/asset/openings"> Openings </a></li>
+                                </ul>
+                            </li>
+                             <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+                <!-- end page title end breadcrumb -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 s-n-bk">Back</button>
+        </div>
+        <h4 class="page-title">Assets Create</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmSNew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label>Assets No</label>
+                        <input type="text" id="asset_no" name="asset_no" class="form-control" placeholder="Asset number" parsley-trigger="change" required readonly="" value="<%-assetnono%>">
+                        <label style="font-size: 10px;">Plan financial year will be change as per Work order date.</label>
+                    </div>
+                    <div class="form-group col-md-3 ui-widget">
+                        <label style="width: 100%;">Period Begin </label>
+                        <input  type="text" id="period_begin" parsley-trigger="change" required placeholder="Period Begin" class="form-control"/>
+                        
+                    </div>
+                   <div class="form-group col-md-3">
+                        <label >Asset Type</label>
+                        <select type="text" class="form-control" id="asset_type"  >
+                            <option value="">select</option>
+                                <% for(var k in atype){ %>
+                                    <option value="<%-atype[k].id%>"><%-atype[k].name%></option>
+                                      <% } %> 
+                                </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Manufacturer</label>
+                       <select type="text" class="form-control" id="manufactuer"  >
+                            <option value="">select</option>
+                        
+                                    <option value=""></option>
+                                       
+                                </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label > Model </label>
+                        <input  type="text" id="model" parsley-trigger="change" required placeholder="Model" class="form-control"/>
+                    </div>
+                    <div class="form-group col-md-3 ui-widget">
+                        <label style="width: 100%;">Vendor <span style="float: right;"><a class="custom-modal-button" data-title="Add New Customer" data-href="/customer/customer/new" href="javascript:void(0);">Add new</a></span></label>
+                        <input autocomplete="off" type="text" id="customer" parsley-trigger="change" required placeholder="Enter a customer" class="form-control"/>
+                        
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Asset Name</label>
+                        <input  type="text" id="asset_name" parsley-trigger="change" required placeholder="Asset Name" class="form-control"/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Purchase Price</label>
+                        <input  type="text" id="purchase_price" parsley-trigger="change" required placeholder="Purchase Price" class="form-control"/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Warranty Of Expiry</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="warranty_of_expiry" parsley-trigger="change" required>
+                    </div>
+                    <div class="form-group col-md-3" style="float: left;">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="scity" class="form-control" placeholder="Shipping City">
+                    </div>
+                    <div class="form-group col-md-3" style="float: left;">
+                            <label >Country</label>
+                            <select class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" id="country" >
+                                <option value="">Select Country</option>
+                                    <%
+                                    for(var k in country) {
+                                    %>
+                                    <option <% if('India'==country[k]){%>selected<%}%> value="<%-country[k]%>"><%-country[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                    </select>
+                        </div>
+                    <div class="form-group col-md-3" style="float: left;">
+                        <label >State<span style="font-size: 10px;">(If country is not India leave it blank)</span></label>
+                        <select class="form-control select2 select2-hidden-accessible" aria-hidden="true" id="state">
+                            <option value="">Select State</option>
+                                    <%
+                                    for(var k in state) {
+                                    %>
+                                    <option value="<%-state[k]%>"><%-state[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                    </select>
+                    </div>
+                    <div class="form-group col-md-3" style="float: left;">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="szip" class="form-control" placeholder="Shipping Zip code">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Depreciation Start Date</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="depreciation_start_date" parsley-trigger="change" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Expected Asset Life</label>
+                        <input type="text" class="form-control" placeholder="Expected Asset Life" id="expected_asset_life" parsley-trigger="change" required>
+                    </div>
+                    <div class="form-group col-md-3 ">
+                        <label >Upload Document</label>
+                        <input type="file" class="form-control" id="asset_doc">
+                            </div>
+                    </div>
+            </div>
+            
+
+                   <div class="card-box">
+                     <div class="form-row"> 
+                      <div class="form-group text-right m-b-0" style="width: 100%">
+            <button class="btn btn-primary waves-effect waves-light" type="submit">
+                Submit
+            </button>
+            <button class="btn btn-secondary waves-effect waves-light m-l-5 s-n-bk">
+                Cancel
+            </button>
+        </div>
+    </div>
+</div>
+                    
+                
+            
+        </form>
+    </div><!-- end col -->
+</div>
+<script src="default_assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/asset.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        ASSET.initAN();
+    });
+</script>

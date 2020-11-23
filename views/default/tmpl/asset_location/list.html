@@ -1,0 +1,112 @@
+<link href="default_assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/asset/dashboard"><i class="mdi mdi-view-list"></i> <span> Asset </span></a>
+                                <ul class="submenu">
+                                    <li  data-permission="sales-plan"><a href="#/asset/asset"> Assets </a></li>
+                                    <li  data-permission="sales-plan"><a href="#/asset/acure_asset"> Additions </a></li>
+                                    <li  data-permission="sales-plan"><a href="#/asset/asset_sale"> Sale Asset </a></li>
+                                    <!--<li  data-permission="sales-plan"><a href="#/asset/issue_asset"> Issue Assets </a></li>
+                                    <li  data-permission="sales-plan"><a href="#/asset/return_asset"> Return Assets </a></li>-->
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/asset/dashboard"><i class="mdi mdi-view-list"></i> <span> Master </span></a>
+
+                                <ul class="submenu">
+                                    <li  data-permission="sales-plan"><a href="#/asset/assettype"> Assets Type </a></li>
+                                     <li  data-permission="sales-plan"><a href="#/asset/depapp/depreciation"> Depreciation </a></li>
+                                     <li  data-permission="sales-plan"><a href="#/asset/asset_rate/assetrate"> Asset Rate </a></li>
+                                     <li  data-permission="sales-plan"><a href="#/asset/assetpartner"> Asset Partner </a></li>
+                                     <li  data-permission="sales-plan"><a href="#/asset/assetpartner/alocation"> Asset Location </a></li>
+                                </ul>
+                            </li>
+                           <li class="has-submenu">
+                                <a href="#/asset/dashboard"><i class="mdi mdi-view-list"></i> <span> Report </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#/report/asset/depincometaxdetails"> Depreciation Income Tax </a></li>
+                                    <li><a href="#/report/asset/depcompanytaxdetails"> Depreciation Company Tax </a></li>
+                                    <li><a href="#/report/asset/addtionsdetails"> Additions </a></li>
+                                    <li><a href="#/report/asset/openings"> Openings </a></li>
+                                </ul>
+                            </li>
+                             <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+                <!-- end page title end breadcrumb -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+             <button class="btn btn-primary waves-effect w-md waves-light m-b-5 s-l-cn">Add Asset Partner</button>
+        </div>
+        <h4 class="page-title">Asset Partner</h4>
+    </div>
+    
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card-box table-responsive">
+            <table id="datatable" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Address</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                
+            </table>
+        </div>
+    </div>
+</div> 
+
+
+        <script src="default_assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="default_assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+       <script src="assets/js/app/assetpartner.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                APARTNER.initALL();
+            });
+        </script>

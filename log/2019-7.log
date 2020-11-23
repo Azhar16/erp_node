@@ -1,0 +1,418 @@
+{"user":1,"type":"system login","time":"2019-08-01T10:36:16.759Z"}
+{"user":1,"type":"system login","time":"2019-08-01T13:05:57.544Z"}
+{"user":1,"type":"system login","time":"2019-08-01T13:07:17.710Z"}
+{"user":1,"type":"system login","time":"2019-08-01T13:08:22.819Z"}
+{"user":1,"type":"system login","time":"2019-08-01T13:24:37.407Z"}
+{"user":1,"type":"system login","time":"2019-08-01T13:26:16.652Z"}
+{"user":1,"type":"system login","time":"2019-08-01T13:52:18.249Z"}
+{"user":1,"type":"system login","time":"2019-08-05T05:57:09.603Z"}
+{"user":1,"type":"system login","time":"2019-08-05T06:48:08.492Z"}
+{"user":1,"type":"system login","time":"2019-08-05T07:07:57.295Z"}
+{"user":1,"type":"system login","time":"2019-08-05T07:24:45.547Z"}
+{"user":1,"type":"purchase order creation","time":"2019-08-05T07:25:27.599Z","refer_id":16}
+{"user":1,"type":"system login","time":"2019-08-05T07:35:51.860Z"}
+{"user":1,"type":"enquiry creation","time":"2019-08-05T07:59:41.234Z","refer_id":63}
+{"user":1,"type":"enquiry status acctepted","time":"2019-08-05T07:59:46.192Z","refer_id":"63"}
+{"user":1,"type":"system login","time":"2019-08-05T08:08:08.430Z"}
+{"user":1,"type":"offer creation","time":"2019-08-05T08:23:11.393Z","refer_id":97}
+{"user":1,"type":"Offer Summary modification","time":"2019-08-05T08:26:27.636Z","refer_id":"undefined"}
+{"user":1,"type":"offer modification","time":"2019-08-05T08:33:40.882Z","refer_id":"97"}
+{"user":1,"type":"offer modification","time":"2019-08-05T08:35:14.130Z","refer_id":"97"}
+{"user":1,"type":"Offer Summary modification","time":"2019-08-05T08:36:50.926Z","refer_id":"90"}
+{"user":1,"type":"Offer Summary modification","time":"2019-08-05T08:38:56.343Z","refer_id":"90"}
+{"user":1,"type":"offer creation","time":"2019-08-05T08:54:26.093Z","refer_id":98}
+{"user":1,"type":"system login","time":"2019-08-05T09:02:17.332Z"}
+{"user":1,"type":"system login","time":"2019-08-05T10:28:55.156Z"}
+{"user":1,"type":"price competitive creation","time":"2019-08-05T10:30:09.818Z","refer_id":9}
+{"user":1,"type":"price competitive modification","time":"2019-08-05T11:21:03.804Z","refer_id":"9"}
+{"user":1,"type":"purchase order creation","time":"2019-08-05T11:30:25.645Z","refer_id":17}
+{"user":1,"type":"system login","time":"2019-08-05T11:40:42.510Z"}
+{"user":1,"type":"system login","time":"2019-08-05T11:44:00.421Z"}
+{"user":1,"type":"system login","time":"2019-08-05T11:45:23.721Z"}
+{"user":1,"type":"purchase order delete","time":"2019-08-05T11:46:53.332Z","refer":[{"id":17,"company":3,"purchase_enquiry":0,"vendor":23,"price_competitive":0,"autono":6,"fyear":"1920","po_no":"PO UI-1/1920/00006","po_date":"2019-08-28T01:00:00.000Z","delivery_date":"2019-08-29T01:00:00.000Z","quotation_no":"456","total_amount":704,"note":"","po_status":"pending","status":"active","creation_date":"2019-08-05T11:30:25.000Z","modification_date":"2019-08-05T11:30:25.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase order creation","time":"2019-08-05T11:47:33.395Z","refer_id":18}
+{"user":1,"type":"system login","time":"2019-08-05T11:49:06.352Z"}
+{"user":1,"type":"purchase order delete","time":"2019-08-05T11:49:21.646Z","refer":[{"id":18,"company":3,"purchase_enquiry":0,"vendor":20,"price_competitive":0,"autono":6,"fyear":"1920","po_no":"PO UI-2/1920/00006","po_date":"2019-08-24T01:00:00.000Z","delivery_date":"2019-08-25T01:00:00.000Z","quotation_no":"345","total_amount":13439,"note":"","po_status":"pending","status":"active","creation_date":"2019-08-05T11:47:33.000Z","modification_date":"2019-08-05T11:47:33.000Z","created_by":1,"modify_by":0}]}
+{"user":1,"type":"purchase order creation","time":"2019-08-05T11:50:40.300Z","refer_id":19}
+{"user":1,"type":"system login","time":"2019-08-05T13:01:55.313Z"}
+{"user":1,"type":"system login","time":"2019-08-05T13:05:31.404Z"}
+{"user":1,"type":"system login","time":"2019-08-05T13:10:25.513Z"}
+{"user":1,"type":"system login","time":"2019-08-05T13:11:50.267Z"}
+{"user":1,"type":"system login","time":"2019-08-05T13:17:02.056Z"}
+{"user":1,"type":"system login","time":"2019-08-05T13:19:38.526Z"}
+{"user":1,"type":"system login","time":"2019-08-05T13:20:47.767Z"}
+{"user":1,"type":"system login","time":"2019-08-05T13:22:31.280Z"}
+{"user":1,"type":"system login","time":"2019-08-05T13:23:36.225Z"}
+{"user":1,"type":"system login","time":"2019-08-05T13:25:07.559Z"}
+{"user":1,"type":"system login","time":"2019-08-05T13:56:49.560Z"}
+{"user":1,"type":"system login","time":"2019-08-05T14:15:00.654Z"}
+{"user":1,"type":"system login","time":"2019-08-05T14:17:14.557Z"}
+{"user":1,"type":"system login","time":"2019-08-05T14:18:49.894Z"}
+{"user":1,"type":"system login","time":"2019-08-05T14:31:49.482Z"}
+{"user":1,"type":"system login","time":"2019-08-05T14:32:42.866Z"}
+{"user":1,"type":"system login","time":"2019-08-05T14:36:00.769Z"}
+{"user":1,"type":"system login","time":"2019-08-05T14:40:05.255Z"}
+{"user":1,"type":"system login","time":"2019-08-05T14:47:17.770Z"}
+{"user":1,"type":"system login","time":"2019-08-05T14:48:35.997Z"}
+{"user":1,"type":"system login","time":"2019-08-05T14:49:45.070Z"}
+{"user":1,"type":"system login","time":"2019-08-07T06:02:18.791Z"}
+{"user":1,"type":"system login","time":"2019-08-07T09:52:59.011Z"}
+{"user":1,"type":"system login","time":"2019-08-07T10:11:02.601Z"}
+{"user":1,"type":"system login","time":"2019-08-07T10:13:36.487Z"}
+{"user":1,"type":"product specification modification","time":"2019-08-07T10:15:01.150Z","refer_id":"27"}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.641Z","refer_id":223}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.671Z","refer_id":224}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.674Z","refer_id":225}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.730Z","refer_id":226}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.743Z","refer_id":227}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.767Z","refer_id":228}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.772Z","refer_id":229}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.785Z","refer_id":230}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.793Z","refer_id":231}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.820Z","refer_id":232}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:15:49.823Z","refer_id":233}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.435Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.437Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.473Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.496Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.499Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.544Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.545Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.561Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.563Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.569Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.576Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.679Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.680Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.782Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.791Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.826Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.834Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.840Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.861Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.867Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.875Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-07T10:16:10.883Z"}
+{"user":1,"type":"system login","time":"2019-08-07T10:18:12.913Z"}
+{"user":1,"type":"product delete","time":"2019-08-07T10:19:26.866Z","refer":{"fieldCount":0,"affectedRows":0,"insertId":0,"serverStatus":34,"warningCount":0,"message":"","protocol41":true,"changedRows":0}}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.583Z","refer_id":256}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.594Z","refer_id":257}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.598Z","refer_id":258}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.600Z","refer_id":259}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.607Z","refer_id":260}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.610Z","refer_id":261}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.615Z","refer_id":262}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.618Z","refer_id":263}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.623Z","refer_id":264}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.627Z","refer_id":265}
+{"user":1,"type":"product codification creation","time":"2019-08-07T10:19:38.633Z","refer_id":266}
+{"user":1,"type":"component mapping updated","time":"2019-08-07T10:19:55.218Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-07T10:19:55.226Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-07T10:19:55.230Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-07T10:19:55.239Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-07T10:19:55.243Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-07T10:19:55.246Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-07T10:19:55.263Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-07T10:19:55.265Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"system login","time":"2019-08-08T06:01:08.489Z"}
+{"user":1,"type":"system login","time":"2019-08-08T06:54:09.257Z"}
+{"user":1,"type":"system login","time":"2019-08-08T06:54:50.155Z"}
+{"user":1,"type":"system login","time":"2019-08-08T07:42:42.099Z"}
+{"user":1,"type":"system login","time":"2019-08-08T07:45:03.976Z"}
+{"user":1,"type":"system login","time":"2019-08-08T07:46:56.668Z"}
+{"user":1,"type":"system login","time":"2019-08-08T08:04:44.135Z"}
+{"user":1,"type":"system login","time":"2019-08-08T08:06:38.987Z"}
+{"user":1,"type":"Depreciation Value updated","time":"2019-08-08T08:15:40.371Z","refer_id":3}
+{"user":1,"type":"system login","time":"2019-08-08T08:17:58.996Z"}
+{"user":1,"type":"Depreciation Value updated","time":"2019-08-08T08:18:27.793Z","refer_id":3}
+{"user":1,"type":"Depreciation Value updated","time":"2019-08-08T08:20:20.295Z","refer_id":3}
+{"user":1,"type":"Asset  creation","time":"2019-08-08T08:50:40.870Z","refer_id":15}
+{"user":1,"type":"system login","time":"2019-08-08T09:19:19.514Z"}
+{"user":1,"type":"system login","time":"2019-08-08T09:19:52.866Z"}
+{"user":1,"type":"system login","time":"2019-08-08T09:25:17.382Z"}
+{"user":1,"type":"system login","time":"2019-08-08T09:26:57.914Z"}
+{"user":1,"type":"system login","time":"2019-08-08T09:27:24.709Z"}
+{"user":1,"type":"Depreciation Value updated","time":"2019-08-08T10:32:33.651Z","refer_id":3}
+{"user":1,"type":"system login","time":"2019-08-08T10:34:12.227Z"}
+{"user":1,"type":"system login","time":"2019-08-08T10:37:17.233Z"}
+{"user":1,"type":"system login","time":"2019-08-08T10:38:48.290Z"}
+{"user":1,"type":"system login","time":"2019-08-08T10:41:06.311Z"}
+{"user":1,"type":"system login","time":"2019-08-08T10:50:01.885Z"}
+{"user":1,"type":"system login","time":"2019-08-08T10:52:13.257Z"}
+{"user":1,"type":"system login","time":"2019-08-08T10:58:11.253Z"}
+{"user":1,"type":"system login","time":"2019-08-08T11:16:49.922Z"}
+{"user":1,"type":"Asset modification","time":"2019-08-08T11:17:13.017Z","refer_id":"15"}
+{"user":1,"type":"system login","time":"2019-08-08T11:24:08.809Z"}
+{"user":1,"type":"system login","time":"2019-08-08T11:25:36.251Z"}
+{"user":1,"type":"system login","time":"2019-08-08T11:26:57.310Z"}
+{"user":1,"type":"system login","time":"2019-08-08T11:29:14.355Z"}
+{"user":1,"type":"system login","time":"2019-08-08T11:30:23.172Z"}
+{"user":1,"type":"system login","time":"2019-08-08T11:32:00.701Z"}
+{"user":1,"type":"system login","time":"2019-08-08T11:33:40.654Z"}
+{"user":1,"type":"system login","time":"2019-08-08T11:36:36.383Z"}
+{"user":1,"type":"system login","time":"2019-08-19T06:00:25.087Z"}
+{"user":1,"type":"system login","time":"2019-08-19T06:12:31.737Z"}
+{"user":1,"type":"system login","time":"2019-08-19T06:18:45.928Z"}
+{"user":1,"type":"system login","time":"2019-08-19T06:23:21.267Z"}
+{"user":1,"type":"product specification modification","time":"2019-08-19T06:24:34.712Z","refer_id":"27"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:25.968Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:25.975Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:25.979Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:25.982Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:25.985Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:25.989Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:25.992Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:25.995Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:25.999Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.002Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.025Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.028Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.031Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.035Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.038Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.041Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.044Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.048Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.050Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.053Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.057Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T07:55:26.060Z"}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.304Z","refer_id":345}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.376Z","refer_id":346}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.395Z","refer_id":347}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.455Z","refer_id":348}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.473Z","refer_id":349}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.521Z","refer_id":350}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.579Z","refer_id":351}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.632Z","refer_id":352}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.650Z","refer_id":353}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.677Z","refer_id":354}
+{"user":1,"type":"product codification creation","time":"2019-08-19T07:56:09.695Z","refer_id":355}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.233Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.258Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.263Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.265Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.269Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.272Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.277Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.279Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.282Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.285Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:06:16.288Z"}
+{"user":1,"type":"product delete","time":"2019-08-19T09:08:16.354Z","refer":{"fieldCount":0,"affectedRows":0,"insertId":0,"serverStatus":34,"warningCount":0,"message":"","protocol41":true,"changedRows":0}}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.883Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.887Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.896Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.903Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.906Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.909Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.912Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.920Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.923Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.925Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T09:08:44.928Z"}
+{"user":1,"type":"product delete","time":"2019-08-19T09:10:45.133Z","refer":{"fieldCount":0,"affectedRows":0,"insertId":0,"serverStatus":34,"warningCount":0,"message":"","protocol41":true,"changedRows":0}}
+{"user":1,"type":"system login","time":"2019-08-19T09:42:05.792Z"}
+{"user":1,"type":"component mapping updated","time":"2019-08-19T09:49:25.455Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-19T09:49:25.511Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-19T09:49:25.652Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-19T09:49:25.733Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-19T09:49:25.751Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-19T09:49:25.789Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-19T09:49:25.833Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"product codification modification","time":"2019-08-19T10:58:54.625Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T10:58:54.630Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T10:58:54.629Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T10:58:54.632Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T10:58:54.635Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T10:58:54.637Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T10:58:54.639Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T10:58:54.640Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T10:58:54.641Z"}
+{"user":1,"type":"system login","time":"2019-08-19T11:24:23.838Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:28:57.752Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:28:57.756Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:28:57.759Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:28:57.761Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:28:57.764Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:28:57.767Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:28:57.770Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:28:57.773Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:28:57.775Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:28:57.778Z"}
+{"user":1,"type":"system login","time":"2019-08-19T11:36:31.951Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.729Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.732Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.736Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.739Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.744Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.747Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.753Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.750Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.758Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.755Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:07.762Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.915Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.918Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.920Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.925Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.929Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.932Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.935Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.939Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.943Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.946Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:37:43.949Z"}
+{"user":1,"type":"system login","time":"2019-08-19T11:42:00.997Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.331Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.337Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.339Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.342Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.346Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.348Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.354Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.357Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.361Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.364Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-19T11:42:29.372Z"}
+{"user":1,"type":"system login","time":"2019-08-21T05:56:39.176Z"}
+{"user":1,"type":"system login","time":"2019-08-22T06:06:57.161Z"}
+{"user":1,"type":"system login","time":"2019-08-23T11:08:54.218Z"}
+{"user":1,"type":"system login","time":"2019-08-23T11:22:17.521Z"}
+{"user":1,"type":"product Item specification modification","time":"2019-08-23T11:26:38.983Z","refer_id":"179"}
+{"user":1,"type":"product Item specification modification","time":"2019-08-23T11:26:47.026Z","refer_id":"175"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.484Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.486Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.488Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.489Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.491Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.501Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.506Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.517Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.523Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.525Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:27:04.548Z"}
+{"user":1,"type":"system login","time":"2019-08-23T11:29:42.122Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.653Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.655Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.659Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.682Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.685Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.687Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.697Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.701Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.702Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.705Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-23T11:29:56.707Z"}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:10.733Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:10.747Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:10.760Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:10.763Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:10.767Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:10.782Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:10.786Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 0  Warnings: 1","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:10.798Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 0  Warnings: 0","protocol41":true,"changedRows":0}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:48.786Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:48.795Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:48.811Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:48.815Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:48.818Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:48.822Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"component mapping updated","time":"2019-08-23T11:30:48.827Z","refer_id":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":1,"message":"(Rows matched: 1  Changed: 1  Warnings: 1","protocol41":true,"changedRows":1}}
+{"user":1,"type":"system login","time":"2019-08-23T13:34:46.704Z"}
+{"user":1,"type":"system login","time":"2019-08-23T13:55:59.896Z"}
+{"user":1,"type":"system login","time":"2019-08-23T15:47:21.117Z"}
+{"user":1,"type":"system login","time":"2019-08-23T16:24:25.202Z"}
+{"user":1,"type":"system login","time":"2019-08-23T16:40:32.499Z"}
+{"user":1,"type":"system login","time":"2019-08-23T16:42:25.177Z"}
+{"user":1,"type":"system login","time":"2019-08-23T17:25:18.973Z"}
+{"user":1,"type":"system login","time":"2019-08-23T17:36:37.778Z"}
+{"user":1,"type":"system login","time":"2019-08-23T17:53:23.588Z"}
+{"user":1,"type":"Depreciation Value updated","time":"2019-08-23T17:59:57.646Z","refer_id":3}
+{"user":1,"type":"Depreciation Value updated","time":"2019-08-23T18:01:18.163Z","refer_id":3}
+{"user":1,"type":"Depreciation Value updated","time":"2019-08-23T18:01:46.036Z","refer_id":3}
+{"user":1,"type":"Depreciation Value updated","time":"2019-08-23T18:02:42.119Z","refer_id":3}
+{"user":1,"type":"Depreciation Value updated","time":"2019-08-23T18:03:40.055Z","refer_id":3}
+{"user":1,"type":"system login","time":"2019-08-27T06:21:01.066Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:07:05.501Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:07:05.503Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:07:05.509Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:07:05.527Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:07:05.605Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:07:05.607Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:07:05.610Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:07:05.613Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:07:05.616Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:07:05.619Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:10:58.177Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:10:58.184Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:10:58.186Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:10:58.187Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:10:58.189Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:10:58.206Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:10:58.208Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:10:58.209Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:10:58.210Z"}
+{"user":1,"type":"product codification modification","time":"2019-08-27T12:10:58.214Z"}
+{"user":1,"type":"system login","time":"2019-08-27T12:19:17.522Z"}
+{"user":1,"type":"system login","time":"2019-08-28T06:11:47.513Z"}
+{"user":1,"type":"product specification modification","time":"2019-08-28T06:40:24.898Z","refer_id":"20"}
+{"user":1,"type":"product specification creation","time":"2019-08-28T06:50:10.858Z","refer_id":33}
+{"user":1,"type":"product specification delete","time":"2019-08-28T06:51:05.486Z","refer":[{"id":33,"company":3,"specification_name":"abc","specification_no":0,"status":"active","show_page":"codification","created_by":1,"creation_time":"2019-08-28T06:50:10.000Z","modification_date":"2019-08-28T06:50:10.000Z","modified_by":0}]}
+{"user":1,"type":"system login","time":"2019-08-28T06:52:41.100Z"}
+{"user":1,"type":"product specification creation","time":"2019-08-28T06:53:06.886Z","refer_id":34}
+{"user":1,"type":"product specification delete","time":"2019-08-28T06:53:17.496Z","refer":[{"id":34,"company":3,"specification_name":"Forging Source","specification_no":0,"status":"active","show_page":"codification","created_by":1,"creation_time":"2019-08-28T06:53:06.000Z","modification_date":"2019-08-28T06:53:06.000Z","modified_by":0}]}
+{"user":1,"type":"product specification creation","time":"2019-08-28T06:54:19.396Z","refer_id":35}
+{"user":1,"type":"product specification delete","time":"2019-08-28T06:54:25.524Z","refer":[{"id":35,"company":3,"specification_name":"wwww","specification_no":1222,"status":"active","show_page":"codification","created_by":1,"creation_time":"2019-08-28T06:54:19.000Z","modification_date":"2019-08-28T06:54:19.000Z","modified_by":0}]}
+{"user":1,"type":"product specification creation","time":"2019-08-28T06:55:59.846Z","refer_id":36}
+{"user":1,"type":"product specification delete","time":"2019-08-28T06:56:04.574Z","refer":[{"id":36,"company":3,"specification_name":"ewew","specification_no":23,"status":"active","show_page":"codification","created_by":1,"creation_time":"2019-08-28T06:55:59.000Z","modification_date":"2019-08-28T06:55:59.000Z","modified_by":0}]}
+{"user":1,"type":"product specification creation","time":"2019-08-28T06:57:29.692Z","refer_id":37}
+{"user":1,"type":"product specification delete","time":"2019-08-28T06:57:38.831Z","refer":[{"id":37,"company":3,"specification_name":"trtr","specification_no":45,"status":"active","show_page":"codification","created_by":1,"creation_time":"2019-08-28T06:57:29.000Z","modification_date":"2019-08-28T06:57:29.000Z","modified_by":0}]}
+{"user":1,"type":"system login","time":"2019-08-28T06:58:24.935Z"}
+{"user":1,"type":"product specification creation","time":"2019-08-28T06:58:51.706Z","refer_id":38}
+{"user":1,"type":"product specification delete","time":"2019-08-28T06:58:55.823Z","refer":[{"id":38,"company":3,"specification_name":"Forging Sourcerrr","specification_no":0,"status":"active","show_page":"codification","created_by":1,"creation_time":"2019-08-28T06:58:51.000Z","modification_date":"2019-08-28T06:58:51.000Z","modified_by":0}]}
+{"user":1,"type":"enquiry permission for change","time":"2019-08-28T07:28:53.878Z","refer_id":"36"}
+{"user":1,"type":"system login","time":"2019-08-30T08:32:46.297Z"}
+{"user":1,"type":"system login","time":"2019-08-30T08:42:04.387Z"}
+{"user":1,"type":"system login","time":"2019-08-30T08:45:19.572Z"}
+{"user":1,"type":"system login","time":"2019-08-30T08:47:44.133Z"}
+{"user":1,"type":"system login","time":"2019-08-30T10:20:05.959Z"}
+{"user":1,"type":"system login","time":"2019-08-30T10:28:09.515Z"}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T10:39:35.513Z","refer_id":9}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T10:39:35.545Z","refer_id":9}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T10:44:37.845Z","refer_id":10}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T10:44:37.866Z","refer_id":10}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T10:46:36.519Z","refer_id":11}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T10:46:36.631Z","refer_id":11}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T10:48:34.962Z","refer_id":12}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T10:48:34.993Z","refer_id":12}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T10:55:33.600Z","refer_id":13}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T10:55:33.629Z","refer_id":13}
+{"user":1,"type":"offer modification","time":"2019-08-30T11:09:40.936Z","refer_id":"98"}
+{"user":1,"type":"product sub codification delete","time":"2019-08-30T11:11:38.132Z","refer":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}}
+{"user":1,"type":"system login","time":"2019-08-30T11:14:59.475Z"}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T11:15:18.237Z","refer_id":14}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T11:15:18.274Z","refer_id":14}
+{"user":1,"type":"product sub codification delete","time":"2019-08-30T11:15:49.954Z","refer":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"","protocol41":true,"changedRows":0}}
+{"user":1,"type":"system login","time":"2019-08-30T11:29:38.655Z"}
+{"user":1,"type":"system login","time":"2019-08-30T11:36:01.577Z"}
+{"user":1,"type":"system login","time":"2019-08-30T11:37:04.042Z"}
+{"user":1,"type":"system login","time":"2019-08-30T11:43:20.191Z"}
+{"user":1,"type":"system login","time":"2019-08-30T12:14:29.201Z"}
+{"user":1,"type":"system login","time":"2019-08-30T12:20:21.403Z"}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T12:20:50.034Z","refer_id":15}
+{"user":1,"type":"product sub codification creation","time":"2019-08-30T12:20:50.038Z","refer_id":15}
+{"user":1,"type":"product sub codification modification","time":"2019-08-30T12:23:56.942Z","refer_id":"15"}
+{"user":1,"type":"product sub codification modification","time":"2019-08-30T12:23:56.943Z","refer_id":"15"}
+{"user":1,"type":"sub product delete","time":"2019-08-30T12:24:05.940Z","refer":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"","protocol41":true,"changedRows":0}}
+{"user":1,"type":"enquiry creation","time":"2019-08-30T12:31:09.089Z","refer_id":64}
+{"user":1,"type":"enquiry status acctepted","time":"2019-08-30T12:31:17.275Z","refer_id":"64"}
+{"user":1,"type":"offer creation","time":"2019-08-30T12:33:07.856Z","refer_id":99}
+{"user":1,"type":"offer status acctepted","time":"2019-08-30T12:33:16.944Z","refer_id":"99"}
+{"user":1,"type":"enquiry modification","time":"2019-08-30T12:34:22.261Z","refer_id":"64"}
+{"user":1,"type":"offer delete","time":"2019-08-30T12:34:54.003Z","refer":[{"id":99,"autono":29,"enquiry":64,"company":3,"customer":24,"offer_date":"2019-04-18T01:00:00.000Z","offer_prepared_by":1,"offer_no":"AIAV/1920/00029","offer_status":"accepted","amendment_no":0,"amendment_date":"2019-08-30T12:33:07.000Z","offer_validity":"4","offer_note":"This is offer Custom Note","offer_term_note":"","total_tax":0,"tax":0,"amount":1416,"adjustment":0,"total_amount":1530,"total_quantity":1,"fyear":"1920","status":"active","creation_date":"2019-08-30T12:33:07.000Z","modification_date":"2019-08-30T12:33:07.000Z","created_by":1,"modified_by":1,"sales_agent":0}]}
+{"user":1,"type":"enquiry delete","time":"2019-08-30T12:36:15.141Z","refer":[{"id":64,"company":3,"customer":24,"shipping":20,"offer":99,"auto_no":32,"enquiry_no":"ENQY /00033/1920","query_date":"2019-08-28T01:00:00.000Z","ref_no":127,"enquiry_validity":"4 Days Later","currency":"USD","bank_guaranty":"PBG","bank_guaranty_percentage":"","sales_agent":2,"project_name":"","project_no":"","category":"Firmed","bid_opening_date":"2019-04-10T01:00:00.000Z","earn_money":"","amount":0,"fyear":"1920","enquiry_status":"accepted","offer_status":"no","status":"active","created_by":1,"creation_date":"2019-08-30T12:31:09.000Z","modification_date":"2019-08-30T07:04:22.000Z","modify_by":1}]}
+{"user":1,"type":"enquiry creation","time":"2019-08-30T12:36:34.143Z","refer_id":65}
+{"user":1,"type":"enquiry status acctepted","time":"2019-08-30T12:36:38.431Z","refer_id":"65"}
+{"user":1,"type":"offer creation","time":"2019-08-30T12:37:20.562Z","refer_id":100}
+{"user":1,"type":"offer status acctepted","time":"2019-08-30T12:37:26.246Z","refer_id":"100"}

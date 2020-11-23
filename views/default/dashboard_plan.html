@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sibyl Accounting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured accounts package for small and mid level industry" name="description" />
+        <meta content="sibyl" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="default_assets/images/favicon.ico">
+        <!-- App css -->
+        <link href="default_assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+        <!--Morris Chart CSS -->
+        <link rel="stylesheet" href="default_assets/plugins/morris/morris.css">
+
+        <link href="default_assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/css/style.css" rel="stylesheet" type="text/css" />
+        <!-- plugin -->
+        <link href="default_assets/plugins/jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/sweet-alert/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        <script src="default_assets/js/modernizr.min.js"></script>
+        <script src="default_assets/js/xlsx.full.min.js"></script>
+        <link href="default_assets/css/custombox.min.css" rel="stylesheet">
+
+
+        <style>
+            .select2-container{
+                z-index: 9999;
+            }
+            .modal-demo {
+          width: 90%; /* New width for default modal */
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-invert-colors"></i> <span>Sales</span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/enquiry">enquiry</a></li>
+                                            <li class="userrole-cls" data-permission="sales-offer"><a href="#/offer">offer</a></li>
+                                            <li class="userrole-cls" data-permission ="sales-workorder"><a href="#/workorder">workorder</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-texture"></i><span>Product</span> </a>
+                                <ul class="submenu">
+                                    <li  data-permission="sales-component_category"><a href="#/componentcategory">component category</a></li>
+                                    <li  data-permission="sales-specification"><a href="#/prod_specification">Specification </a></li>
+                                    <li  data-permission="sales-prod_feature"><a href="#/prod_feature">Feature </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/prod_codification">Product </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/rawitem">Raw Item </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/serviceitem"> Service Item </a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span>Master</span> </a>
+
+                                <ul class="submenu">
+                                    <li  data-permission="sales-component_category"><a href="#/componentcategory">component category</a></li>
+                                    <li  data-permission="sales-item"><a href="#/item">Item</a></li>
+                                    <li><a href="#/salesagent">Sales Agent </a></li>
+                                    <li  data-permission="sales-plan"><a href="#/plan">Plan </a></li>
+                                </ul>
+                                
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><p>Enquiry</p></li>
+                                            <li><a href="#/report/enquiry/enquirydetails">Enquiry Summary</a></li>
+
+                                            <li><p>Offer</p></li>
+                                            <li><a href="#/report/offer/offerdetails">Offer Summary</a></li>
+
+                                            <li><p>Plan</p></li>
+                                            <li><a href="#/report/plan/planningsumdetail">Planning Summary</a></li>
+                                             <li><a href="#/report/plan/componentdetail">Component Details</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Settings </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#/settings">General settings</a></li>
+                                    <li><a href="#/user">Users & Roles </a></li>
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper" >
+            <div class="container-fluid" id="mainContent"></div>
+
+        </div>
+        <!-- end wrapper -->
+
+        <div id="custom-modal" class="modal-demo">
+            <button type="button" class="close" onclick="Custombox.modal.closeAll();">
+                <span>&times;</span><span class="sr-only">Close</span>
+            </button>
+            <h4 class="custom-modal-title"></h4>
+            <div class="custom-modal-text modalbody" style="background: #253138;">
+
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        © Sibyl Infotech Pvt Ltd. <a href="http://www.sibyltech.co">sibyltech.co</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        
+
+
+        <!-- jQuery  -->
+       <script src="default_assets/js/jquery.min.js"></script>
+        <script src="default_assets/js/popper.min.js"></script>
+        <script src="default_assets/js/bootstrap.min.js"></script>
+        <script src="default_assets/js/waves.js"></script>
+        <script src="default_assets/js/jquery.slimscroll.js"></script>
+        
+
+        <!-- App js -->
+        <script src="default_assets/js/jquery.core.js"></script>
+        <script src="default_assets/js/jquery.app.js"></script>
+        <!---------ROUTING-------------->
+        <script src="assets/js/routing/signals.js"></script>
+        <script src="assets/js/routing/hasher.min.js"></script>
+        <script src="assets/js/routing/crossroads.min.js"></script>
+        <script src="assets/js/routing/routing.js"></script>
+        <script src="assets/js/app/common.js"></script>
+        <script src="default_assets/js/jspdf.min.js"></script> 
+
+        <script src="default_assets/js/custombox.min.js"></script>
+        <script src="default_assets/js/custombox.legacy.min.js"></script>
+
+        <!-- plugin -->
+
+        <script src="default_assets/plugins/jquery-ui/jquery-ui.js"></script>
+        <script src="default_assets/plugins/toastr/toastr.min.js"></script>
+        <script src="default_assets/plugins/sweet-alert/sweetalert2.min.js"></script>
+        <script src="default_assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="default_assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="default_assets/plugins/select2/js/select2.min.js" ></script>
+
+        <script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+        <script src="default_assets/plugins/jquery-knob/jquery.knob.js"></script>    
+        <!--Morris Chart-->
+        <script src="default_assets/plugins/morris/morris.min.js"></script>
+        <script src="default_assets/plugins/raphael/raphael-min.js"></script>
+        <!-- Dashboard init -->
+        <script src="default_assets/pages/jquery.dashboard.js"></script>
+
+        <!-- data table -->
+        <!-- Buttons examples -->
+        <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="default_assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+        <script src="default_assets/plugins/datatables/jszip.min.js"></script>
+        <script src="default_assets/plugins/datatables/pdfmake.min.js"></script>
+        <script src="default_assets/plugins/datatables/vfs_fonts.js"></script>
+        <script src="default_assets/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="default_assets/plugins/datatables/buttons.print.min.js"></script>
+
+        <!-- Key Tables -->
+        <script src="default_assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+
+        <!-- Responsive examples -->
+        <script src="default_assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="default_assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+
+        <!-- Selection table -->
+        <script src="default_assets/plugins/datatables/dataTables.select.min.js"></script>
+
+        <script type="text/javascript">
+            COMMON.getUserRole();
+        </script>
+
+       <!--class="userrole-cls"-->
+        
+        
+    </body>
+</html>

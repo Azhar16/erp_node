@@ -1,0 +1,142 @@
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 i-n-b">Back</button>
+        </div>
+        <h4 class="page-title">Item Edit</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmINew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+                <div class="form-group">
+                    <div class="radio radio-info form-check-inline">
+                        <input type="radio" value="product" name="type" <% if(row.type=='product'){%>checked=""<%}%> >
+                        <label> Product </label>
+                    </div>
+                    <div class="radio form-check-inline">
+                        <input type="radio" value="service" name="type" <% if(row.type=='service'){%>checked=""<%}%>>
+                        <label > Service </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label >Item Code*</label>
+                        <input type="text" name="code" parsley-trigger="change" required
+                               placeholder="Enter item code" class="form-control" id="code" value='<%=row.code%>'>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Name*</label>
+                        <input type="text" name="name" parsley-trigger="change" required
+                               placeholder="Enter item name" class="form-control" id="name" value="<%-row.name%>">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Specification</label>
+                        <input type="text" name="specification" placeholder="Enter item specification" class="form-control" id="specification" value="<%-row.specification%>">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Group</label>
+                        <input type="text" name="group" placeholder="Enter item group" class="form-control" id="group" value="<%-row.group%>">
+                    </div>
+                    <div class="form-group col-md-4 forProd">
+                        <label >Unit*</label>
+                        <input type="text" id="unit" name="unit" value="<%-row.unit%>" class="form-control" placeholder="Default item unit" parsley-trigger="change" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>HSN Code</label>
+                        <input type="text" id="hsn_code" value="<%-row.hsn_code%>" name="hsn_code" class="form-control" placeholder="HSN code">
+                    </div>
+                    <div class="form-group col-md-4 forProd">
+                        <label >Item Category</label>
+                        <select class="form-control" id="category">
+                            <option <% if(row.category=='raw'){%>selected<%}%> value="raw">Raw material</option>
+                            <option <% if(row.category=='finished'){%>selected<%}%> value="finished">Finished goods</option>
+                            </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Tax Rate Slab</label>
+                        <select class="form-control" id="tax_slabe">
+                            <%
+                                    for(var k in tax_slab) {
+                                    %>
+                                    <option <% if(row.tax_slabe==tax_slab[k]){%>selected<%}%> value="<%-tax_slab[k]%>"><%-tax_slab[k]%>%</option>
+                                        <%
+                                     }
+                                    %>
+                            </select>
+                    </div>
+                    
+                    <div class="form-group col-md-12 forProd">
+                        <label >Multi unit</label>
+                           <input id="multi_unit" type="checkbox" <% if(row.multi_unit=='yes'){%>checked<%}%>>
+                           <div class="form-group col-md-8 m-u-w" <% if(row.multi_unit=='no'){%>style="display: none;"<%}%>>
+                        <div class="form-group col-md-4" style="float: left;">
+                            <label ></label>
+                            <input type="number" step=".01" value="<%-row.unit_one_no.toFixed(2)%>" id="unit_one_no" name="unit_one_no" class="form-control" placeholder="unit one" style="width: 40%;float: left;"> <span class="i-d-u"><% if(row.unit==''){%>Default unit<%}else{%><%-row.unit%><%}%></span>
+                        </div>
+                        <div class="form-group col-md-1" style="float: left;">
+                            <label></label>=
+                        </div>
+                        <div class="form-group col-md-3" style="float: left;">
+                            <input type="number" step=".01" value="<%-row.unit_two_no.toFixed(2)%>" id="unit_two_no" name="unit_two_no" class="form-control" placeholder="unit no" style="width: 40%;float: left;">
+                            <input type="text" id="unit_two" value="<%-row.unit_two%>" name="unit_two" class="form-control" placeholder="unit" style="width: 40%;float: left;">
+                        </div>
+                        <div class="form-group col-md-1" style="float: left;">
+                            <label ></label>=
+                        </div>
+                        <div class="form-group col-md-3" style="float: left;">
+                            <input type="number" step=".01" value="<%-row.unit_three_no.toFixed(2)%>" id="unit_three_no" name="unit_three_no" class="form-control" placeholder="unit no" style="width: 40%;float: left;">
+                            <input type="text" id="unit_three" value="<%-row.unit_three%>" name="unit_three" class="form-control" placeholder="unit" style="width: 40%;float: left;">
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="form-group col-md-4">
+                        <label >Sales Rate</label>
+                        <input type="number" step=".01" id="sales_rate" value="<%-row.sales_rate.toFixed(2)%>" name="sales_rate" class="form-control" placeholder="Sales rate">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Default Sales Discount %</label>
+                        <input type="number" step=".01" id="sales_discount" value="<%-row.sales_discount.toFixed(2)%>" name="sales_discount" class="form-control" placeholder="Sales discount">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Purchase Rate</label>
+                        <input type="number" step=".01" id="purchase_rate" value="<%-row.purchase_rate%>" name="purchase_rate" class="form-control" placeholder="Purchase rate">
+                    </div>
+                    <div class="form-group col-md-4 forProd">
+                        <label >Inventory Opening Stock</label>
+                        <input type="number" step=".01" id="ostock" value="<%-os.quantity%>" name="ostock" class="form-control" placeholder="Opening Stock">
+                    </div>
+                    <div class="form-group col-md-4 forProd">
+                        <label >Opening Stock Rate</label>
+                        <input type="number" step=".01" id="orate" value="<%-os.rate%>" name="orate" class="form-control" placeholder="Opening stock rate">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label >Item Short Note</label>
+                        <textarea class="form-control" rows="5" id="description"><%-row.description%></textarea>
+                    </div>
+                    <div class="form-group text-right m-b-0 col-md-12">
+                        <input type="hidden" name="iid" id="iid" value="<%-row.id%>"/>
+                    <button class="btn btn-primary waves-effect waves-light" type="submit">
+                        Submit
+                    </button>
+                    <button class="btn btn-secondary waves-effect waves-light m-l-5 i-n-b">
+                        Cancel
+                    </button>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div><!-- end col -->
+</div>
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/item.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        ITEM.initIN();
+    });
+</script>

@@ -1,0 +1,88 @@
+{
+  "user_type": {
+    "name": {
+      "super_admin": "super_admin",
+      "lvl1": "lvl1",
+      "lvl2": "lvl2",
+      "lvl3": "lvl3",
+      "User": "User"
+    }
+  },
+  "modules": {
+    "accounts": {
+      "name": "accounts",
+      "permission": -1,
+      "submodule": {
+        "jurnal": {
+          "name": "jurnal",
+          "permission": -1,
+          "item": {
+            "add": "add",
+            "edit": "edit",
+            "delete": "delete"
+          }
+        }
+      }
+    },
+    "sales": {
+      "name": "sales",
+      "permission": -1,
+      "submodule": {
+        "offer": {
+          "name": "offer",
+          "permission": -1,
+          "item": {
+            "add": "add",
+            "edit": "edit",
+            "delete": "delete",
+            "view": "view",
+            "status_change": "status_change"
+          }
+        },
+        "enquiry": {
+          "name": "enquiry",
+          "permission": -1,
+          "item": {
+            "add": "add",
+            "edit": "edit",
+            "delete": "delete",
+            "status_change": "status_change"
+          }
+        },
+        "workorder": {
+          "name": "workorder",
+          "permission": -1,
+          "item": {
+            "add": "add",
+            "edit": "edit",
+            "delete": "delete",
+            "commercial_part": "commercial_part",
+            "techno_commercial": "techno_commercial",
+            "despatch_insurance": "despatch_insurance",
+            "product_list": "product_list"
+          }
+        },
+        "component_category": {
+          "name": "component_category",
+          "permission": -1,
+          "item": {
+            "add": "add",
+            "edit": "edit",
+            "delete": "delete",
+            "sub_component": "sub_component"
+          }
+        },
+        "item": {
+          "name": "item",
+          "permission": -1,
+          "item": {
+            "add": "add",
+            "edit": "edit",
+            "delete": "delete",
+            "component_mapping": "component_mapping"
+          }
+        }
+      }
+    }
+  }
+}

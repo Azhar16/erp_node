@@ -1,0 +1,21 @@
+
+{"userid":"1","user_type":"Super Admin","user_module":"accounts","user_role":[{"accounts":"Banking"},{"accounts":"Inventory"}],"time":"2019-01-16T06:43:58.175Z","modify_by":1}
+{"userid":"1","user_type":"Super Admin","user_module":"Sales","user_role":[{"sales":"Offer"},{"sales":"Item"}],"time":"2019-01-16T06:43:58.176Z","modify_by":1}
+{"userid":"1","user_type":"Super Admin","user_module":"Payroll","user_role":[{"payroll":"Employee"},{"payroll":"Payroll Management"}],"time":"2019-01-16T06:43:58.176Z","modify_by":1}
+{"userid":"1","user_type":"Super Admin","user_module":"accounts","time":"2019-01-16T08:29:26.390Z","modify_by":1}
+{"userid":"1","user_type":"Super Admin","user_module":"Sales","time":"2019-01-16T08:29:26.390Z","modify_by":1}
+{"userid":"1","user_type":"Super Admin","user_module":"Payroll","time":"2019-01-16T08:29:26.391Z","modify_by":1}
+{"userid":"1","user_type":"Super Admin","user_module":"accounts","user_role":[],"time":"2019-01-16T08:39:59.185Z","modify_by":1}
+{"userid":"1","user_type":"Super Admin","user_module":"Sales","user_role":[],"time":"2019-01-16T08:39:59.186Z","modify_by":1}
+
+
+{"userid":"1","user_type":"Super Admin","user_module":"accounts","user_role":[{"accounts":"Banking"},{"Sales":"Workorder"},{"Payroll":"Time Management"}],"time":"2019-01-16T10:47:44.656Z","modify_by":1}
+{"userid":"2","user_type":"Super Admin","user_module":"accounts","user_role":[{"accounts":"Banking"},{"Sales":"Offer"},{"Payroll":"Employee"}],"time":"2019-01-16T10:50:06.861Z","modify_by":1}
+{"userid":"2","user_type":"Super Admin","user_module":"accounts","user_role":[{"accounts":"Banking"},{"Sales":"Item"}],"time":"2019-01-16T10:52:16.592Z","modify_by":1}
+{"userid":"2","user_type":"Super Admin","user_module":"Sales","user_role":[{"accounts":"Banking"},{"Sales":"Item"}],"time":"2019-01-16T10:52:16.593Z","modify_by":1}
+{"userid":"2","user_type":"Super Admin","user_module":"accounts","user_role":[{"accounts":"Banking"},{"Sales":"Item"}],"time":"2019-01-16T10:53:50.231Z","modify_by":1}
+{"userid":"2","user_type":"Super Admin","user_module":"Sales","user_role":[{"accounts":"Banking"},{"Sales":"Item"}],"time":"2019-01-16T10:53:50.238Z","modify_by":1}
+{"userid":"2","user_type":"Super Admin","user_module":"accounts","user_role":[{"accounts":"Banking"},{"Sales":"Offer"},{"Sales":"Workorder"}],"time":"2019-01-16T11:04:21.166Z","modify_by":1}
+{"userid":"2","user_type":"Super Admin","user_module":"Sales","user_role":[{"accounts":"Banking"},{"Sales":"Offer"},{"Sales":"Workorder"}],"time":"2019-01-16T11:04:21.167Z","modify_by":1}
+{"userid":"2","user_type":"Super Admin","user_module":"accounts","user_role":[{"accounts":"Master"},{"Sales":"Component_category"}],"time":"2019-01-16T11:06:03.595Z","modify_by":1}
+{"userid":"2","user_type":"Super Admin","user_module":"Sales","user_role":[{"accounts":"Master"},{"Sales":"Component_category"}],"time":"2019-01-16T11:06:03.596Z","modify_by":1}

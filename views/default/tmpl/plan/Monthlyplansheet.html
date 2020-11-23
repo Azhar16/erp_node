@@ -1,0 +1,282 @@
+<link href="default_assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/plan/dashboard"><i class="mdi mdi-view-list"></i> <span> Plan </span> </a>
+
+                                <ul class="submenu">
+                                    <li  data-permission="sales-plan"><a href="#/plan/plan"> Plan </a></li>
+                                    <li  data-permission="sales-plan"><a href="#/plan/requisition_plan"> Requisition Plan </a></li>
+                                </ul>
+                                
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><p>Plan</p></li>
+                                            <li><a href="#/report/plan/planningsumdetail">Planning Summary</a></li>
+                                             <li><a href="#/report/plan/componentdetail">Component Details</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row">
+    <div class="col-sm-12">
+         <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 s-n-bk">Back</button>
+        </div>
+        <h4 class="page-title">Monthly Plan Sheet</h4>
+    </div>
+            <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >serial no:</span>
+               <select class="select2 select2-multiple" multiple="multiple" multiple id="srlFltr">
+               </select>
+             </div>
+             <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >workorder:</span>
+               <select id="woFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>
+             <!--<div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >customer:</span>
+               <select id="cusFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>
+             <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >size:</span>
+               <select id="sizeFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>
+             <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >moc:</span>
+               <select id="mocFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>
+             <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >Trim:</span>
+               <select id="trimFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>
+             <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >ends:</span>
+               <select id="endsFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>
+             <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >cdd:</span>
+               <select id="cddFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>
+             <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >odr qnty:</span>
+               <select id="odrFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>
+             <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >plned qnty:</span>
+               <select id="plndFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>
+             <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >balanced qnty:</span>
+               <select id="balaFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>-->
+</div>
+
+<div class="row ">
+    <div class="col-12">
+        <div class="card-box table-responsive">
+            <table id="datatable" class="table table-bordered">
+                <thead>
+                    <tr>
+
+                        <th><input name="select_all" value="1" id="example-select-all" type="checkbox" /></th>
+                        <th type="hidden">Serial No.</th>
+                        <th>WO Reference</th>
+                        <th>Customer</th>
+                        <th>Size Id</th>
+                        <th>MOC</th>
+                        <th>Trim</th>
+                        <th>Ends</th>
+                        <th>CDD</th>
+                        <th>Order</th>
+                        <th>Planed</th>
+                        <th>Balanced</th>
+                        
+                        
+                    </tr>
+                </thead>
+               <!-- <tfoot>
+            <tr>
+                <th><input name="select_all" value="1" id="example-select-all" type="checkbox" /></th>
+                <th >Serial No.</th>
+                <th>WO Reference</th>
+                <th>Customer</th>
+                <th>Size Id</th>
+                <th>MOC</th>
+                <th>Trim</th>
+                <th>Ends</th>
+                <th>CDD</th>
+                <th>Order</th>
+                <th>Planed</th>
+                <th>Balanced</th>
+            </tr>
+        </tfoot> -->
+            </table>
+            <input type="hidden" name="planid" id="planid" value="<%-planid%>">
+            
+        </div>
+        </div> 
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+    <div class="card-box">
+         
+        
+            <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmSNew">
+                <h4 class="m-t-0 header-title">Create Monthly Plan Sheet</h4>
+                <div class="form-row">
+                    
+                                      <div class="form-group col-md-3">
+                                        <label class="col-form-label">ID</label>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="col-form-label">Pick Id</label>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label class="col-form-label">Plan Quantity</label>
+                                    </div>
+                                  <div class="item-wrapper" style="width: 100%;">
+                            
+                              </div>
+                                 <div class="form-group text-right m-b-0" style="width: 100%;margin-top: 25px">
+                                            <button class="btn btn-primary waves-effect waves-light" type="submit">
+                                                Submit
+                                            </button>
+                                            <button class="btn btn-secondary waves-effect waves-light m-l-5 s-n-bk">
+                                                Cancel
+                                            </button>
+                                        </div>
+                                    
+
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                    <div class="card-box">
+                         
+                        <h4 class="m-t-0 header-title">Monthly Plan Sheet history</h4>
+                            <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmMPSHNew">
+                                <div class="form-row">
+                                      <div class="form-group col-md-2">
+                                        <label class="col-form-label">ID</label>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label class="col-form-label">Pick Id</label>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label class="col-form-label">Plan Quantity</label>
+                                    </div>
+                                    <div class="form-group col-md-2" >
+                                        <label class="col-form-label"></label>
+                                    </div>
+                                    <div class="form-group col-md-2" >
+                                        <label class="col-form-label"></label>
+                                    </div>
+
+                                  <div class="item-history-wrapper" style="width: 100%;">
+                                        <%
+                                    for(var k in planitm) {
+                                     %>
+                                     <% console.log("html "+planitm[k].plan_item_id); %>
+                                       
+                                    <div class="data-row-wrap-history" data-id="<%-planitm[k].id%>" data-qnty="<%-planitm[k].quntity%>" data-plnqnty="<%-planitm[k].plan_quantity%>" data-balance="<%-planitm[k].balanced%>" data-planed="<%-planitm[k].planed%>">
+                                    <div class="col-md-2" style="float: left;">
+                                    <input type="text" placeholder="Enter Id" class="form-control i-r-pitemid-history" readonly="" value="<%-planitm[k].plan_item_id%>"/>
+                                    </div>
+                                    <div class="col-md-3" style="float: left;">
+                                    <input type="text" class="form-control i-r-wono-history" placeholder="Enter Pick Id" readonly="" value="<%-planitm[k].wo_no%>">
+                                    </div>
+                                    <div class="col-md-3" style="float: left;">
+                                    <input type="number" step=".01" class="form-control i-r-oqnty-history" placeholder="Quantity" value="<%-planitm[k].plan_quantity%>">
+                                    </div>
+                                    <div class="col-md-2"  style="float: left;">
+                                    <a class="btn btn-icon waves-effect waves-light btn-danger m-b-5 i-r-del-history<%-planitm[k].id%>"> <i class="fa fa-remove"></i> </a>
+                                    </div>
+                                    <div class="col-md-2"  style="float: left;">
+                                    <a class="btn btn-icon waves-effect waves-light btn-warning m-b-5 i-r-edit-history<%-planitm[k].id%>"> <i class="fa fa-wrench"></i> </a>
+                                    </div>
+                                    <div  style="float: left;">
+                                    <input type="hidden"  class="form-control i-r-planwoid-history" placeholder="Quantity" value="<%-planitm[k].workorder%>">
+                                    </div>
+                                    <div  style="float: left;">
+                                    <input type="hidden"  class="form-control i-r-planitem-history" placeholder="Quantity" value="<%-planitm[k].item%>">
+                                    </div>
+                                    <div  style="float: left;">
+                                    <input type="hidden" class="form-control i-r-planhisid-history" placeholder="Quantity" value="<%-planitm[k].plan%>">
+                                    </div>
+                                    </div>
+                                    <%
+                                }
+                               %>
+                </div>
+        </form>
+    </div>
+</div>
+</div>
+
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+
+        <script src="default_assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="default_assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+       <script src="assets/js/app/plan.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                PLAN.initMPSL();
+            });
+        </script>

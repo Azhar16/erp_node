@@ -1,0 +1,404 @@
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/sales/dashboard"><i class="mdi mdi-invert-colors"></i> <span>Sales</span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/sales/enquiry">Enquiry</a></li>
+                                            <li class="userrole-cls" data-permission="sales-offer"><a href="#/sales/offer">Offer</a></li>
+                                            <li class="userrole-cls" data-permission ="sales-workorder"><a href="#/sales/workorder">Workorder</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span>Master</span> </a>
+
+                                <ul class="submenu">
+                                    <li><a href="#/salesagent"> Sales Agent </a></li>
+                                     <li><a href="#/sales/offer/product_list"> Sub Product </a></li>
+                                     <li><a href="#/sales/special_services"> Special Services </a></li>
+                                     <li><a href="#/sales/inspection"> Inspection </a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><a href="#/report/enquiry/enquirydetails">Enquiry </a></li>
+                                            <li><a href="#/report/offer/offerdetails">Offer</a></li>
+                                            <li><a href="#/report/workorder/workorderdetails">Workorder</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 s-n-bk">Back</button>
+        </div>
+        <h4 class="page-title">Work Order Technocommercial Part Create</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmSNew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+                            <h4 class="m-t-0 header-title">Technical Checklist</h4>
+                            <div class="col-md-12">
+             <div class="form-row"> 
+                    <div class="form-group col-md-3">
+                        <label >Drawing Approval</label>
+                        <input type="text" class="form-control" placeholder="Drawing Approval" id="drawing_approval" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.drawing_approval%><% } %>" parsley-trigger="change" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Quality Assurance Plan</label>
+                        <input type="text" class="form-control" placeholder="Quality Assurance Plan" id="quality_assurance_plan" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.quality_assurance_plan%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Inspection By</label>
+                        <input type="text" class="form-control" placeholder="Inspection By" id="inspection_by" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.inspection_by%><% } %>" parsley-trigger="change" >
+                    </div>
+                    
+                    <div class="form-group col-md-3">
+                        <label >Guarantee Period</label>
+                        <input type="text" class="form-control" placeholder="Guarantee Period" id="guarantee_period" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.guarantee_period%><% } %>">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Guarantee Days</label>
+                        <input type="text" class="form-control" placeholder="Guarantee Days" id="guarantee_days" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.guarantee_days%><% } %>">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Other test if any</label>
+                        <textarea class="form-control"  id="other_test" parsley-trigger="change" ><% if(wotc.sa != undefined){ %><%-wotc.sa.other_test%><% } %></textarea>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >TPI Charges</label>
+                        <textarea class="form-control"  id="tpi_charges" parsley-trigger="change" ><% if(wotc.sa != undefined){ %><%-wotc.sa.tpi_charges%><% } %></textarea>
+                    </div>
+
+
+                </div>
+                </div>
+                 </div>
+                 <div class="card-box">
+                <h4 class="m-t-0 header-title">Freight Clause</h4>
+                <div class="col-md-12">
+                <div class="form-row"> 
+                    <div class="form-group col-md-5">
+                        <label >Freight Option</label>
+                        <select class="form-control" name="formal_order"
+                        id="freight_option" parsley-trigger="change">
+                            <option>select</option>
+                            <option <%if(wotc.sa != undefined && wotc.sa.freight_option== 'to pay'){%>selected <%}%>  value="to pay">To Pay</option>
+                            <option <%if(wotc.sa != undefined && wotc.sa.freight_option== 'paid by us'){%>selected <%}%> value="paid by us">Paid By Us</option>
+                            <option <%if(wotc.sa != undefined && wotc.sa.freight_option== 'no'){%>selected <%}%> value="paid by us to be billed">Paid By Us To Be Billed</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label >Freight Charges</label>
+                        <input type="text" class="form-control" placeholder="Freight Charges" id="freight_charges" parsley-trigger="change" required value="<% if(wotc.sa != undefined){ %><%-wotc.sa.freight_charges%><% } %>">
+                    </div>
+                </div>
+                </div>
+                </div>
+                
+                <div class="card-box">
+                <div class="col-md-12">
+                <div class="form-row">
+                <div class="col-md-6">
+                <h4 class="m-t-0 header-title">Order Acknowledgement Send To</h4>
+                <div class="form-row">
+                <div class="col-md-5">
+                <label>Company Name</label>
+                <input type="text" name="sender_name" id="sender_name" class="form-control" value="<%-row.company_name %>" readonly="">
+                </div>
+                <div class="col-md-5">
+                <label>Shipping Address<span style="margin-left: 52px;"><a class="new-shipping" data-title="Add New Customer Shipping" data-href="#" href="javascript:void(0);">Add new</a></span></label>
+                <select class="form-control select2 select2-hidden-accessible" id="shipping" parsley-trigger="change" required></select>
+                </div>
+                <div class="col-md-1">
+                <label>Details</label>
+                <a class="btn btn-icon waves-effect waves-light btn-warning m-b-5 form-control i-r-shippig-details"> <i class="fa fa-wrench"></i> </a>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                     <h4 class="m-t-0 header-title">Order Acknowledgement Copy To</h4>
+                     <div class="item-wrapper" style="width: 100%;">
+                       <% 
+                       if(wotc.sp != undefined){
+                       for(var k in wotc.sp){ %>
+                        <div class="data-row-acknowledgement" data-id="<%-parseInt(k)+1%>" >
+                        <div class="col-md-6" style="float: left;">
+                        <input type="text" placeholder="Enter company name" class="form-control i-r-company" value="<%-wotc.sp[k].label%>"/>
+                        </div>
+                        <div class="col-md-2" style="float: left;">
+                        <a class="btn btn-icon waves-effect waves-light btn-primary m-b-5 i-r-modal-details"> <i class="fa fa-eye"></i> </a>
+                        </div>
+                        <div class="col-md-2" style="float: left;">
+                        <a class="btn btn-icon waves-effect waves-light btn-primary m-b-5 i-r-add"> <i class="fa fa-eye"></i> </a>
+                        </div>
+                        <div class="col-md-2" style="float: left;">
+                        <a class="btn btn-icon waves-effect waves-light btn-danger m-b-5 i-r-del"> <i class="fa fa-remove"></i> </a>
+                        </div>
+                        <input  type="hidden" class="form-control i-address" value="<%-wotc.sp[k].address%>" >
+                        <input  type="hidden" class="form-control i-city" value="<%-wotc.sp[k].city%>" >
+                        <input  type="hidden" class="form-control i-country" value="<%-wotc.sp[k].country%>" >
+                        <input  type="hidden" class="form-control i-state" value="<%-wotc.sp[k].state%>" >
+                        <input  type="hidden" class="form-control i-zip" value="<%-wotc.sp[k].zip%>" >
+                        <input  type="hidden" class="form-control i-gstin" value="<%-wotc.sp[k].gstin%>" >
+                        </div>
+                       <% } 
+                   }
+                       %>
+                     </div>
+                     <div class="item-modal" style="width: 100%;">
+                        <% 
+                       if(wotc.sp != undefined){
+                       for(var k in wotc.sp){ %>
+                        <div id="myModal<%-parseInt(k)+1%>" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+                        <div class="modal-dialog modal-lg" style="padding-top: 140px;">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabel">Item Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body" >
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Address Information</h4>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >City</label>
+                        <input type="text" name="city" value="<%-wotc.sp[k].city%>" class="form-control modal_city">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >State<span style="font-size: 10px;">(If country is not India leave it blank)</span></label>
+                        <select class="form-control select2 select2-hidden-accessible modal_state" aria-hidden="true" id="state">
+                        <option value="">select </option>
+                        <% for(var i in state){ %>
+                        <option <% if(wotc.sp[k].state == state[i]){ %>selected<% } %> value="<%-state[i]%>"><%-state[i]%></option>
+                        <% } %>
+                        </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Country</label>
+                        <select class="form-control select2 select2-hidden-accessible modal_country" tabindex="-1" aria-hidden="true" id="country" >
+                        <% for(var i in country){ %>
+                        <option <% if(wotc.sp[k].country == country[i]){ %>selected<% } %> value="<%-country[i]%>"><%-country[i]%></option>
+                        <% } %>
+                        </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Zip Code</label>
+                        <input type="text" name="zip" value="<%-wotc.sp[k].zip%>" class="form-control modal_zip">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >GSTIN</label>
+                        <input type="text" name="gstin" value="<%-wotc.sp[k].gstin%>" class="form-control modal_gstin">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Address</label>
+                        <textarea name="address" rows="5" class="form-control modal_address"><%-wotc.sp[k].address%></textarea>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button class="btn  btn-success btn-outline btn-rounded acpt-btn"  data-dismiss="modal">Save</button>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                        <% } 
+                   }
+                       %>
+                     </div>
+                      
+                </div>
+                            </div>
+                            </div>
+                            </div>
+
+                 <div class="card-box">
+                <h4 class="m-t-0 header-title">Commercial Checklist</h4>
+                <div class="col-md-12">
+                <div class="form-row"> 
+
+                    <div class="form-group col-md-3">
+                        <label >Price Based On</label>
+                        <select class="form-control" name="formal_order"
+                        id="price_based_on" parsley-trigger="change">
+                            <option>select</option>
+                            <option <%if(wotc.sa != undefined && wotc.sa.price_based_on== 'Ex-Works'){%>selected <%}%> value="Ex-Works">Ex-Works</option>
+                            <option <%if(wotc.sa != undefined && wotc.sa.price_based_on== 'for destination'){%>selected <%}%>  value="for destination"> For Destination </option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Packing and Forwarding </label>
+                        <input type="text" class="form-control" placeholder="Packing and Forwarding" id="packing_forwarding" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.packing_forwarding%><% } %>">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Excise Duty</label>
+                        <input type="text" class="form-control" placeholder="Excise Duty" id="excise_duty" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.excise_duty%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-3 ">
+                        <label >Sale Tax</label>
+                        <input type="text" class="form-control" placeholder="Sale Tax" id="sale_tax" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.sale_tax%><% } %>">
+                    </div>
+                    <div class="form-group col-md-3 ">
+                        <label >SurCharge</label>
+                        <input type="text" class="form-control" placeholder="SurCharge" id="surcharge" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.surcharge%><% } %>">
+                    </div>
+                    <div class="form-group col-md-3 ">
+                        <label >CGST</label>
+                        <input type="text" class="form-control" placeholder="CGST" id="cgst" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.cgst%><% } %>">
+                    </div>
+                    <div class="form-group col-md-3 ">
+                        <label >SGST</label>
+                        <input type="text" class="form-control" placeholder="SGST" id="sgst" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.sgst%><% } %>">
+                    </div>
+                    <div class="form-group col-md-3 ">
+                        <label >IGST</label>
+                        <input type="text" class="form-control" placeholder="IGST" id="igst" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.igst%><% } %>">
+                    </div>
+                    <div class="form-group col-md-3 ">
+                        <label >Bank Gurantee</label>
+                        <input type="text" class="form-control" placeholder="Bank Gurantee" id="bank_guarantee" parsley-trigger="change" value="<% if(wotc.sa != undefined){ %><%-wotc.sa.bank_guarantee%><% } %>">
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <label >Payment Terms</label>
+                         <textarea class="form-control"  id="payment_terms" parsley-trigger="change" ><% if(wotc.sa != undefined){ %><%-wotc.sa.payment_terms%><% } %></textarea>
+                    </div>
+
+        
+                </div>
+                </div>
+                </div>
+           <div class="card-box">
+             <div class="form-row"> 
+              <div class="form-group text-right m-b-0" style="width: 100%">
+                <input type="hidden" name="wtcid" id="wtcid" value="<% if(wotc.sa != undefined){%><%-wotc.sa.id%><% } %>">
+                <input type="hidden" name="wotcid" id="wotcid" value="<%-wotcid%>">
+            <button class="btn btn-primary waves-effect waves-light" type="submit">
+                Submit
+            </button>
+            <button class="btn btn-secondary waves-effect waves-light m-l-5 s-n-bk">
+                Cancel
+            </button>
+        </div>
+    </div>
+</div>
+                    
+                
+            
+        </form>
+    </div><!-- end col -->
+</div>
+
+<div id="myShippingModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+<div class="modal-dialog modal-lg" style="padding-top: 140px;">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="myModalLabel">Shipping Address Details</h5>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body" >
+<div class="form-row col-md-6">
+    <label >Label : </label>
+    <span id="label_modal"></span>
+    </div>
+    <div class="form-row col-md-6">
+    <label >city : </label>
+    <span id="city_modal"></span>
+    </div>
+    <div class="form-row col-md-6">
+    <label >state : </label>
+    <span id="state_modal"></span>
+    </div>
+    <div class="form-row col-md-6">
+    <label >Country : </label>
+    <span id="country_modal"></span>
+    </div>
+    <div class="form-row col-md-6">
+    <label >Zip code : </label>
+    <span id="zip_modal"></span>
+    </div>
+    <div class="form-row col-md-6">
+    <label >GSTIN No : </label>
+    <span id="gst_modal"></span>
+    </div>
+    <div class="form-row col-md-6">
+    <label >Address : </label>
+    <span id="address_modal"></span>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-info" data-dismiss="modal" id="modalClose">Close</button>
+</div>
+</div>
+<!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+</div>
+<script src="default_assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/workorder.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        WORKORDER.initWOTC(<%-JSON.stringify(row)%>,<%-JSON.stringify(wotc)%>,<%-JSON.stringify(country)%>,<%-JSON.stringify(state)%>);
+    });
+</script>

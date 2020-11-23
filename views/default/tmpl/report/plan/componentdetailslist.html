@@ -1,0 +1,93 @@
+<div class="card-box table-responsive" style="width: 100%;">
+    <h1 style="text-align: center;"><%-com.name%></h1>
+    <div style="text-align: center;"><%-com.address%>,<%-com.city%>,<%-com.state%>,<%-com.zip%></div>
+    <div style="text-align: center;">List Of Components</div>
+</div>
+<% if(typeof compname != 'undefined'){ %>
+<div class="card-box">
+<div class="row" style="margin-left: 14px;">
+<div style="width: 33%;float: left;">component Name : <span style="font-weight:bold"><%-compname.name%></span></div>
+<div style="width: 33%;float: left;text-align: center;">Month : <span style="font-weight:bold"><%-month%></span></div>
+<div style="width: 33%;float: left;text-align: right;">Year : <span style="font-weight:bold"><%-yr%></span>
+</div>
+</div>
+</div>
+<div class="card-box table-responsive" style="width: 100%;">
+    
+            <table  class="table datatable" id="datatable" style="width: 100%;" cellspacing='0'>
+                                               
+                <thead>
+                    <tr>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;">Description</th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;">Total Planed Quantity</th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;">Component Quantity</th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;">Total Quantity(component x planed)</th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;" colspan="2">Date Of Completion</th>
+                        
+
+                    </tr>
+                </thead>
+                
+
+                <tbody>
+                     <%
+                        var tot={t:0,s:0,p:0,q:0};
+                        for(var k in row) {
+                        tot.s = (row[k].planqnty * row[k].prod_quantity)
+                        tot.t += row[k].planqnty;
+                        tot.p += tot.s;
+                        tot.q += row[k].prod_quantity;
+                     %>
+                    <tr>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].drawing_no%>  <%-row[k].code%> </td>
+                        <td style="text-align: center; border-bottom: 1px solid #354650;padding: .75rem;" ><%-row[k].planqnty.toFixed(2)%></td>
+                        <td style="text-align: center; border-bottom: 1px solid #354650;padding: .75rem;" ><%-row[k].prod_quantity.toFixed(2)%></td>
+                        <td style="text-align: center; border-bottom: 1px solid #354650;padding: .75rem;" ><%-tot.s.toFixed(2)%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"></td>
+                    </tr>
+                    <%
+                    }
+                    %>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;" >Grand Total</th>
+                        <th  style="text-align: center;border-bottom: 1px solid #354650;padding: .75rem;"><%-tot.t.toFixed(2)%></th>
+                         <th  style="text-align: center;border-bottom: 1px solid #354650;padding: .75rem;"><%-tot.q.toFixed(2)%></th>
+                        <th  style="text-align: center;border-bottom: 1px solid #354650;padding: .75rem;"><%-tot.p.toFixed(2)%></th>
+                       
+                    </tr>
+                </tfoot>
+       
+                
+            </table>
+    
+        </div>
+        <div class="card-box ">
+            <table class="table datatable">
+                <tr>
+                <td style="padding-right: 140px;">
+                        <div style="width: 100%;margin: 10px 0px;text-align: center;">Approved by</div>
+                        <div style="min-height: 50px;">&nbsp;</div>
+                        <div style="width: 100%;text-align: center;">(Managing Director) </div>
+                    </td>
+                    <td style="width:50%;padding-left: 235px;">
+                        <div style="width: 100%;margin: 10px 0px;text-align: center;">Issued by</div>
+                        <div style="min-height: 50px;">&nbsp;</div>
+                        <div style="width: 100%;text-align: center;">(Authorised Signatory) </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <% }else{ %>
+        <div class="card-box ">
+            <div style="text-align: center;"> No Data Found</div>
+        </div>
+        <% } %>
+
+<script src="assets/js/app/report/plan.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        RPLAN.initCompDetLis();
+    });
+</script>

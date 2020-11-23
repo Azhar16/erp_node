@@ -1,0 +1,103 @@
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Settings </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#/configuration/settings">General settings</a></li>
+                                    <li><a href="#/configuration/user">Users & Roles </a></li>
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+                <!-- end page title end breadcrumb -->
+<div class="row">
+    <div class="col-sm-6"  style="margin: auto;">
+        <div class="btn-group pull-right m-t-20">
+            <a class="btn btn-primary waves-effect w-md waves-light m-b-5 b-u-s-c-b" >Back</a>
+        </div>
+        <h4 class="page-title">Switch Company</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6"  style="margin: auto;">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmSCUser">
+
+            
+            <div class="card-box">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="p-20">
+                            
+                            <div class="form-group row">
+                                <label >Select a company to switch</label>
+                                <select class="form-control" id="company">
+                                    <%
+                                    console.log(curcom);
+                                    for(var k in row) {
+                                    %>
+                                    <option <% if(row[k].id==curcom){%> selected <% } %> value="<%-row[k].id%>"><%-row[k].name%></option>
+                                        <%
+                                     }
+                                    %>
+                                    </select>
+                            </div>
+                            <div class="form-group text-right m-b-0">
+                                <button class="btn btn-primary waves-effect waves-light" type="submit">
+                                        Save
+                                    </button>
+                                <a href="/" class="btn btn-secondary waves-effect waves-light m-l-5 b-u-s-c-b">
+                                        Cancel
+                                    </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </form>
+    </div><!-- end col -->
+</div>
+<script src="assets/js/app/user.js"></script>
+<script type="text/javascript">
+            $(document).ready(function() {
+                USER.initsc();
+            });
+        </script>

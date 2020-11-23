@@ -1,0 +1,151 @@
+<style type="text/css">
+  table { table-layout:fixed; width:310px;}
+   table td { width:100px; word-wrap:break-word;}
+</style>
+<div class="card-box table-responsive" style="width: 100%;">
+    <h1 style="text-align: center;"><%-com.name%></h1>
+    <div style="text-align: center;"><%-com.address%>,<%-com.city%>,<%-com.state%>,<%-com.zip%></div>
+    <div style="text-align: center;">Planning Summary Details</div>
+</div>
+<div class="card-box table-responsive" style="width: 100%;">
+    <%
+    if(row.length > 0){
+    var tot={t:0,q:0,v:0,s:0}
+    for(var k in acc){
+    %>
+    <div style="width: 40%;text-align: left;padding-top: 10px;font-size: 18px;font-weight: bold;float: left"><span>Planing Schedule No </span>: <%-k%></div>
+    <div style="width: 30%;text-align: left;padding-top: 10px;font-size: 18px;font-weight: bold;float: left"><span>Month </span>: <%-month%></div>
+    
+    <table style="width: 100%;border: 1px solid #354650;font-size: 10px;">
+        <tr>
+            <td style="width: 35%;padding: 5px 0px 5px 5px;text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;">
+              <div style="width: 10%;float: left;">Item No</div>
+              <div style="width: 20%;float: left;">Code</div>
+              <div style="width: 30%;float: left;">Item Description</div>
+              <div style="width: 10%;float: left;">qty</div>  
+              <div style="width: 10%;float: left;">Insp</div>
+              <div style="width: 20%;float: left;">CDD</div>
+            </td>
+            <td style="width: 25%;padding: 5px 0px 5px 5px;text-align: left;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;">
+               <div style="width: 50%;float: left;">Item Speciality</div>
+               <div style="width: 25%;float: left;">Unit Rate</div>
+               <div style="width: 25%;float: left;">Value</div> 
+            </td>
+            <td style="width: 40%;padding: 0px;text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;" colspan="2">
+                <table  style="width: 100%;font-size: 10px;" cellspacing='0' >
+                <thead>
+                 <tr>
+                   <th colspan="3">Matching Plan</th> 
+                   <th colspan="4">Testing and Despatch</th>
+                 </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:5%;">Body<br/><span style="font-size: 11px;">M/c</span></td>
+                        <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:5%;">Bnt/<br/><span style="font-size: 11px;">M/c</span></td>
+                        <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:5%;">Others<br/><span style="font-size: 11px;">M/c</span></td>
+                        <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:5%;">Trim<br/><span style="font-size: 11px;">M/c</span></td>
+                        <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:5%;">Assy</td>
+                        <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:5%;">Testing</td>
+                        <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:5%;">TPI</td>
+                        <td style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;padding: .75rem;width:5%;">Desp</td>
+                    </tr>
+                </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <%
+        for(var i in acc[k]) {
+          %>
+    <div style="width: 30%;text-align: left;padding-top: 10px;font-size: 18px;font-weight: bold;float: left"><%-i%> </div>
+    <div style="width: 30%;text-align: left;padding-top: 10px;float: left"><span>Customer > </span> : <%-acc[k][i][0].cus%></div>
+    <div style="width: 20%;text-align: left;padding-top: 10px;float: left"><span>Order No > </span> : <%-acc[k][i][0].offer%></div>
+    <div style="width: 20%;text-align: center;padding-top: 10px;float: left"><span>Date > </span> : <%-acc[k][i][0].cdd%></div>
+    <table  class="table" id="datatable" style="width: 100%;border: 1px solid #354650;font-size: 10px;">
+                
+    <% for(var j in acc[k][i]){ 
+
+        var s = acc[k][i][j].rate;
+        tot.t = acc[k][i][j].planed;
+        tot.s = (s*tot.t);
+  
+    %>
+            <tr>
+                <td style="width: 6%;padding: 0px;text-align: center;">
+                      <%-acc[k][i][j].itmid%></td>
+                      <td style="width: 6%;padding: 0px;text-align: center;">
+                      <%-acc[k][i][j].itmno%></td>
+                      <td style="width: 6%;padding: 0px;text-align: center;">
+                      <%-acc[k][i][j].size_id%>/<%-acc[k][i][j].ends%>/
+                          <%-acc[k][i][j].moc%>/<%-acc[k][i][j].trim%></td>
+                      <td style="width: 6%;padding: 0px;text-align: center;">
+                      <%-acc[k][i][j].planed%></td>
+                      <td style="width: 6%;padding: 0px;text-align: center;">
+                      <%-acc[k][i][j].inspection%></td>
+                      <td style="width: 6%;padding: 0px;text-align: center;">
+                      <%-acc[k][i][j].wodate%></td>
+                      
+                 
+                <td style="width: 24%;padding: 0px;text-align: left;">
+                   <div style="width: 50%;float: left;">fffff</div>
+                   <div style="width: 25%;float: left;"><%-acc[k][i][j].rate.toFixed(2)%></div>
+                   <div style="width: 25%;float: left;"><%-tot.s.toFixed(2)%></div>  
+                </td>
+                <td style="width: 5%;padding: 0px;text-align: left;border-left: 1px solid #354650;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;">
+                </td>
+                <td style="width: 5%;padding: 0px;text-align: left;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;">
+                </td>
+                <td style="width: 5%;padding: 0px;text-align: left;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;">
+                </td>
+                <td style="width: 5%;padding: 0px;text-align: left;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;">
+                </td>
+                <td style="width: 5%;padding: 0px;text-align: left;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;">
+                </td>
+                <td style="width: 5%;padding: 0px;text-align: left;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;">
+                </td>
+                <td style="width: 5%;padding: 0px;text-align: left;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;">
+                </td>
+                <td style="width: 5%;padding: 0px;text-align: left;border-top: 1px solid #354650;border-bottom: 1px solid #354650;border-right: 1px solid #354650;">
+                </td>
+                       
+                          
+                   
+                </td>
+                 </tr>
+            
+            <%
+             tot.v += tot.s;
+             tot.q += tot.t;
+            } 
+             
+            %>
+
+
+            </table>
+             <div style="width: 100%">
+             <div style="text-align: left;float: left;width: 10%">Sub Total</div>
+             <div  style="text-align: right;float: left;margin-left: 8%"><%-tot.q.toFixed(2)%></div>
+             <div  style="text-align: right;margin-right:41.5%;"><%-tot.v.toFixed(2)%></div>
+             </div>
+
+             <%
+             }
+             }
+               }
+               else {
+               %>
+                <div style="text-align: center;"> No Data Found</div>
+            <% 
+              }
+            %>
+        
+    
+    </div>
+
+<script src="assets/js/app/report/plan.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        RPLAN.initPlanSunDetLis();
+    });
+</script>

@@ -1,0 +1,26 @@
+27/05/2019
+
+product_sub_feature
+
+ALTER TABLE `product_sub_feature` ADD `type` VARCHAR(20) NOT NULL AFTER `name`, ADD `length` DECIMAL(5,2) NOT NULL AFTER `type`, ADD `diameter` DECIMAL(5,2) NOT NULL AFTER `length`, ADD `unit` VARCHAR(20) NOT NULL AFTER `diameter`;
+
+item
+
+ALTER TABLE `item` CHANGE `unit` `unit` VARCHAR(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+new table "hydro_test","price_competitive","price_competitive_item"
+
+31/05/2019
+
+enquiry
+
+ALTER TABLE `enquiry` ADD `offer_status` ENUM('no','os','od') NOT NULL DEFAULT 'no' AFTER `enquiry_status`;
+ 
+ 'offer'
+
+ALTER TABLE `offer` CHANGE `offer_status` `offer_status` ENUM('pending','accepted','rejected','expired','delete') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'pending';
+
+
+
+
+

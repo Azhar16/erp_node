@@ -1,0 +1,116 @@
+<link href="default_assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        
+         
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/purchase/dashboard"><i class="mdi mdi-invert-colors"></i> <span>Purchase</span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/purchase/requisition_purchase">Requisition Plan</a></li>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/purchase/purchase_enquiry">Enquiry</a></li>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/purchase/price_competitive">Price Competitive</a></li>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/purchase/purchase_order">Purchase Order</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><p>Purchase Order</p></li>
+                                            <li><a href="#/report/purchase_order/podetails">Purchase Order</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+             <button class="btn btn-primary waves-effect w-md waves-light m-b-5 s-l-cn">Add Purchase Order</button>
+        </div>
+        <h4 class="page-title">Purchase Order List</h4>
+    </div>
+    
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card-box table-responsive">
+            <table id="datatable" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Purchase Order No</th>
+                        <th>Vendor</th>
+                        <th>Enquiry No</th>
+                        <th>Purchase Date</th>
+                        <th>Total Amount</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                
+            </table>
+        </div>
+    </div>
+</div> 
+
+        <script src="default_assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="default_assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+       <script src="assets/js/app/purchase_order.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                PORDER.initPOL();
+            });
+        </script>

@@ -1,0 +1,828 @@
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/sales/dashboard"><i class="mdi mdi-invert-colors"></i> <span>Sales</span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/sales/enquiry">Enquiry</a></li>
+                                            <li class="userrole-cls" data-permission="sales-offer"><a href="#/sales/offer">Offer</a></li>
+                                            <li class="userrole-cls" data-permission ="sales-workorder"><a href="#/sales/workorder">Workorder</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span>Master</span> </a>
+
+                                <ul class="submenu">
+                                    <li><a href="#/salesagent"> Sales Agent </a></li>
+                                     <li><a href="#/sales/offer/product_list"> Sub Product </a></li>
+                                     <li><a href="#/sales/special_services"> Special Services </a></li>
+                                     <li><a href="#/sales/inspection"> Inspection </a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><a href="#/report/enquiry/enquirydetails">Enquiry </a></li>
+                                            <li><a href="#/report/offer/offerdetails">Offer</a></li>
+                                            <li><a href="#/report/workorder/workorderdetails">Workorder</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 s-n-bk">Back</button>
+        </div>
+        <h4 class="page-title">Work Order Product  </h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmSNew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+                <div class="form-row">
+                    
+                  
+                    <div class="form-group col-md-6">
+                        <label>Offer No</label>
+                        <input type="text" id="offer_no" name="offer_no" class="form-control" placeholder="Offer number" parsley-trigger="change" required readonly="" value="<%-row.sa.offer_no%>">
+                        <label style="font-size: 10px;">Offer financial year will be change as per offer date.</label>
+                    </div>
+                    
+
+                    <div class="form-row">
+                                 <!--   <div class="form-group col-md-1">
+                                        <label class="col-form-label" >Sl No</label>
+                                    </div> -->
+                                    <div class="form-group col-md-1">
+                                        <label class="col-form-label" >Product</label>
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label class="col-form-label" >Details</label>
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label class="col-form-label">Quantity</label>
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label class="col-form-label">Unit</label>
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label class="col-form-label">Rate</label>
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label class="col-form-label">Discount(%)</label>
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label class="col-form-label">Discount(Numeric)</label>
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label class="col-form-label">GST(%)</label>
+                                    </div>
+                                     <div class="form-group col-md-1" style="text-align: right;">
+                                        <label class="col-form-label" style="text-align: right;">Discounted Amount</label>
+                                    </div>
+                                    <div class="form-group col-md-1" style="text-align: right;">
+                                        <label class="col-form-label" style="text-align: right;">GST</label>
+                                    </div>
+                                    <div class="form-group col-md-1" style="text-align: right;padding-right: 20px;">
+                                        <label class="col-form-label">Amount</label>
+                                    </div>
+                                    <div class="form-group col-md-1" >
+                                    <label class="col-form-label"></label>
+                                    </div>
+                                     <div class="form-group col-md-1" >
+                                    <label class="col-form-label"></label>
+                                    </div>
+                                    <%
+                                     if(row.item.length > 0 || row.newitem.length > 0){
+                                     %>
+                        <div class="item-wrapper" style="width: 100%;">
+                            <%
+                            if(row.newitem.length < 1){
+                            for(var k in row.item) {
+                            %>
+                        <div class="data-row-wrap" data-id="<%-row.item[k].id%>" data-moc="<%-row.item[k].pr_parts%>" data-trim="<%-row.item[k].trim_parts%>" data-stem="<%-row.item[k].stem%>">
+                       <!-- <div class="col-md-1 " style="float: left;    padding-top: 10px;font-size: 20px;">
+                        <span class="i-r-slno"><%-parseInt(k)+1%>.</span>
+                        </div> -->
+                        <div class=" col-md-1" style="float: left;">
+                        <input type="text" placeholder="Enter product" class="form-control i-r-prod" value="<%-row.item[k].size_id%>"/>
+                        </div>
+                        <div class="col-md-1" style="float: left;">
+                        <a class="btn btn-icon waves-effect waves-light btn-primary m-b-5 i-r-modal-details"> <i class="fa fa-eye"></i> </a>
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <input type="number" step="1" class="form-control i-r-qnt" placeholder="Quantity" value="<%-row.item[k].quantity%>">
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <select  class="form-control i-r-unit">
+                        <% for(var i in unit){ %>
+                        <option <%if(unit[i].id == row.item[k].punit){%>selected<%}%> value="<%-unit[i].id%>"><%-unit[i].name%></option>
+                        <%}%>
+                        </select>
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <input type="number" class="form-control i-r-price" step="1" placeholder="Price" value="<%-row.item[k].rate%>">
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <input type="number" class="form-control i-r-dis" step="1" placeholder="Discount(%)" value="<%-row.item[k].discount%>">
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <input type="number" class="form-control i-r-dis-numeric" step="1" placeholder="Discount(%)" value="<%-row.item[k].discount_numeric%>">
+                        </div> 
+                        <div class="col-md-1" style="float: left;">
+                        <select class="form-control i-r-tax-slab">
+                            <%
+                        for(var i in tax_slab){ 
+                        %>
+                        <option <%if(parseFloat(tax_slab[i])==parseFloat(row.item[k].tax)){%>selected<%}%> value="<%-tax_slab[i]%>"><%-tax_slab[i]%> %</option>
+                        <%
+                        }
+                        %>
+                        </select>
+                        </div>
+                        <div class="col-md-1" style="float: left;text-align: right;">
+                        <span class="i-r-dis-tot">0.00</span>
+                        </div>
+                        <div class="col-md-1" style="float: left;text-align: right;">
+                        <span class="i-r-tax-tot"><%-row.item[k].tax_amount.toFixed(2)%></span>
+                        </div>
+                        <div class=" col-md-1" style="float: left;text-align: right;padding-right: 20px;">
+                        <span class="i-r-tot"><%-row.item[k].final_amount.toFixed(2)%></span>
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <a class="btn btn-icon waves-effect waves-light btn-danger m-b-5 i-r-del"> <i class="fa fa-remove"></i> </a>
+                        </div>
+                        <div class="col-md-1" style="float: left;">
+                        <a class="btn btn-icon waves-effect waves-light btn-warning m-b-5 i-r-save"> <i class="fa fa-wrench"></i> </a>
+                        </div>
+                        <input  type="hidden" class="form-control i-item-code"  value="<%-row.item[k].item_code%>">
+                        <input  type="hidden" class="form-control i-special-description" value="<%-row.item[k].special_description%>" >
+                        <input  type="hidden" class="form-control i-general-description" value="<%-row.item[k].description%>" >
+                        <input  type="hidden" class="form-control i-inspection-cls" value="<%-row.item[k].inspection_cls%>" >
+                        <input  type="hidden" class="form-control i-hydraulic-body" value="<%-row.item[k].hydraulic_body%>" >
+                        <input  type="hidden" class="form-control i-hydraulic-seat"  value="<%-row.item[k].hydraulic_seat%>">
+                        <input  type="hidden" class="form-control i-pneumatic-seat"  value="<%-row.item[k].pneumatic_seat%>">
+                        <input  type="hidden" class="form-control i-hydroback-seat" value="<%-row.item[k].hydroback_seat%>">
+                        <input  type="hidden" class="form-control i-spcl-cls" >
+                        <input  type="hidden" class="form-control i-standard-cls"  value="<%-row.item[k].standard%>">
+                        <input  type="hidden" class="form-control i-enq-serial-cls"  value="<%-row.item[k].enq_serial_no%>">
+                        <input  type="hidden" class="form-control i-loa-serial-cls"  >
+                        <input  type="hidden" class="form-control i-po-serial-cls" >
+                        <div class="col-md-12" style="float: left;">
+                        <span class="i-r-span" style="font-size:10px;"><%=row.item[k].specification%></span>
+                        </div>
+                        <input type="hidden" name="sts" class="i-r-sts" value="<%-row.item[k].item_mapping_status%>">
+                        <div style="clear: both;"></div>
+                        </div>
+
+
+                            <%
+                            }
+                        }
+                        else{
+                            %>
+                            <div style="clear:both;"></div>
+                            <%
+                            for(var k in row.newitem) {
+                            %>
+                        <div class="data-row-wrap" data-id="<%-row.newitem[k].id%>" data-moc="<%-row.newitem[k].pr_parts%>" data-trim="<%-row.newitem[k].trim_parts%>" data-stem="<%-row.newitem[k].stem%>">
+                        <!-- <div class="col-md-1 " style="float: left;    padding-top: 10px;font-size: 20px;">
+                        <span class="i-r-slno"><%-parseInt(k)+1%>.</span>
+                        </div> -->
+                        <div class=" col-md-1" style="float: left;">
+                        <input type="text" placeholder="Enter product" class="form-control i-r-prod" value="<%-row.newitem[k].size_id%>"/>
+                        </div>
+                        <div class="col-md-1" style="float: left;">
+                        <a class="btn btn-icon waves-effect waves-light btn-primary m-b-5 i-r-modal-details"> <i class="fa fa-eye"></i> </a>
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <input type="number" step="1" class="form-control i-r-qnt" placeholder="Quantity" value="<%-row.newitem[k].quantity%>">
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <select  class="form-control i-r-unit">
+                        <% for(var i in unit){ %>
+                        <option <%if(unit[i].id == row.newitem[k].punit){%>selected<%}%> value="<%-unit[i].id%>"><%-unit[i].name%></option>
+                        <%}%>
+                        </select>
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <input type="number" class="form-control i-r-price" step="1" placeholder="Price" value="<%-row.newitem[k].rate%>">
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <input type="number" class="form-control i-r-dis" step="1" placeholder="Discount(%)" value="<%-row.newitem[k].discount%>">
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <input type="number" class="form-control i-r-dis-numeric" step="1" placeholder="Discount(%)" value="<%-row.newitem[k].discount_numeric%>">
+                        </div> 
+                        <div class="col-md-1" style="float: left;">
+                        <select class="form-control i-r-tax-slab">
+                            <%
+                        for(var i in tax_slab){ 
+                        %>
+                        <option <%if(parseFloat(tax_slab[i])==parseFloat(row.newitem[k].tax)){%>selected<%}%> value="<%-tax_slab[i]%>"><%-tax_slab[i]%> %</option>
+                        <%
+                        }
+                        %>
+                        </select>
+                        </div>
+                        <div class="col-md-1" style="float: left;text-align: right;">
+                        <span class="i-r-dis-tot">0.00</span>
+                        </div>
+                        <div class="col-md-1" style="float: left;text-align: right;">
+                        <span class="i-r-tax-tot"><%-row.newitem[k].tax_amount.toFixed(2)%></span>
+                        </div>
+                        <div class=" col-md-1" style="float: left;text-align: right;padding-right: 20px;">
+                        <span class="i-r-tot"><%-row.newitem[k].final_amount.toFixed(2)%></span>
+                        </div>
+                        <div class=" col-md-1" style="float: left;">
+                        <a class="btn btn-icon waves-effect waves-light btn-danger m-b-5 i-r-del"> <i class="fa fa-remove"></i> </a>
+                        </div>
+                        <div class="col-md-1" style="float: left;">
+                        <a class="btn btn-icon waves-effect waves-light btn-warning m-b-5 i-r-save"> <i class="fa fa-wrench"></i> </a>
+                        </div>
+                        <input  type="hidden" class="form-control i-item-code"  value="<%-row.newitem[k].item_code%>">
+                        <input  type="hidden" class="form-control i-special-description" value="<%-row.newitem[k].special_description%>" >
+                        <input  type="hidden" class="form-control i-general-description" value="<%-row.newitem[k].description%>" >
+                        <input  type="hidden" class="form-control i-inspection-cls" value="<%-row.newitem[k].inspection_cls%>" >
+                        <input  type="hidden" class="form-control i-hydraulic-body" value="<%-row.newitem[k].hydraulic_body%>" >
+                        <input  type="hidden" class="form-control i-hydraulic-seat"  value="<%-row.newitem[k].hydraulic_seat%>">
+                        <input  type="hidden" class="form-control i-pneumatic-seat"  value="<%-row.newitem[k].pneumatic_seat%>">
+                        <input  type="hidden" class="form-control i-hydroback-seat" value="<%-row.newitem[k].hydroback_seat%>">
+                        <input  type="hidden" class="form-control i-spcl-cls" >
+                        <input  type="hidden" class="form-control i-standard-cls"  value="<%-row.newitem[k].standard%>">
+                        <input  type="hidden" class="form-control i-enq-serial-cls"  value="<%-row.newitem[k].enq_serial_no%>">
+                        <input  type="hidden" class="form-control i-loa-serial-cls"  value="<%-row.newitem[k].loa_serial_no%>">
+                        <input  type="hidden" class="form-control i-po-serial-cls"  value="<%-row.newitem[k].po_serial_no%>">
+                        <div class="col-md-12" style="float: left;">
+                        <span class="i-r-span" style="font-size:10px;"><%=row.newitem[k].specification%></span>
+                        </div>
+                        <input type="hidden" name="sts" class="i-r-sts" value="<%-row.newitem[k].item_mapping_status%>">
+                        <div style="clear: both;"></div>
+                        </div>
+                            <%
+                            }
+                        }
+                            %>
+                        </div>
+                        <% } else{ 
+                        %>
+                        <div class="item-wrapper" style="width: 100%;">
+                        </div>
+                        <% } %>
+                        <%
+                         if(row.item.length > 0 || row.newitem.length > 0){
+                        %>
+                        <div class="item-modal" style="width: 100%;">
+                        <%
+                        if(row.newitem.length < 1){
+                            for(var k in row.item) {
+                            %>
+                        <div id="myModal<%-row.item[k].id%>" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+                        <div class="modal-dialog modal-lg" style="padding-top: 140px;">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabel">Item Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body" >
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Serial No</h4>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Enquiry Serial No</label>
+                        <input type="text" name="enq_serial_no" value="<%-row.item[k].enq_serial_no%>" class="form-control enq_serial_no_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >LOA Serial No</label>
+                        <input type="text" name="loa_serial_no" value="" class="form-control loa_serial_no_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Po Serial No</label>
+                        <input type="text" name="po_serial_no" value="" class="form-control po_serial_no_cls">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Product Summary</h4>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Size Id</label>
+                        <input type="text" name="size_id"  class="form-control i-r-size_id">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Moc</label>
+                        <select  class="form-control select2 select2-hidden-accessible  pr_cls">
+                        <option value="">select</option>
+                        <% for(var i in prcategory){ %>
+                        <option <%if(prcategory[i].id == row.item[k].pr_parts){%>selected<%}%> value="<%-prcategory[i].id%>" data-forg="<%-prcategory[i].short_code%>"><%-prcategory[i].name%></option>
+                        <% } %>
+                        </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" > Stem </label>
+                        <select  class="form-control select2 select2-hidden-accessible  stem_cls">
+                        <option value="0">select</option>
+                        <% for(var i in stemcategory){ %>
+                        <option <%if(stemcategory[i].id == row.item[k].stem){%>selected<%}%> value="<%-stemcategory[i].id%>"><%-stemcategory[i].name%></option>
+                        <% } %>
+                        </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" > Trim </label>
+                        <select  class="form-control select2 select2-hidden-accessible  trim_cls">
+                        <option value="">select</option>
+                        <% for(var i in trimcategory){ %>
+                        <option  <%if(trimcategory[i].id == row.item[k].trim_parts){%>selected<%}%> value="<%-trimcategory[i].id%>"><%-trimcategory[i].name%></option>
+                        <% } %>
+                        </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" > Forging </label>
+                        <input type="text" name="forging" value="<%-row.item[k].short_code%>" class="form-control forg_cls">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Description</h4>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Description(special Entry)</label>
+                        <textarea  class="form-control i-r-prod-spcl-des" colspan="3"><%-row.item[k].special_description%></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >General Description</label>
+                        <textarea  placeholder="Enter product Description" class="form-control i-r-prod-des" colspan="3"><%-row.item[k].description%></textarea>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Other Details</h4>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Item code / Tag No</label>
+                        <input type="text" name="item_code" value="<%-row.item[k].item_code%>" class="form-control item_code_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Inspection By</label>
+                        <input type="text" name="inspection_by" value="" class="form-control inspection_cls">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Special Services</h4>
+                        <div class="form-row">
+                         <% for(var i in spclsrvc){ %>
+                        <div class="form-group col-md-6 special_service_cls" data-id="<%-spclsrvc[i].id%>">
+                        <label class="col-form-label" ><%-spclsrvc[i].service_name%></label>
+                        <select  class="form-control select2 select2-hidden-accessible special_service_sub_cls" id="spclsrvc<%-spclsrvc[i].id%>">
+                        </select>
+                        </div>
+                       <% } %>
+                        </div>
+                        </div>
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Details</h4>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Standard</label>
+                        <input type="text" name="standard" value="<%-row.item[k].standard%>"  class="form-control standard_cls">
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Hydraulic body</label>
+                        <input type="text" name="hydraulic_body" value="<%-row.item[k].hydraulic_body%>" class="form-control hydraulic_body_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Hydraulic seat</label>
+                        <input type="text" name="hydraulic_seat" value="<%-row.item[k].hydraulic_seat%>" class="form-control hydraulic_seat_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Pneumatic seat</label>
+                        <input type="text" name="pneumatic_seat" value="<%-row.item[k].pneumatic_seat%>" class="form-control pneumatic_seat_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Hydroback seat</label>
+                        <input type="text" name="hydroback_seat" value="<%-row.item[k].hydroback_seat%>" class="form-control hydroback_seat_cls">
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button class="btn  btn-success btn-outline btn-rounded acpt-btn"  data-dismiss="modal">Save</button>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <% } 
+                         }
+                         else{
+                        %>
+                        <div style="clear:both;"></div>
+                        <%
+                            for(var k in row.newitem) {
+                            %>
+                        <div id="myModal<%-row.newitem[k].id%>" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+                        <div class="modal-dialog modal-lg" style="padding-top: 140px;">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabel">Item Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body" >
+                         <div class="card-box">
+                        <h4 class="m-t-0 header-title">Serial No</h4>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Enquiry Serial No</label>
+                        <input type="text" name="enq_serial_no" value="<%-row.newitem[k].enq_serial_no%>" class="form-control enq_serial_no_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >LOA Serial No</label>
+                        <input type="text" name="loa_serial_no" value="<%-row.newitem[k].loa_serial_no%>" class="form-control loa_serial_no_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Po Serial No</label>
+                        <input type="text" name="po_serial_no" value="<%-row.newitem[k].po_serial_no%>" class="form-control po_serial_no_cls">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Product Summary</h4>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Size Id</label>
+                        <input type="text" name="size_id"  class="form-control i-r-size_id">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Moc</label>
+                        <select  class="form-control select2 select2-hidden-accessible  pr_cls">
+                        <option value="">select</option>
+                        <% for(var i in prcategory){ %>
+                        <option <%if(prcategory[i].id == row.newitem[k].pr_parts){%>selected<%}%> value="<%-prcategory[i].id%>" data-forg="<%-prcategory[i].short_code%>"><%-prcategory[i].name%></option>
+                        <% } %>
+                        </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" > Stem </label>
+                        <select  class="form-control select2 select2-hidden-accessible  stem_cls">
+                        <option value="0">select</option>
+                        <% for(var i in stemcategory){ %>
+                        <option <%if(stemcategory[i].id == row.newitem[k].stem){%>selected<%}%> value="<%-stemcategory[i].id%>"><%-stemcategory[i].name%></option>
+                        <% } %>
+                        </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" > Trim </label>
+                        <select  class="form-control select2 select2-hidden-accessible  trim_cls">
+                        <option value="">select</option>
+                        <% for(var i in trimcategory){ %>
+                        <option  <%if(trimcategory[i].id == row.newitem[k].trim_parts){%>selected<%}%> value="<%-trimcategory[i].id%>"><%-trimcategory[i].name%></option>
+                        <% } %>
+                        </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" > Forging </label>
+                        <input type="text" name="forging" value="<%-row.newitem[k].short_code%>" class="form-control forg_cls">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Description</h4>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Description(special Entry)</label>
+                        <textarea  class="form-control i-r-prod-spcl-des" colspan="3"><%-row.newitem[k].special_description%></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >General Description</label>
+                        <textarea  placeholder="Enter product Description" class="form-control i-r-prod-des" colspan="3"><%-row.newitem[k].description%></textarea>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Other Details</h4>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Item code / Tag No</label>
+                        <input type="text" name="item_code" value="<%-row.newitem[k].item_code%>" class="form-control item_code_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Inspection By</label>
+                        <input type="text" name="inspection_by" value="" class="form-control inspection_cls">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Special Services</h4>
+                        <div class="form-row">
+                         <% for(var i in spclsrvc){ %>
+                        <div class="form-group col-md-6 special_service_cls" data-id="<%-spclsrvc[i].id%>">
+                        <label class="col-form-label" ><%-spclsrvc[i].service_name%></label>
+                        <select  class="form-control select2 select2-hidden-accessible special_service_sub_cls" id="spclsrvc<%-spclsrvc[i].id%>">
+                        </select>
+                        </div>
+                       <% } %>
+                        </div>
+                        </div>
+                        <div class="card-box">
+                        <h4 class="m-t-0 header-title">Details</h4>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Standard</label>
+                        <input type="text" name="standard" value="<%-row.newitem[k].standard%>"  class="form-control standard_cls">
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Hydraulic body</label>
+                        <input type="text" name="hydraulic_body" value="<%-row.newitem[k].hydraulic_body%>" class="form-control hydraulic_body_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Hydraulic seat</label>
+                        <input type="text" name="hydraulic_seat" value="<%-row.newitem[k].hydraulic_seat%>" class="form-control hydraulic_seat_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Pneumatic seat</label>
+                        <input type="text" name="pneumatic_seat" value="<%-row.newitem[k].pneumatic_seat%>" class="form-control pneumatic_seat_cls">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label class="col-form-label" >Hydroback seat</label>
+                        <input type="text" name="hydroback_seat" value="<%-row.newitem[k].hydroback_seat%>" class="form-control hydroback_seat_cls">
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button class="btn  btn-success btn-outline btn-rounded acpt-btn"  data-dismiss="modal">Save</button>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                         <%
+                            }
+                        }
+                            %>
+                        </div>
+                        <% } else{ 
+                        %>
+                        <div class="item-modal" style="width: 100%;">
+                        </div>
+                        <% } %>
+                        <div class="form-group col-md-12" style="margin: 5px 0px;">
+                            <div class="form-group col-md-3" style="float: left;">
+                                <label >Sub Total</label>
+                            </div>
+                            <div class="form-group col-md-1" style="float: left;text-align: right;">
+                                <span class="s-a-s-tot-qnty" >0.00</span>
+                            </div>
+                            <div class="form-group col-md-2" style="float: left;text-align: right;">
+                                <span class="s-a-s-tot-r" >0.00</span>
+                            </div>
+                            <div class="form-group col-md-1" style="float: left;text-align: right;">
+                                <span class="s-a-s-tot-dis" >0.00</span>
+                            </div>
+                            <div class="form-group col-md-1" style="float: left;text-align: right;">
+                                <span class="s-a-s-tot-profit" >0.00</span>
+                            </div>
+                            <div class="form-group col-md-2" style="float: left;text-align: right;">
+                                <span class="s-a-s-tot-tax" >0.00</span>
+                            </div>
+                            <div class="form-group col-md-1" style="float: left;text-align: right;padding-right: 15px;">
+                                <span class="s-a-s-tot" >0.00</span>
+                            </div>
+                            <div class="form-group col-md-1" style="float: left;">&nbsp;</div>
+                            <div style="clear: both;"></div>
+                            <%
+                            if(row.newitem.length < 1){
+                            for(var k in row.saf) {
+                            %>
+                        <div class="safildwrap" data-saacc='<%-row.saf[k].account%>' data-said='<%-row.saf[k].id%>'>
+                        <div class="form-group col-md-6" style="float: left;text-align: right;">
+                            <label ><%-row.saf[k].name%>: </label>
+                            
+                        </div>
+                        <div class="form-group col-md-2" style="float: left;text-align: right;" >
+                            <input step=".01" type="number" class="form-control sa-field"  data-pct='<%-row.saf[k].amount%>' placeholder="0.00" value="<%-row.saf[k].samount%>" style="text-align: right;">
+                        </div>
+                        <div class="form-group col-md-1" style="float: left;">
+                            <select class="form-control i-r-o-tax-slab">
+                                <%
+                                for(var i in tax_slab){
+                                %>
+                                <option <%if(parseFloat(tax_slab[i])==parseFloat(row.saf[k].tax)){%>selected<%}%> value="<%-tax_slab[i]%>"><%-tax_slab[i]%> %</option>
+                                <%
+                                }
+                                %>
+                            </select>
+                        </div>
+                        <div class="col-md-1" style="float: left;text-align: right;">
+                            <span class="i-r-o-tax-tot">0.00</span>
+                        </div>
+                            <div class="col-md-1" style="float: left;text-align: right;padding-right: 15px;">
+                    <span class="i-r-o-tot">0.00</span>
+                    </div>
+                        <div style="clear: both;"></div>
+                        </div>
+                        
+                        <%
+                       }
+                        }
+                        else{
+                        for(var k in row.newsaf){
+                        %>
+                        <div class="safildwrap" data-saacc='<%-row.newsaf[k].account%>' data-said='<%-row.newsaf[k].id%>'>
+                        <div class="form-group col-md-6" style="float: left;text-align: right;">
+                            <label ><%-row.newsaf[k].name%>: </label>
+                            
+                        </div>
+                        <div class="form-group col-md-2" style="float: left;text-align: right;" >
+                            <input step=".01" type="number" class="form-control sa-field"  data-pct='<%-row.newsaf[k].amount%>' placeholder="0.00" value="<%-row.newsaf[k].samount%>" style="text-align: right;">
+                        </div>
+                        <div class="form-group col-md-1" style="float: left;">
+                            <select class="form-control i-r-o-tax-slab">
+                                <%
+                                for(var i in tax_slab){
+                                %>
+                                <option <%if(parseFloat(tax_slab[i])==parseFloat(row.newsaf[k].tax)){%>selected<%}%> value="<%-tax_slab[i]%>"><%-tax_slab[i]%> %</option>
+                                <%
+                                }
+                                %>
+                            </select>
+                        </div>
+                        <div class="col-md-1" style="float: left;text-align: right;">
+                            <span class="i-r-o-tax-tot">0.00</span>
+                        </div>
+                            <div class="col-md-1" style="float: left;text-align: right;padding-right: 15px;">
+                    <span class="i-r-o-tot">0.00</span>
+                    </div>
+                        <div style="clear: both;"></div>
+                        </div>
+
+                        <% } 
+                        }
+                        %>
+                    </div>
+                        <div class="form-group col-md-12">
+                        <div class="form-group col-md-3" style="float: left;">
+                            <label >Sub Total</label>
+                        </div>
+                        <div class="form-group col-md-1" style="float: left;text-align: right;">
+                            <span class="s-a-s-qnty-2" >0.00</span>
+                        </div>
+                        <div class="form-group col-md-2" style="float: left;text-align: right;">
+                            <span class="s-a-s-r-2" >0.00</span>
+                        </div>
+                        <div class="form-group col-md-1" style="float: left;text-align: right;">
+                            <span class="s-a-s-dis-2" >0.00</span>
+                        </div>
+                        <div class="form-group col-md-1" style="float: left;text-align: right;">
+                            <span class="s-a-s-pft-2" >0.00</span>
+                        </div>
+                        <div class="form-group col-md-2" style="float: left;text-align: right;">
+                            <span class="s-a-s-tot-2-tax" >0.00</span>
+                        </div>
+                        <div class="form-group col-md-1" style="float: left;text-align: right;padding-right: 15px;">
+                            <span class="s-a-s-tot-2" >0.00</span>
+                        </div>
+                        <div class="form-group col-md-1" style="float: left;text-align: right;">
+                           
+                        </div>
+                        </div>
+                                    
+                           <div class="form-group col-md-8">
+                      
+                            <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Sales note" id="offer_note"><%-row.sa.offer_note%></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Offer Terms" id="p_terms_note" value="<%-row.sa.offer_term_note%>"/>
+                            </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        
+                        <div style="clear: both;"></div>
+                        <div class="form-group col-md-6" style="float: left;text-align: right;">
+                            <label >CGST @ <span class="s-a-cgst-a">0.00</span></label>
+                        </div>
+                        <div class="form-group col-md-6" style="float: left;text-align: right;">
+                           
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div class="form-group col-md-6" style="float: left;text-align: right;">
+                            <label >SGST @ <span class="s-a-sgst-a">0.00</span></label>
+                        </div>
+                        <div class="form-group col-md-6" style="float: left;text-align: right;">
+                           
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div class="form-group col-md-6" style="float: left;text-align: right;">
+                            <label >IGST @ <span class="s-a-igst-a">0.00</span></label>
+                            
+                        </div>
+                        <div class="form-group col-md-6" style="float: left;">
+                            
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div class="form-group col-md-3" style="float: left;text-align: right;">
+                            <label >Total</label>
+                            
+                        </div>
+                        <div class="form-group col-md-6" style="float: left;text-align: right;padding-right: 15px;">
+                            <span class="s-a-totr">0.00</span>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div class="form-group col-md-3" style="float: left;text-align: right;">
+                            <label >Rounded off</label>
+                            
+                        </div>
+                        <div class="form-group col-md-6" style="float: left;text-align: right;padding-right: 15px;">
+                            <span class="s-a-round">0.00</span>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div class="form-group col-md-3" style="float: left;text-align: right;">
+                            <label >Total value</label>
+                            
+                        </div>
+                        <div class="form-group col-md-6" style="float: left;text-align: right;padding-right: 15px;">
+                            <span class="s-a-tot">0.00</span>
+                        </div>
+                    </div> 
+                </div>
+                    <div class="form-group text-right m-b-0" style="width: 100%">
+                    	<input type="hidden" id="sid" value="<%-row.sa.id%>"/>
+                        <input type="hidden" id="woid" value="<%-woid%>"/>
+            <button class="btn btn-primary waves-effect waves-light" type="submit">
+                Submit
+            </button>
+            <button class="btn btn-secondary waves-effect waves-light m-l-5 s-n-bk">
+                Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+        </form>
+    </div><!-- end col -->
+</div>
+<script src="default_assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/workorder.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        WORKORDER.initWOPE('<%-comstate%>',<%-JSON.stringify(row.cus[0])%>,<%-JSON.stringify(row.item)%>,<%-JSON.stringify(row.newitem)%>,<%-JSON.stringify(tax_slab)%>,<%-JSON.stringify(prcategory)%>,<%-JSON.stringify(trimcategory)%>,<%-JSON.stringify(stemcategory)%>,<%-JSON.stringify(unit)%>,<%-JSON.stringify(spclsrvc)%>);
+    });
+</script>

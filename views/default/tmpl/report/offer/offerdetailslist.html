@@ -1,0 +1,121 @@
+<div class="card-box table-responsive" style="width: 100%;">
+    <h1 style="text-align: center;"><%-com.name%></h1>
+    <div style="text-align: center;"><%-com.address%>,<%-com.city%>,<%-com.state%>,<%-com.zip%></div>
+    <div style="text-align: center;"> Offer Details </div>
+    
+    
+</div>
+<div class="card-box table-responsive" style="width: 100%;">
+    <% 
+    var offer_no='',tot={q:0,v:0,r:0,d:0,tv:0,tx:0};
+    for(var k=0;k< row.length;k++) {
+    
+    if(offer_no != row[k].offer_no){
+       tot={q:0,v:0,r:0,d:0,tv:0,tx:0}
+    %>
+    <div style="width: 100%;text-align: left;padding-top: 10px;font-size: 18px;font-weight: bold;text-decoration: underline;"><span>Offer Number</span> : <%-row[k].offer_no%></div>
+            <table  class="table datatable" id="datatable" style="width: 100%;" cellspacing='0'>
+                <thead>
+                    <tr>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Sr No </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Size Id </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Item </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Type </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Size_1(INCH) </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Item Code </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Rating </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;">Description  </th>
+                        <th style="text-align: center;border-top: 1px solid #354650;border-bottom: 1px solid #354650; solid #354650;padding: .75rem;">Quantity</th>
+                        <th style="text-align: center;border-bottom: 1px solid #354650;padding: .75rem;"> Unit Price </th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;" >Total Price</th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;" >Remark</th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;">SIZE </th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;"> TYPE </th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;"> MOC </th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;"> TRIM </th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;"> CLASS </th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;"> ENDS </th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;"> JOINT </th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;"> INSPECTION </th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;"> SPECIAL </th>
+                        
+
+                       
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <%
+                    }
+                    var srln=0;
+                        srln=k;
+                        offer_no=row[k].offer_no;
+                        tv=parseFloat(row[k].quantity)*parseFloat(row[k].rate);
+                        tot.q +=parseFloat(row[k].quantity);
+                        tot.r += parseFloat(row[k].rate);
+                        //tot.d += (tv*parseFloat(row[k].discount))/100;
+                        tot.tv +=parseFloat(row[k].final_amount);
+                        tot.tx +=parseFloat(row[k].tax_amount);
+                    
+                    %>
+                    <tr>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-parseInt(srln)+1%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].size_id%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].type%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].item_code%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;">CL <%-row[k].class%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].description%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].quantity.toFixed(2)%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].rate.toFixed(2)%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].final_amount.toFixed(2)%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].size%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].short_code%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].pr_parts%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].trim_parts%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].class%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].ends%> <%-row[k].ends_out%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].joint%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].inspection%></td>
+                        <td style="text-align: center; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].special_description%></td>
+                    </tr>
+                    <%
+                        
+                        
+                     if(typeof row[k+1] == 'undefined' || offer_no!=row[k+1].offer_no){   
+                          
+                       %>
+                    
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        
+                        <td style="text-align: right;border-top: 1px solid #354650;padding: .75rem;" colspan="7">&nbsp;</td>
+                        <td style="text-align: right;border-top: 1px solid #354650;padding: .75rem;">Total : </td>
+                        <td style="border-top: 1px solid #354650;padding: .75rem;"><%-tot.q.toFixed(2)%></td>
+                        <td style="border-top: 1px solid #354650;padding: .75rem;"><%-tot.r.toFixed(2)%></td>
+                        <td style="border-top: 1px solid #354650;padding: .75rem;" ><%-tot.tv.toFixed(2)%></td>
+                        
+                    </tr>
+                </tfoot>
+            </table>      
+        <%
+         }
+        }
+        %>
+   
+            <table  class="datatable1" style="width: 100%;" cellspacing='0'>
+                <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;" colspan="3">Grand Total</th>
+                <th  style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;"></th>
+            </table>
+          </div>
+
+<script src="assets/js/app/report/offerrpt.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        ROFFER.initofferRprtL();
+    });
+</script>

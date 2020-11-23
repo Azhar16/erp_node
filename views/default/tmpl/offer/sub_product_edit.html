@@ -1,0 +1,138 @@
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/sales/dashboard"><i class="mdi mdi-invert-colors"></i> <span>Sales</span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/sales/enquiry">Enquiry</a></li>
+                                            <li class="userrole-cls" data-permission="sales-offer"><a href="#/sales/offer">Offer</a></li>
+                                            <li class="userrole-cls" data-permission ="sales-workorder"><a href="#/sales/workorder">Workorder</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span>Master</span> </a>
+
+                                <ul class="submenu">
+                                    <li><a href="#/salesagent"> Sales Agent </a></li>
+                                     <li><a href="#/sales/offer/product_list"> Sub Product </a></li>
+                                     <li><a href="#/sales/special_services"> Special Services </a></li>
+                                     <li><a href="#/sales/inspection"> Inspection </a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><a href="#/report/enquiry/enquirydetails">Enquiry </a></li>
+                                            <li><a href="#/report/offer/offerdetails">Offer</a></li>
+                                            <li><a href="#/report/workorder/workorderdetails">Workorder</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row hide-for-modal">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 c-n-b" >Back</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmCNew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+                <h4 class="m-t-0 header-title">Product Sub Codification Edit</h4>
+                  <div class="form-row main-cls">
+                    <div class="form-group col-md-3">
+                    </div>
+                    <% for(var k in specificcategory) { %>
+                    <div class="form-group col-md-3 specific_category_cls" data-id="<%-specificcategory[k].id%>">
+                        <label ><%-specificcategory[k].specification_name%>*</label>
+                        <select class="form-control select2 select2-hidden-accessible specification_item_cls" id="speification_item<%-specificcategory[k].id%>" data-name='<%-specificcategory[k].specification_name%>'>
+                            <option value="">select</option>
+                        </select>
+                    </div>
+                     <% } %>
+                </div>
+                <div class="form-group col-md-6" style="margin-left: 290px;">
+                    <label >Product Code</label>
+                    <textarea class="form-control" rows="2" id="product_code" readonly="" style="text-align: center;"></textarea>
+                    </div>
+                    <input type="hidden" id="product_name" >
+                    <input type="hidden" id="product_part" >
+                </div>
+              <div class="card-box">
+                <div class="form-group text-right m-b-0">
+                    <input type="hidden" name="itmid" id="itmid" value="<%-row.item%>">
+                    <input type="hidden" name="subitmid" id="subitmid" value="<%-row.sub_item%>">
+                <button class="btn btn-primary waves-effect waves-light" type="submit">
+                    Submit
+                </button>
+                <button class="btn btn-secondary waves-effect waves-light m-l-5 c-n-b hide-for-modal">
+                    Cancel
+                </button>
+                 </div>
+                </div>
+        </form>
+    </div><!-- end col -->
+</div>
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/offer.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        OFFER.initSPE(<%-JSON.stringify(row)%>);
+    });
+</script>

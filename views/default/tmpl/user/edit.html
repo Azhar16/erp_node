@@ -1,0 +1,146 @@
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Settings </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#/configuration/settings">General settings</a></li>
+                                    <li><a href="#/configuration/user">Users & Roles </a></li>
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+                <!-- end page title end breadcrumb -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 b-u-b">Back</button>
+        </div>
+        <h4 class="page-title">User Edit</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmCUser">
+
+            <div class="card-box">
+                <div class="row">
+                    <div class="loginmessage"></div>
+                    <div class="col-md-6">
+                        <div class="p-20">
+
+
+                            <div class="form-group row">
+                                <label for="name">Name*</label>
+                                    <input type="text" name="name" parsley-trigger="change" required
+                                           placeholder="Enter user name" class="form-control" id="name" value="<%-row.name%>">
+                            </div>
+                            <div class="form-group row">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" value="<%-row.email%>" class="form-control" placeholder="someemail@domain.com" parsley-trigger="change" required>
+                            </div>
+                            
+                            <div class="form-group row">
+                                <label >Address</label>
+                                <textarea class="form-control" rows="5" id="address"><%-row.address%></textarea>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-6">
+                        <div class="p-20">
+
+                            <div class="form-group row">
+                                <label for="code">Code*</label>
+                                <input type="text" id="uid" name="uid" class="form-control" placeholder="User code" value="<%-row.uid%>" parsley-trigger="change" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="phone">Phone No*</label>
+                                <input type="text" id="ph" name="ph" class="form-control" value="<%-row.ph%>" placeholder="09999999999" parsley-trigger="change" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="password">Password*</label>
+                                <input type="password" id="password" name="password" value="******" class="form-control" placeholder="Enter user password" parsley-trigger="change" required>
+                                </div>
+                            <div class="form-group row">
+                                <%
+                                if(row.img!=''){
+                                %>
+                               <img src="images/users/<%-row.img%>" class="company-logo-list" />
+                                <%
+                                }
+                                    %>
+                                <label >Picture</label>
+                                <input type="file" class="form-control" id="logo">
+                                <input type="hidden" name="ologo" id="ologo" value="<%-row.img%>"/>
+                                 </div>
+                            
+                            <div class="form-group text-right m-b-0">
+                                <input type="hidden" name="id" id="id" value="<%-row.id%>"/>
+                                <button class="btn btn-primary waves-effect waves-light" type="submit">
+                                        Save
+                                    </button>
+                                    <button class="btn btn-secondary waves-effect waves-light m-l-5 b-u-b">
+                                        Cancel
+                                    </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </form>
+    </div><!-- end col -->
+</div>
+
+
+
+
+<!-- Validation js (Parsleyjs) -->
+        <script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+        <script src="assets/js/app/user.js"></script>
+<script type="text/javascript">
+            $(document).ready(function() {
+                USER.initf();
+            });
+        </script>

@@ -1,0 +1,162 @@
+<link href="default_assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+<link href="default_assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" type="text/css" />-->
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Settings </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#/configuration/settings">General settings</a></li>
+                                    <li><a href="#/configuration/user">Users & Roles </a></li>
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+                <!-- end page title end breadcrumb -->
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+             <button class="btn btn-primary waves-effect w-md waves-light m-b-5 b-u-c">Create New</button>
+        </div>
+        <h4 class="page-title">List of existing user</h4>
+    </div>
+    <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" multiple="true">Name:</span>
+               <select class="select2 select2-multiple" multiple="multiple" multiple id="nameFltr">
+               </select>
+             </div>
+             <div class="col-md-4">
+               <span style="font-size:18px;font-weight:500;" >Phone:</span>
+               <select id="phnoFltr" class="select2 select2-multiple" multiple="multiple" multiple ></select>
+             </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card-box table-responsive">
+            <table id="datatable" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <%
+                    for(var k in row) {
+                    %>
+                    <tr>
+                        <td>
+                            <%
+                        if(row[k].img==''){
+                        %>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <i class="mdi mdi-account-multiple"></i>
+                                </div>
+                        <%
+                        }
+                        else{
+                        %>
+                            <img src="images/users/<%-row[k].img%>" class="company-logo-list" />
+                            <%
+                            }
+                            %>
+                        </td>
+                        <td><%-row[k].name%></td>
+                        <td><%-row[k].ph%></td>
+                        <td><%-row[k].email%></td>
+                        <td data-id="<%-row[k].id%>">
+                            <%
+                        if(row[k].status=='active'){
+                        %>
+                            <a data-type="block" class="btn btn-success btn-trans waves-effect w-md waves-success m-b-5 b-u-ab">Active</a>
+                            <%
+                        }
+                        else{
+                        %>
+                        <a data-type="active" class="btn btn-danger btn-trans waves-effect w-md waves-danger m-b-5 b-u-ab">Block</a>
+                        <%
+                            }
+                            %>
+                        </td>
+                        <td data-id="<%-row[k].id%>">
+                            <button class="btn btn-icon waves-effect waves-light btn-info m-b-5 b-u-r"> <i class="fa fa-keyboard-o"></i> </button>
+                            <button class="btn btn-icon waves-effect waves-light btn-warning m-b-5 b-u-e"> <i class="fa fa-wrench"></i> </button>
+                            <button class="btn btn-icon waves-effect waves-light btn-danger m-b-5 b-u-d"> <i class="fa fa-remove"></i> </button>
+                            
+                        </td>
+                    </tr>
+                    <%
+                        }
+                       %>
+                </tbody>
+                <tfoot>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </tfoot> 
+            </table>
+        </div>
+    </div>
+</div> <!-- end row -->
+
+<!-- Required datatable js -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+<script src="default_assets/plugins/datatables/dataTables.select.min.js"></script>
+        <script src="default_assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="default_assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="assets/js/app/user.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                USER.initl();
+            });
+
+        </script>

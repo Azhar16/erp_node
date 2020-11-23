@@ -1,0 +1,114 @@
+<!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/product/dashboard"><i class="mdi mdi-texture"></i><span>Product</span> </a>
+                                <ul class="submenu">
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/prod_codification">Product </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/rawitem">Raw Item </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/serviceitem"> Service Item </a></li>
+                                </ul>
+                            </li>
+                             <li class="has-submenu">
+                                <a href="#/product/dashboard"><i class="mdi mdi-texture"></i><span>Master</span> </a>
+                                <ul class="submenu">
+                                    <li  data-permission="sales-component_category"><a href="#/product/componentcategory">Component Category</a></li>
+                                    <li  data-permission="sales-specification"><a href="#/product/prod_specification">Specification </a></li>
+                                    <li  data-permission="sales-prod_feature"><a href="#/product/prod_feature">Feature </a></li>
+                                    <li  data-permission="sales-prod_feature"><a href="#/product/unit"> Unit </a></li>
+                                    <li  data-permission="sales-prod_feature"><a href="#/product/hydro_test"> Hydro Test </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/forging"> Forging </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/opening_stock/openingstock"> Opening Stock </a></li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row hide-for-modal">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 c-n-b" >Back</button>
+        </div>
+        <h4 class="page-title">Unit Create</h4>
+    </div>
+</div>
+ 
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmCNew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+                <div class="form-row">
+                   
+                     <div class="form-group col-md-6">
+                         <label > Name </label>
+                        <input type="text" name="unit_name" id="unit" parsley-trigger="change" required
+                               placeholder="Enter Unit name" class="form-control" value="<%-row.name%>">
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="form-group text-right m-b-0">
+                    <input type="hidden" name="unitid" id="uid" value="<%-row.id%>">
+            <button class="btn btn-primary waves-effect waves-light" type="submit">
+                Submit
+            </button>
+            <button class="btn btn-secondary waves-effect waves-light m-l-5 c-n-b hide-for-modal">
+                Cancel
+            </button>
+        </div>
+            </div>
+        </form>
+    </div><!-- end col -->
+</div>
+
+
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/unit.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        UNIT.initPU();
+    });
+</script>

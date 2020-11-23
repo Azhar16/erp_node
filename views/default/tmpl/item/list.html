@@ -1,0 +1,41 @@
+<link href="default_assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+             <button class="btn btn-primary waves-effect w-md waves-light m-b-5 i-l-cn" >Create New</button>
+        </div>
+        <h4 class="page-title">Items</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card-box table-responsive">
+            <table id="datatable" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Code</th>
+                        <th>Unit</th>
+                        <th>Specification</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                
+            </table>
+        </div>
+    </div>
+</div> <!-- end row -->
+
+<!-- Required datatable js -->
+        <script src="default_assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="default_assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="assets/js/app/item.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                ITEM.initI();
+            });
+        </script>
+        

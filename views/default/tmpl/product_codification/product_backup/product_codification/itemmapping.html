@@ -1,0 +1,245 @@
+<style type="text/css">
+    .p-name{
+        width: 60%;
+        float: left;
+    }
+    .p-num,.p-del{
+        width: 20%;
+        float: left;
+    }
+    #item-srch{
+      width: 265px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: white;
+      background-image: url("default_assets/images/google-custom-search.png");
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 3px 20px 12px 40px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+    #item-srch:focus,input:focus {
+      width: 80%;
+      border: 3px solid rgb(35, 138, 64);
+
+   }
+   .item-dragable{
+      width: 67%;
+      margin-left: 65px;
+      text-align: center;
+      background-color: black;
+      border: .5px solid grey;
+      border-radius: 2px;
+      padding-bottom: 4px;
+      padding-top: 4px;
+   }
+   .item-dragable:focus {
+      background-color: yellow;
+   }
+
+
+</style>
+<!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/product/dashboard"><i class="mdi mdi-texture"></i><span>Product</span> </a>
+                                <ul class="submenu">
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/prod_codification">Product </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/rawitem">Raw Item </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/serviceitem"> Service Item </a></li>
+                                </ul>
+                            </li>
+                             <li class="has-submenu">
+                                <a href="#/product/dashboard"><i class="mdi mdi-texture"></i><span>Master</span> </a>
+                                <ul class="submenu">
+                                    <li  data-permission="sales-component_category"><a href="#/product/componentcategory">Component Category</a></li>
+                                    <li  data-permission="sales-specification"><a href="#/product/prod_specification">Specification </a></li>
+                                    <li  data-permission="sales-prod_feature"><a href="#/product/prod_feature">Feature </a></li>
+                                    <li  data-permission="sales-prod_feature"><a href="#/product/unit"> Unit </a></li>
+                                    <li  data-permission="sales-prod_feature"><a href="#/product/hydro_test"> Hydro Test </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/forging"> Forging </a></li>
+                                    <li  data-permission="sales-prod_codification"><a href="#/product/opening_stock/openingstock"> Opening Stock </a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row hide-for-modal">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 i-n-b">Back</button>
+        </div>
+        <h4 class="page-title">Item Mapping</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmINew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+            <h4 class="m-t-0 header-title">Product</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label >Size*</label>
+                        <input type="number" name="product_size" parsley-trigger="change" placeholder="Enter product size" class="form-control" id="product_size"  value="<% if(compmap != undefined && compmap.size != ''){ %><%-compmap.size%><% } else if(proddi != undefined && proddi.size != ''){ %><%-proddi.size%><% } %>" readonly="">   
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Type*</label>
+                        <input type="text" name="product_type" parsley-trigger="change" placeholder="Enter product type" class="form-control" id="product_type" value="<% if(compmap != undefined && compmap.type != ''){ %><%-compmap.type%><% } else if(proddi != undefined && proddi.subtype != ''){ %><%-proddi.subtype%><% } %>" readonly="">    
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Class*</label>
+                        <input type="text" name="product_class" parsley-trigger="change" placeholder="Enter product class" class="form-control" id="product_class" value="<% if(compmap != undefined && compmap.class != ''){ %><%-compmap.class%><% } else if(proddi != undefined && proddi.clas != ''){ %><%-proddi.clas%><% } %>" readonly="">    
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Figure*</label>
+                        <input type="text" name="product_figure" parsley-trigger="change" placeholder="Enter product figure" class="form-control" id="product_figure" value="<% if(compmap != undefined && compmap.figure != ''){ %><%-compmap.figure%><% } else if(proddi != undefined && proddi.forg != '' && proddi.clasc != '' && proddi.bore != '' && proddi.stype != ''){ %><%-proddi.clasc%><%-proddi.bore%><%-proddi.stype%><%-proddi.forg%><% } %>" readonly="">    
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Ends*</label>
+                        <input type="text" name="product_ends" parsley-trigger="change" placeholder="Enter product Ends" class="form-control" id="product_ends" value="<% if(compmap != undefined && compmap.ends != ''){ %><%-compmap.ends%><% } else if(proddi != undefined && proddi.ends != ''){ %><%-proddi.ends%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Hydraulic body*</label>
+                        <select name="product_hydraulic_body" parsley-trigger="change" class="form-control" id="product_hydraulic_body" >
+                        <% for(var k in hydro){
+                        %>
+                         <option <% if(compmap != undefined && compmap.hydraulic_body == '' && fnlhydro != undefined  && fnlhydro.body == hydro[k].body){ %>selected<% } else if(compmap != undefined && compmap.hydraulic_body != '' &&  compmap.hydraulic_body == hydro[k].body){ %>selected<% }else if(compmap == undefined && fnlhydro != undefined  && fnlhydro.body == hydro[k].body){ %>selected<% } %> value="<%-hydro[k].body%>"><%-hydro[k].body%></option>
+                         <% } %>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Hydraulic Seat*</label>
+                        <select name="product_hydraulic_seat" parsley-trigger="change" class="form-control" id="product_hydraulic_seat">
+                                <% for(var k in hydro){%>
+                                 <option <% if(compmap != undefined && compmap.hydraulic_seat == '' && fnlhydro != undefined  && fnlhydro.seat == hydro[k].seat){ %>selected<% } else if(compmap != undefined && compmap.hydraulic_seat != '' &&  compmap.hydraulic_seat == hydro[k].seat){ %>selected<% }else if(compmap == undefined && fnlhydro != undefined  && fnlhydro.seat == hydro[k].seat){ %>selected<% } %> value="<%-hydro[k].seat%>"><%-hydro[k].seat%></option>
+                                 <% } %>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Pneumatic Seat*</label>
+                        <select name="product_pneumatic_seat" parsley-trigger="change" class="form-control" id="product_pneumatic_seat">
+                                <% for(var k in hydro){%>
+                                 <option <% if(compmap != undefined && compmap.pneumatic_seat == '' && fnlhydro != undefined && fnlhydro.seat_air == hydro[k].seat_air){ %>selected<% } else if(compmap != undefined && compmap.pneumatic_seat != '' &&  compmap.pneumatic_seat == hydro[k].seat_air){ %>selected<% }else if(compmap == undefined && fnlhydro != undefined  && fnlhydro.seat_air == hydro[k].seat_air){ %>selected<% } %> value="<%-hydro[k].seat_air%>"><%-hydro[k].seat_air%></option>
+                                 <% } %>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Hydroback Seat*</label>
+                        <select name="product_hydroback_seat" parsley-trigger="change" class="form-control" id="product_hydroback_seat">
+                                <% for(var k in hydro){%>
+                                 <option <% if(compmap != undefined && compmap.hydroback_seat == '' && fnlhydro != undefined && fnlhydro.back_seat == hydro[k].back_seat){ %>selected<% } else if(compmap != undefined && compmap.hydroback_seat != '' &&  compmap.hydroback_seat == hydro[k].back_seat){ %>selected<% }else if(compmap == undefined && fnlhydro != undefined  && fnlhydro.back_seat == hydro[k].back_seat){ %>selected<% } %> value="<%-hydro[k].back_seat%>"><%-hydro[k].back_seat%></option>
+                                 <% } %>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4" >
+                        <label >Unit Rate*</label>
+                        <input type="number" name="product_unit_rate" parsley-trigger="change" placeholder="Enter product unit rate" class="form-control" id="product_unit_rate" value="<% if(compmap != undefined){ %><%-compmap.unit_rate%><% } %>" ></div>
+                    <div class="form-group col-md-4">
+                        <label >Category*</label>
+                        <input type="text" name="product_category" parsley-trigger="change" placeholder="Enter product Category" class="form-control" id="product_category" value="<% if(compmap != undefined){ %><%-compmap.category%><% } %>" >     
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Default Tax Rate Slab</label>
+                        <select class="form-control" id="tax_slabe">
+                        <%
+                            for(var k in tax_slab) {
+                            %>
+                            <option <% if(compmap != undefined && compmap.tax_slabe != '' &&  compmap.tax_slabe == tax_slab[k]){ %>selected<% } else if(tax_slab[k] == '18'){%>selected<%}%> value="<%-tax_slab[k]%>"><%-tax_slab[k]%>%</option>
+                                <%
+                             }
+                            %>
+                            </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Size Id*</label>
+                        <input type="text" name="product_size_id" parsley-trigger="change" placeholder="Enter Size Id" class="form-control" id="size_id" value="<% if(compmap != undefined && compmap.size_id != ''){ %><%-compmap.size_id%><% } else if(proddi != undefined && proddi.forg != '' && proddi.clasc != '' && proddi.bore != '' && proddi.stype != '' && proddi.size != ''){ %><%-proddi.size%> x <%-proddi.clasc%><%-proddi.bore%><%-proddi.stype%><%-proddi.ends%><%-proddi.forg%> : <%-proddi.joint%><% } %>" readonly="">    
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+            <h4 class="m-t-0 header-title">Component Name & subname</h4>
+                <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label class="col-form-label">Component Name</label>
+                </div>
+                <div class="form-group col-md-3">
+                    <label class="col-form-label"> Feature </label>
+                </div>
+                <div class="form-group col-md-3">
+                    <label class="col-form-label"> Sub Feature </label>
+                </div>
+                <div class="form-group col-md-2">
+                    <label class="col-form-label">Quantity</label>
+                </div>
+                <div class="form-group col-md-1" >
+                <label class="col-form-label"></label>
+                </div>
+                <div class="item-wrapper" style="width: 100%;">
+                  
+                </div>
+                </div>
+                </div>
+                 <div class="card-box">
+                    <div class="form-group text-right m-b-0 col-md-12">
+                      <input type="hidden" name="compmapid" id="compmapid" value="<%-item.id%>"/>
+                    <button class="btn btn-primary waves-effect waves-light" type="submit">
+                        Submit
+                    </button>
+                    <button class="btn btn-secondary waves-effect waves-light m-l-5 i-n-b hide-for-modal">
+                        Cancel
+                    </button>
+                </div>
+                </div>
+        </form>
+    </div><!-- end col -->
+</div>
+<script>
+</script>
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/prod_codification.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        CODIFICATION.initPIMN(<%- JSON.stringify(row)%>,<%- JSON.stringify(mapping)%>);
+    });
+</script>

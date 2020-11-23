@@ -1,0 +1,145 @@
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/plan/dashboard"><i class="mdi mdi-view-list"></i> <span> Plan </span> </a>
+
+                                <ul class="submenu">
+                                    <li  data-permission="sales-plan"><a href="#/plan/plan"> Plan </a></li>
+                                    <li  data-permission="sales-plan"><a href="#/plan/requisition_plan"> Requisition Plan </a></li>
+                                </ul>
+                                
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><p>Plan</p></li>
+                                            <li><a href="#/report/plan/planningsumdetail">Planning Summary</a></li>
+                                             <li><a href="#/report/plan/componentdetail">Component Details</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+        </div>
+        <h4 class="page-title">List Of Components</h4>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="loginmessage"></div>
+            <div class="card-box">
+                <div class="form-row">
+                     <div class="form-group col-md-3">
+                        <label >Year</label>
+                        <select type="text" class="form-control" id="plan_year"  required>
+                            <option value="">select</option>
+                            <option value="2016-2017">2016-2017</option>
+                            <option value="2017-2018">2017-2018</option>
+                            <option value="2018-2019">2018-2019</option>
+                            <option value="2019-2020">2019-2020</option>
+                        
+                                </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Month</label>
+                       <select type="text" class="form-control" id="plan_month"  required>
+                            <option value="">select</option>
+                        <%
+                                    for(var k in month) {
+                                    %>
+                                    <option value="<%-month[k]%>"><%-month[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                </select>
+                    </div>
+                    
+                    <div class="form-group col-md-3">
+                        <label >Components*</label>
+                        <select type="text" class="form-control" id="comp_name"  required>
+                         <option value="">select</option>
+                            <%
+                            for(var k in compname){
+                            %>
+                            <option value="<%-compname[k].id%>"><%-compname[k].name%></option>
+                            <% } %>
+                        
+                                </select>
+                    </div>
+                    
+                    <div class="form-group col-md-4">
+                        <label style="width: 100%;">&nbsp;</label>
+                       <button class="btn btn-primary waves-effect waves-light btn-p-OS-g">GO</button>
+                       <button class="btn btn-primary waves-effect waves-light btn-p-OS" >Print</button>
+                       <button class="btn btn-primary waves-effect waves-light btn-pdf" >PDF</button>
+                       <button class="btn btn-primary waves-effect waves-light btn-xl-OS" >XLS</button>
+                    </div>
+                    
+                </div>
+            </div>
+        <div id="itemWrap">
+            
+        </div>
+           
+    </div><!-- end col -->
+</div>
+<script src="assets/js/app/report/plan.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        RPLAN.initcomRprt();
+    });
+</script>

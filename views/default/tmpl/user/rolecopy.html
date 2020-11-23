@@ -1,0 +1,191 @@
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Settings </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#/configuration/settings">General settings</a></li>
+                                    <li><a href="#/configuration/user">Users & Roles </a></li>
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+                <!-- end page title end breadcrumb -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <a class="btn btn-primary waves-effect w-md waves-light m-b-5 s-n-bk" >Back</a>
+        </div>
+        <h4 class="page-title">User Role</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmSCUser">
+
+           <!-- <div class="card-box">
+                <div class="row">
+                    
+                    <div class="col-md-12">
+                        <div class="p-20">
+                    <h4 class="m-t-0 header-title">User Role will come here</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            
+            
+            
+            
+            <div class="card-box">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="p-20">
+                             <h4 class="m-t-0 header-title">User Permission</h4>
+                            <div class="form-group">
+                                <h4 >User type</h4>
+                            </div>
+                            <div class="form-group">
+                                <%
+                                    for(var m in userrole.user_type.name) {
+                                    %>
+                                <div class="radio radio-info form-check-inline">
+                                    <input type="radio" id="inlineRadio1" class="usertype"  value="<%-userrole.user_type.name[m]%>" name="usertype" <%if(usavedrole != undefined && usavedrole.user_type.name[m]==1){%>checked<%}%>>
+                                    <label for="inlineRadio1"> <%-userrole.user_type.name[m]%> </label>
+                                </div>
+                                <%
+                                     }
+                                    %>
+                            </div>
+                            <div class="form-group">
+                                <h4 >Modules</h4>
+                            </div>
+                            <div class="form-group row module-cls">
+                                <%
+
+                                    for(var m in userrole.modules) {
+                                    %>
+                                    
+
+                                <div style="width: 15%;font-size: 15px;float: left;" class="checkbox checkbox-success form-check-inline">
+                                    <input type="checkbox" class="module-each-cls" name="usermodules"   value="<%-userrole.modules[m].name%>" <%if(usavedrole != undefined && usavedrole.modules[m].permission==1){%>checked<%}%>>
+                                    <label for="inlineModulesCheckbox"> <%-userrole.modules[m].name%> </label>
+                                </div>
+
+                                        <div style="float:left;width: 80%;min-height: 20px;">
+                                <%
+
+                                    for(var n in userrole.modules[m].submodule) {
+                                    %>
+                                    
+
+                                    <div style="width: 20%;float: left;" class="checkbox checkbox-success form-check-inline">
+                                        <input type="checkbox" class="module-sub-each-cls" name="usersubmodules"   value="<%-userrole.modules[m].submodule[n].name%>" <%if(usavedrole != undefined && usavedrole.modules[m].submodule[n].permission==1){%>checked<%}%>>
+                                        <label for="inlineModulesCheckbox"> <%-userrole.modules[m].submodule[n].name%> </label>
+                                    </div>
+                                    
+                                        <div style="width: 70%;float: left;">
+                                        
+                                    <%
+
+                                        for(var o in userrole.modules[m].submodule[n].item) {
+                                    %>
+                                    
+
+                                    <div class="checkbox checkbox-success form-check-inline">
+                                        <input type="checkbox" class="module-item-each-cls" name="useritemmodule"   value="<%-userrole.modules[m].submodule[n].item[o]%>" <%if(usavedrole != undefined && usavedrole.modules[m].submodule[n].item[o]==1){%>checked<%}%>>
+                                        <label for="inlineModulesCheckbox"> <%-userrole.modules[m].submodule[n].item[o]%> </label>
+                                    </div>
+                                    <%
+
+                                    }
+
+                                    %>
+                                        </div>
+                                        <%
+
+                                         }
+                                        %>
+                                        </div>
+                                        <div style="clear: both;;"></div>
+                                        <%
+
+                                     }
+                                    %>
+                                    
+                                    
+                            </div>
+                          
+
+                                    
+                            
+                          
+                            
+                            <div class="form-group text-right m-b-0">
+                                <input type="hidden" name="userid" id="userid" value="<%-userid%>">
+                                <button class="btn btn-primary waves-effect waves-light" type="submit">
+                                        Save
+                                    </button>
+                                    <a href="#/user" class="btn btn-secondary waves-effect waves-light m-l-5">
+                                        Cancel
+                                    </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </form>
+    </div><!-- end col -->
+</div>
+
+
+
+<!-- Validation js (Parsleyjs) -->
+        <script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+        <script src="assets/js/app/user.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+               
+                USER.initR();
+           
+            });
+        </script>

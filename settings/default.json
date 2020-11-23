@@ -1,0 +1,71 @@
+{
+    "port": "3000",
+    "host": "http://103.253.125.192/",
+    "base_url": "http://103.253.125.192:3000/",
+    "session_time": 999999999999,
+    "company_logo_path": "views/assets/images/company",
+    "user_logo_path": "views/assets/images/users",
+    "sales_doc": "upload/sales",
+    "purchase_doc": "upload/purchase",
+    "crnote_doc": "upload/crnote",
+    "denote_doc": "upload/denote",
+    "default_sales_ledger":"SDEBT",
+    "default_purchase_ledger":"SC",
+    "db": {
+        "server": "mysql",
+        "mysql": {
+            "host": "localhost",
+            "user": "sibyl",
+            "pass": "Sibyl@123",
+            "dbname": "toolings_erp"
+        }
+    },
+    "payment_terms": {
+        "0": "Today",
+        "1": "Tomorrow",
+        "2": "2 Days Later",
+        "3": "3 Days Later",
+        "4": "4 Days Later",
+        "5": "5 Days Later",
+        "6": "6 Days Later",
+        "7": "7 Days Later",
+        "8": "8 Days Later",
+        "9": "9 Days Later",
+        "10": "10 Days Later",
+        "15": "15 Days Later",
+        "20": "20 Days Later",
+        "25": "25 Days Later",
+        "30": "30 Days Later",
+        "35": "35 Days Later",
+        "40": "40 Days Later",
+        "45": "45 Days Later",
+        "50": "50 Days Later",
+        "60": "60 Days Later",
+        "70": "70 Days Later",
+        "80": "80 Days Later",
+        "90": "90 Days Later",
+        "100": "100 Days Later"
+    },
+    "tax_slab": {
+        "0": "0",
+        "0.25": "0.25",
+        "3": "3",
+        "5": "5",
+        "12": "12",
+        "18": "18",
+        "28": "28"
+    },
+    "note_reason": {
+        "Sales return": "Sales return",
+        "Post sale discount": "Post sale discount",
+        "Deficiency in service": "Deficiency in service",
+        "Correction in invoice": "Correction in invoice",
+        "Change in POS": "Change in POS",
+        "Finalization of provisional assessment": "Finalization of provisional assessment",
+        "Others": "Others"
+    },
+    "currency":{
+        "INR":"INR",
+        "USD":"USD"
+    }
+}

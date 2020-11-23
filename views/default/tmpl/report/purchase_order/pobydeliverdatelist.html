@@ -1,0 +1,41 @@
+<div class="card-box table-responsive" style="width: 100%;">
+    <h1 style="text-align: center;"><%-com.name%></h1>
+    <div style="text-align: center;"><%-com.address%>,<%-com.city%>,<%-com.state%>,<%-com.zip%></div>
+    <div style="text-align: center;">Purchase Order Summary For Next <%-nday%> Days</div>
+    
+    
+</div>
+<div class="card-box table-responsive" style="width: 100%;">
+            <table id="datatable" class="table " style="width: 100%;" cellspacing='0' >
+                <thead>
+                    <tr >
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Date </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> PO No </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Vendor </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Enquiry No </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Total Amount </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%
+                    for(var k in row) {
+                    %>
+                    <tr>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].po_date%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].po_no%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].company_name%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].enquiry_no%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].total_amount%></td>
+                    </tr>
+                    <%
+                        }
+                       %>
+                </tbody>
+            </table>
+        </div>
+<script src="assets/js/app/report/purchase_order.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        RPORDER.initpoallRprtL();
+    });
+</script>

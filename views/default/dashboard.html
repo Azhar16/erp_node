@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sibyl Accounting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured accounts package for small and mid level industry" name="description" />
+        <meta content="sibyl" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="default_assets/images/favicon.ico">
+        <!-- App css -->
+        <link href="default_assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+        <!--Morris Chart CSS -->
+        <link rel="stylesheet" href="default_assets/plugins/morris/morris.css">
+
+        <link href="default_assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/css/style.css" rel="stylesheet" type="text/css" />
+        <!-- plugin -->
+        <link href="default_assets/plugins/jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/sweet-alert/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="default_assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        <script src="default_assets/js/modernizr.min.js"></script>
+        <script src="default_assets/js/xlsx.full.min.js"></script>
+        <link href="default_assets/css/custombox.min.css" rel="stylesheet">
+
+
+        <style>
+            .select2-container{
+                z-index: 9999;
+            }
+            .modal-demo {
+          width: 90%; /* New width for default modal */
+        }
+        </style>
+    </head>
+
+    <body>
+
+        
+
+
+        <div class="wrapper" >
+            <div class="container-fluid" id="mainContent"></div>
+
+        </div>
+        <!-- end wrapper -->
+
+        <div id="custom-modal" class="modal-demo">
+            <button type="button" class="close" onclick="Custombox.modal.closeAll();">
+                <span>&times;</span><span class="sr-only">Close</span>
+            </button>
+            <h4 class="custom-modal-title"></h4>
+            <div class="custom-modal-text modalbody" style="background: #253138;">
+
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        © Sibyl Infotech Pvt Ltd. <a href="http://www.sibyltech.co">sibyltech.co</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        
+        
+
+        <!-- jQuery  -->
+       <script src="default_assets/js/jquery.min.js"></script>
+        <script src="default_assets/js/popper.min.js"></script>
+        <script src="default_assets/js/bootstrap.min.js"></script>
+        <script src="default_assets/js/waves.js"></script>
+        <script src="default_assets/js/jquery.slimscroll.js"></script>
+        
+
+        <!-- App js -->
+        <script src="default_assets/js/jquery.core.js"></script>
+        <script src="default_assets/js/jquery.app.js"></script>
+        <!---------ROUTING-------------->
+        <script src="assets/js/routing/signals.js"></script>
+        <script src="assets/js/routing/hasher.min.js"></script>
+        <script src="assets/js/routing/crossroads.min.js"></script>
+        <script src="assets/js/routing/routing.js"></script>
+        <script src="assets/js/app/common.js"></script>
+        <script src="default_assets/js/jspdf.min.js"></script> 
+
+        <script src="default_assets/js/custombox.min.js"></script>
+        <script src="default_assets/js/custombox.legacy.min.js"></script>
+
+        <!-- plugin -->
+
+        <script src="default_assets/plugins/jquery-ui/jquery-ui.js"></script>
+        <script src="default_assets/plugins/toastr/toastr.min.js"></script>
+        <script src="default_assets/plugins/sweet-alert/sweetalert2.min.js"></script>
+        <script src="default_assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="default_assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="default_assets/plugins/select2/js/select2.min.js" ></script>
+
+        <script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+        <script src="default_assets/plugins/jquery-knob/jquery.knob.js"></script>    
+
+        <!-- Dashboard init -->
+        <!--<script src="default_assets/pages/jquery.dashboard.js"></script>-->
+
+        <!-- data table -->
+        <!-- Buttons examples -->
+        <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="default_assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+        <script src="default_assets/plugins/datatables/jszip.min.js"></script>
+        <script src="default_assets/plugins/datatables/pdfmake.min.js"></script>
+        <script src="default_assets/plugins/datatables/vfs_fonts.js"></script>
+        <script src="default_assets/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="default_assets/plugins/datatables/buttons.print.min.js"></script>
+
+        <!-- Key Tables -->
+        <script src="default_assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+
+        <!-- Responsive examples -->
+        <script src="default_assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="default_assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+
+        <!-- Selection table -->
+        <script src="default_assets/plugins/datatables/dataTables.select.min.js"></script>
+
+        <script type="text/javascript">
+            COMMON.getUserRole();
+        </script>
+
+        
+
+       <!--class="userrole-cls"-->
+        
+        
+    </body>
+</html>

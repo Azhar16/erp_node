@@ -1,0 +1,338 @@
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 b-u-b">Back</button>
+        </div>
+        <h4 class="page-title">Employee Information</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmCUser">
+
+             <div class="loginmessage"></div>
+            <div class="card-box">
+                <h4 class="m-t-0 header-title">Employee Joining Info</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label >First Name*</label>
+                        <input type="text" name="fname" parsley-trigger="change" 
+                                class="form-control" id="fname">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Last Name*</label>
+                        <input type="text" name="lname" parsley-trigger="change"  class="form-control" id="lname">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Date Of Birth*</label>
+                     <input type="text" class="form-control"  id="date" parsley-trigger="change" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Email*</label>
+                        <input type="email" id="email" name="email" class="form-control"  parsley-trigger="change" >
+                    </div>
+                    
+                    <div class="form-group col-md-4">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" class="form-control select2 select2-hidden-accessible" aria-hidden="true" parsley-trigger="change">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="maritalstatus">Marital Status</label>
+                        <select id="maritalstatus" name="maritalstatus" class="form-control select2 select2-hidden-accessible" aria-hidden="true" parsley-trigger="change">
+                             <%
+                                    for(var m in maritalstatus) {
+                                    %>
+                            <option value="<%-maritalstatus[m]%>"><%-maritalstatus[m]%></option>
+                               <%
+                                     }
+                                    %>
+                        </select>
+                    </div>
+                     <div class="form-group col-md-4">
+                        <label for="employeeType">Type Of Employee</label>
+                        <select id="employeeType" name="employeeType" class="form-control" parsley-trigger="change">
+                             <%
+                                    for(var e in employeetype) {
+                                    %>
+                            <option value="<%-employeetype[e]%>"><%-employeetype[e]%></option>
+                               <%
+                                     }
+                                    %>
+                        </select>
+                    </div>
+                     <div class="form-group col-md-4">
+                        <label >Passport No*</label>
+                        <input type="text" name="passport" parsley-trigger="change"  class="form-control" id="passport">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >PAN No*</label>
+                        <input type="text" name="pan" parsley-trigger="change"  class="form-control" id="pan">
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+                <h4 class="m-t-0 header-title">Local Address</h4>
+                <div class="form-row">
+                   <!-- <div class="form-group col-md-6">
+                        <label >Address</label>
+                        <textarea class="form-control" rows="5" id="address"></textarea>
+                    </div>-->
+                    <div class="form-group col-md-4">
+                        <label >House No*</label>
+                        <input type="text" name="houseNo" parsley-trigger="change"  class="form-control" id="houseNo">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Lane/road name*</label>
+                        <input type="text" name="roadName" parsley-trigger="change"  class="form-control" id="roadName">
+                    </div>
+                    
+                        <div class="form-group col-md-4" style="float: left;">
+                            <label >City</label>
+                            <input type="text" id="city" name="city" class="form-control" >
+                        </div>
+                        <div class="form-group col-md-4" style="float: left;">
+                            <label >Country</label>
+                            <select class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" id="country" >
+                                <option value="">Select Country</option>
+                                    <%
+                                    for(var k in country) {
+                                    %>
+                                    <option <% if('India'==country[k]){%>selected<%}%> value="<%-country[k]%>"><%-country[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                    </select>
+                        </div>
+                        <div class="form-group col-md-4 " style="float: left;">
+                            <label >State <span style="font-size: 10px;"></span></label>
+                            <select class="form-control select2 select2-hidden-accessible" aria-hidden="true" id="state">
+                                <option value="">Select State</option>
+                                    <%
+                                    for(var k in state) {
+                                    %>
+                                    <option value="<%-state[k]%>"><%-state[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                    </select>
+                        </div>
+                        <div class="form-group col-md-4" style="float: left;">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="zip" class="form-control" placeholder="Zip code">
+                        </div>
+                    
+
+                </div>
+            </div>
+            <div class="card-box">
+                <h4 class="m-t-0 header-title">Contact Info</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label >Email*</label>
+                        <input type="email" id="email" name="email" class="form-control"  parsley-trigger="change" >
+                    </div>
+                     <div class="form-group col-md-6">
+                        <label >Contact No*</label>
+                        <input type="text" id="phno" name="phno" class="form-control"  parsley-trigger="change" >
+                    </div>
+               
+
+                </div>
+            </div>
+
+            <div class="card-box">
+                <h4 class="m-t-0 header-title">Emergency Details</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-6" style="float: left;">
+                        <label >Name*</label>
+                        <input type="text" id="name" name="ph" class="form-control" placeholder="Emergency contact person name" parsley-trigger="change" required>
+                    </div>
+                    <div class="form-group col-md-6" style="float: left;">
+                        <label >Relationship*</label>
+                        <input type="text" id="relation" name="relation" class="form-control" placeholder="Relation with employee" parsley-trigger="change" required>
+                    </div>
+                        <div class="form-group col-md-6">
+                        <label >Address</label>
+                        <textarea class="form-control" rows="5" id="address"></textarea>
+                    </div>
+                    <div class="form-group col-md-6">
+
+                         <div class="form-group col-md-6" style="float: left;">
+                        <label >Email*</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="someemail@domain.com" parsley-trigger="change" required>
+                    </div>
+
+                     <div class="form-group col-md-6" style="float: left;">
+                        <label >Phone No*</label>
+                        <input type="text" id="ph" name="ph" class="form-control" placeholder="09999999999" parsley-trigger="change" required>
+                    </div>
+
+                        <div class="form-group col-md-6" style="float: left;">
+                            <label >City</label>
+                            <input type="text" id="city" name="city" class="form-control" placeholder="City">
+                        </div>
+                       
+                        <div class="form-group col-md-6" style="float: left;">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="zip" class="form-control" placeholder="Zip code">
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="card-box">
+                <h4 class="m-t-0 header-title">Employee Qualification</h4>
+                <div class="form-row">
+                     <div class="form-group col-md-4">
+                        <label >Education Specialization*</label>
+                        <input type="text" id="educationspecialization" name="educationspecialization" class="form-control" placeholder="Highest Qualification" parsley-trigger="change" required>
+                    </div>
+                     <div class="form-group col-md-4">
+                        <label >Institute Name*</label>
+                        <input type="text" id="institute" name="institute" class="form-control" placeholder="Institute Name" parsley-trigger="change" required>
+                    </div>
+                   <div class="form-group col-md-4">
+                            <label for="course">Course Type*</label>
+                           <select id="course" name="course" class="form-control select2 select2-hidden-accessible" aria-hidden="true" parsley-trigger="change">
+                                <%
+                                    for(var k in coursetype) {
+                                    %>
+                                    <option  value="<%-coursetype[k]%>" ><%-coursetype[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                       
+                                    </select>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                        <label >Start Date*</label>
+                        <input type="text" id="startDate" name="empjobstartdate" class="form-control" placeholder="mm/dd/yyyy" parsley-trigger="change" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Completed On*</label>
+                        <input type="text" id="endDate" name="empjobenddate" class="form-control" placeholder="mm/dd/yyyy" parsley-trigger="change" >
+                    </div>
+                    
+                    </div>
+
+                </div>
+                <div class="card-box">
+                <h4 class="m-t-0 header-title">Employee Experience details</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label >Employee Id*</label>
+                               <select name="name" parsley-trigger="change"
+                                class="form-control select2 select2-hidden-accessible" aria-hidden="true" id="name">
+                                   <option></option>
+                               </select>
+                    </div>
+                     <div class="form-group col-md-4">
+                        <label >Profile title/designation*</label>
+                        <input type="text" id="profiletitle" name="profiletitle" class="form-control" placeholder="Profile title" parsley-trigger="change" required>
+                    </div>
+                     <div class="form-group col-md-4">
+                        <label >Job Profile</label>
+                        <input type="text" id="jobprofile" name="jobprofile" class="form-control" placeholder="Profile Summary" parsley-trigger="change" >
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label >Total Exprience*</label>
+                        <select name="yearofexprience" id="yearofexprience" class="form-control select2 select2-hidden-accessible" aria-hidden="true" parsley-trigger="change" >
+                            <option value="">year of exprience</option>
+                                    <%
+                                    for(var k in exprienceyear) {
+                                    %>
+                                    <option value="<%-exprienceyear[k]%>"><%-exprienceyear[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                        </select>
+                        <select name="monthofexprience" id="monthofexprience" class="form-control select2 select2-hidden-accessible" aria-hidden="true" parsley-trigger="change">
+                             <option value="">month of exprience</option>
+                                    <%
+                                    for(var m in expriencemonth) {
+                                    %>
+                                    <option value="<%-expriencemonth[m]%>"><%-expriencemonth[m]%></option>
+                                        <%
+                                     }
+                                    %>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label >Current/Latest annual salery*</label>
+                        <input type="text" id="currentsalery" name="currentsalery" class="form-control" placeholder="Current annual salery" parsley-trigger="change" required>
+                    </div>
+
+                      
+                      <div class="form-group col-md-4">
+                        <label >Notice Period*</label>
+                        <select name="noticeperiod" id="noticeperiod" class="form-control select2 select2-hidden-accessible" aria-hidden="true" parsley-trigger="change">
+                                   <%
+                                    for(var k in noticeperoid) {
+                                    %>
+                                    <option  value="<%-noticeperoid[k]%>" ><%-noticeperoid[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Last working day*</label>
+                     <input type="text" name="lastworkingday" class="form-control" placeholder="Last working day" id="lastworkingday" parsley-trigger="change" required>
+                    </div>
+                    </div>
+
+                </div>
+
+            <div class="card-box">
+                <h4 class="m-t-0 header-title">Document Of Employee</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label >CV*</label>
+                        <input type="file" id="empcv" name="empcv" class="form-control" >
+                    </div>
+                   <div class="form-group col-md-6">
+                        <label >Image*</label>
+                        <input type="file" id="empimage" name="empimage" class="form-control" >
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <div class="form-group text-right m-b-0">
+                    
+            <button class="btn btn-primary waves-effect waves-light" type="submit" data-toggle="modal" data-target="#myModal">
+                Submit
+            </button>
+            <button class="btn btn-secondary waves-effect waves-light m-l-5 c-n-b hide-for-modal">
+                Cancel
+            </button>
+        </div>
+            </div>
+
+
+
+        </form>
+    </div><!-- end col -->
+</div>
+
+
+
+
+
+<!-- Validation js (Parsleyjs) -->
+        <script src="assets/js/app/employee.js"></script>
+<script type="text/javascript">
+            $(document).ready(function() {
+                EMPLOYEE.initNew();
+            });
+        </script>

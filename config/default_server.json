@@ -1,0 +1,18 @@
+{
+    "port": "3080",
+    "host": "http://103.253.125.192/",
+    "base_url": "http://103.253.125.192:3080/",
+    "session_time": 999999999999,
+    "company_logo_path": "views/assets/images/company",
+    "user_logo_path": "public/images/users",
+    "db": {
+        "server": "mysql",
+        "mysql": {
+            "host": "localhost",
+            "user": "root",
+            "pass": "",
+            "dbname": "sibyl_erp"
+        }
+    },
+
+}

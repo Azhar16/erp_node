@@ -1,0 +1,48 @@
+<div class="card-box table-responsive" style="width: 100%;">
+    <h1 style="text-align: center;"><%-com.name%></h1>
+    <div style="text-align: center;"><%-com.address%>,<%-com.city%>,<%-com.state%>,<%-com.zip%></div>
+    <div style="text-align: center;">Enquiry Summary</div>
+    <div style="text-align: center;"><%-frm_date%> to <%-to_date%></div>
+    
+</div>
+<div class="card-box table-responsive" style="width: 100%;">
+            <table id="datatable" class="table " style="width: 100%;" cellspacing='0' >
+                <thead>
+                    <tr >
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Date </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Enquiry No </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Reference No </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Validity </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Sales Agent </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <%
+                    for(var k in row) {
+     
+                    %>
+                    <tr>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].query_date%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].enquiry_no%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].ref_no%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].enquiry_validity%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].name%></td>
+                        
+                    </tr>
+                    <%
+                        }
+                       %>
+                    
+                    
+                </tbody>
+               
+            </table>
+        </div>
+
+<script src="assets/js/app/report/enquiryrpt.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        RENQUIRY.initenqyRprtL();
+    });
+</script>

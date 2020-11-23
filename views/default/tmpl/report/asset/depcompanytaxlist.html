@@ -1,0 +1,75 @@
+<div class="card-box table-responsive" style="width: 100%;">
+    <h1 style="text-align: center;"><%-com.name%></h1>
+    <div style="text-align: center;"><%-com.address%>,<%-com.city%>,<%-com.state%>,<%-com.zip%></div>
+    <div style="text-align: center;"> Depreciation Company Tax Details </div>
+    
+</div>
+<div class="card-box table-responsive" style="width: 100%;">
+            <% if(row.length > 0 && frm_date != ''){ 
+            %>
+            <table id="datatable" class="table " style="width: 100%;" cellspacing='0' >
+                <thead>
+                    <tr >
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Purchase Date </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Calculation Date </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Asset No </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Asset Name </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Depreciation Percentage </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Purchase Value </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Depreciation Value </th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"> Current Value </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <%
+                    var tot={p:0,d:0};
+                    for(var k in row) {
+
+                    tot.p +=row[k].default_price;
+                    tot.d +=row[k].finalcal;
+     
+                    %>
+                    <tr>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].start_date%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].cdate%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].asset_no%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].asset_name%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].itax%>%</td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].default_price.toFixed(2)%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-row[k].finalcal.toFixed(2)%></td>
+                        <td style="text-align: left; border-bottom: 1px solid #354650;padding: .75rem;"><%-(row[k].default_price - row[k].finalcal).toFixed(2) %></td>
+                        
+                    </tr>
+                    <%
+                        }
+                       %>
+                    
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;" colspan="4">Total</th>
+                        <th style="text-align: right;border-bottom: 1px solid #354650;padding: .75rem;"></th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"><%-tot.p.toFixed(2)%></th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"><%-tot.d.toFixed(2)%></th>
+                        <th style="text-align: left;border-bottom: 1px solid #354650;padding: .75rem;"><%-(tot.p-tot.d).toFixed(2)%></th>
+                    </tr>
+                </tfoot>
+               
+            </table>
+            <% 
+   }
+        
+else {
+    %>
+    <div style="text-align: center;"> No Data Found</div>
+        <% } %>
+        </div>
+
+<script src="assets/js/app/report/asset.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        RASSET.initassetCRprtL();
+    });
+</script>

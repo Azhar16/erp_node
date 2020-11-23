@@ -1,0 +1,342 @@
+
+          <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div class="alogo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                        <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="/" class="alogo">
+                            <img src="default_assets/images/logo-sm.png" alt="" height="26" class="alogo-small">
+                            <img src="default_assets/images/logo.png" alt="" height="24" class="alogo-large">
+                        </a>
+
+                    </div>
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="/dashboard"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#/sales/dashboard"><i class="mdi mdi-invert-colors"></i> <span>Sales</span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li class="userrole-cls"  data-permission="sales-enquiry"><a href="#/sales/enquiry">Enquiry</a></li>
+                                            <li class="userrole-cls" data-permission="sales-offer"><a href="#/sales/offer">Offer</a></li>
+                                            <li class="userrole-cls" data-permission ="sales-workorder"><a href="#/sales/workorder">Workorder</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span>Master</span> </a>
+
+                                <ul class="submenu">
+                                    <li><a href="#/salesagent"> Sales Agent </a></li>
+                                     <li><a href="#/sales/offer/product_list"> Sub Product </a></li>
+                                     <li><a href="#/sales/special_services"> Special Services </a></li>
+                                     <li><a href="#/sales/inspection"> Inspection </a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-list"></i> <span> Reports </span> </a>
+                                <ul class="submenu megamenu" >
+                                    <li>
+                                        <ul>
+                                            <li><a href="#/report/enquiry/enquirydetails">Enquiry </a></li>
+                                            <li><a href="#/report/offer/offerdetails">Offer</a></li>
+                                            <li><a href="#/report/workorder/workorderdetails">Workorder</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-donut-variant"></i><span> Sing Out! </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-submenu" style="float: right;margin-top: 15px;">
+                                <p>Welcome Admin</p>
+
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 s-n-bk">Back</button>
+        </div>
+        <h4 class="page-title">Despatch Information Create</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmSNew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+                <div class="col-md-12">
+                <div class="form-row">
+                <div class="col-md-6">
+                    <h4 class="m-t-0 header-title">Despatch Intimation Send To</h4>
+                    <div class="col-md-12">
+                        <label>Company Name</label>
+                        <input type="text" name="sender_name" id="sender_name" class="form-control" value="<%-row.company_name %>">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label >Address</label>
+                        <textarea class="form-control" rows="5" id="sender_address"><%-row.address%></textarea>
+                    </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label >City</label>
+                            <input type="text" id="sender_city" name="sender_city" class="form-control" placeholder="City" value="<%-row.city%>">
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label >Country</label>
+                            <select class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" id="sender_country" >
+                                <option value="">Select Country</option>
+                                    <%
+                                    for(var k in country) {
+                                    %>
+                                    <option <% if(row.country==country[k]){%>selected<%}%> value="<%-country[k]%>"><%-country[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                    </select>
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label >State <span style="font-size: 10px;">(If country is not India leave it blank)</span></label>
+                            <select class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" id="sender_state" >
+                                <option value="">Select State</option>
+                                    <%
+                                    for(var k in state) {
+                                    %>
+                                    <option <% if(row.state==state[k]){%>selected<%}%> value="<%-state[k]%>"><%-state[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                    </select>
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="sender_zip" name="sender_zip" class="form-control" placeholder="Zip code" value="<%-row.zip%>">
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label for="zip">GSTIN NO</label>
+                            <input type="text" id="sender_gst" name="sender_gst" class="form-control" placeholder="GSTIN NO" value="<%-row.gst%>">
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label for="zip">ECC NO:</label>
+                            <input type="text" id="sender_ecc" name="sender_ecc" class="form-control" placeholder="ECC NO" value="">
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label for="zip">TIN NO</label>
+                            <input type="text" id="sender_tin" name="sender_tin" class="form-control" placeholder="TIN NO" value="">
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label for="zip">CST NO</label>
+                            <input type="text" id="sender_cst" name="sender_cst" class="form-control" placeholder="CST NO" value="">
+                        </div>
+                
+                </div>
+                <div class="col-md-6">
+                     <h4 class="m-t-0 header-title">Despatch Intimation Copy To</h4>
+                      <div class="col-md-12">
+                        <label>Company Name</label>
+                        <input type="text" name="copy_name" id="copy_name" class="form-control" value="<%-row.company_name %>">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label >Address</label>
+                        <textarea class="form-control" rows="5" id="copy_address"><%-row.address%></textarea>
+                    </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label >City</label>
+                            <input type="text" id="copy_city" name="copy_city" class="form-control" placeholder="City" value="<%-row.city%>">
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label >Country</label>
+                            <select class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" id="copy_country" >
+                                <option value="">Select Country</option>
+                                    <%
+                                    for(var k in country) {
+                                    %>
+                                    <option <% if(row.country==country[k]){%>selected<%}%> value="<%-country[k]%>"><%-country[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                    </select>
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label >State <span style="font-size: 10px;">(If country is not India leave it blank)</span></label>
+                            <select class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" id="copy_state" >
+                                <option value="">Select State</option>
+                                    <%
+                                    for(var k in state) {
+                                    %>
+                                    <option <% if(row.state==state[k]){%>selected<%}%> value="<%-state[k]%>"><%-state[k]%></option>
+                                        <%
+                                     }
+                                    %>
+                                    </select>
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="copy_zip" name="copy_zip" class="form-control" placeholder="Zip code" value="<%-row.zip%>">
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label for="zip">GSTIN NO</label>
+                            <input type="text" id="copy_gst" name="copy_gst" class="form-control" placeholder="GSTIN NO" value="<%-row.gst%>">
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label for="zip">ECC NO:</label>
+                            <input type="text" id="copy_ecc" name="copy_ecc" class="form-control" placeholder="ECC NO" value="">
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label for="zip">TIN NO</label>
+                            <input type="text" id="copy_tin" name="copy_tin" class="form-control" placeholder="TIN NO" value="">
+                        </div>
+                        <div class="form-group col-md-12" style="float: left;">
+                            <label for="zip">CST NO</label>
+                            <input type="text" id="copy_cst" name="copy_cst" class="form-control" placeholder="CST NO" value="">
+                        </div>
+                </div>
+                            </div>
+                            </div>
+                            </div>
+                    <div class="card-box">
+                <h4 class="m-t-0 header-title">Customer Address</h4>
+                <div class="col-md-12">
+                <div class="form-row">
+
+                <div style="width: 100%;font-weight: bold;"><%-row.company_name %></div>
+            <div style="width: 100%;font-weight: bold;"><%-row.address %></div>
+            <div style="width: 100%;font-weight: bold;"><% if(row.city!=''){ %><%-row.city %>,<%} %><%-row.state %>, Pin-<%-row.zip %></div>
+            <div style="width: 100%;font-weight: bold;margin-top: 10px;">GSTIN NO :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%-row.gst %></div>
+
+
+
+                    </div>
+                    </div>
+                    </div>
+                    <div class="card-box">
+                <h4 class="m-t-0 header-title">Insurance Clause</h4>
+                <div class="col-md-12">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label >Insurance brone by</label>
+                        <input type="text" class="form-control" placeholder="Insurance brone by" id="insurance_brone_by" parsley-trigger="change" value="<% if(wodirow != undefined){ %><%-wodirow.insurance_brone_by%><% } %>">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Insurance Details</label>
+                        <textarea class="form-control"  id="insurance_details" parsley-trigger="change" ><% if(wodirow != undefined){ %><%-wodirow.insurance_details%><% } %></textarea>
+                    </div>
+
+                <div style="width: 100%;font-weight: bold;"><%-row.company_name %></div>
+            <div style="width: 100%;font-weight: bold;"><%-row.address %></div>
+            <div style="width: 100%;font-weight: bold;"><% if(row.city!=''){ %><%-row.city %>,<%} %><%-row.state %>, Pin-<%-row.zip %></div>
+            <div style="width: 100%;font-weight: bold;margin-top: 10px;">GSTIN NO :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%-row.gst %></div>
+
+
+
+                    </div>
+                    </div>
+                    </div>
+            <div class="card-box">
+                            <h4 class="m-t-0 header-title">Despatch Information</h4>
+                            <div class="col-md-12">
+             <div class="form-row"> 
+                    <div class="form-group col-md-3">
+                        <label >Mode of Transport</label>
+                         <select class="form-control" name="transport_mode"
+                        id="transport_mode" parsley-trigger="change">
+                        <option value="">select</option>
+                        <%
+                            for(var k in transportname) {
+                            %>
+                            <option <%if(wodirow != undefined && wodirow.transport_mode== transportname[k]){%>selected <%}%>  value="<%-transportname[k]%>"><%-transportname[k]%></option>
+                               <%
+                             }
+                            %>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Delivery Basis</label>
+                        <select class="form-control" name="delivery_basis"
+                        id="delivery_basis" parsley-trigger="change">
+                        <option value="">select</option>
+                        <option <%if(wodirow != undefined && wodirow.delivery_basis== 'door delivery'){%>selected <%}%> value="door delivery">Door Delivery</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label >Way bill/road permit</label>
+                        <input type="text" class="form-control" placeholder="Way bill/road permit" id="road_permit" value="<% if(wodirow != undefined){ %><%-wodirow.road_permit%><% } %>"  parsley-trigger="change" >
+                    </div>
+                    
+                    <div class="form-group col-md-3">
+                        <label style="width: 100%;">Name Of Transport<span style="float: right;"><a class="custom-modal-button-t" data-title="Transport" data-href="/transport/new" href="javascript:void(0);">Add new</a></span></label>
+                        <select class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" id="transport">
+                            <option value=""></option>
+                            <%
+                            for(var k in tran) {
+                            %>
+                            <option <%if(wodirow != undefined && wodirow.transport== tran[k].id){%>selected <%}%>  value="<%-tran[k].id%>"><%-tran[k].title%></option>
+                                <%
+                             }
+                            %>
+                            </select>
+                    </div>
+                    
+
+                </div>
+                </div>
+                 </div>
+                 
+                   <div class="card-box">
+                     <div class="form-row"> 
+                      <div class="form-group text-right m-b-0" style="width: 100%">
+                        <input type="hidden" name="wodi" id="wodi" value="<%-wodi%>">
+            <button class="btn btn-primary waves-effect waves-light" type="submit">
+                Submit
+            </button>
+            <button class="btn btn-secondary waves-effect waves-light m-l-5 s-n-bk">
+                Cancel
+            </button>
+        </div>
+    </div>
+</div>
+                    
+                
+            
+        </form>
+    </div><!-- end col -->
+</div>
+<script src="default_assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/workorder.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        WORKORDER.initWODI(<%-JSON.stringify(wodirow)%>);
+    });
+</script>

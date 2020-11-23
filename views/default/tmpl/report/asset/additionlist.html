@@ -1,0 +1,143 @@
+<style type="text/css">
+    table {
+  border-collapse: collapse;
+}
+table, td, th {
+  border: 1px solid black;
+}
+</style>
+<div class="card-box table-responsive" style="width: 100%;">
+    <h1  style="text-align: center;"><%-com.name%></h1>
+    <div style="text-align: center;"><%-com.address%>,<%-com.city%>,<%-com.state%>,<%-com.zip%></div>
+    <div style="text-align: center;"> Additions </div>
+    <div style="text-align: center;"> Financial Year <%-cyear%><%-startyear%> - <%-endyear%> </div>  
+</div>
+<div class="card-box table-responsive">
+            <table id="datatable" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th> Nature of Assets </th>
+                        <th> Shift </th>
+                        <th> Date of Addition </th>
+                        <th> Amount of Addition </th>
+                        <th> If Sold in FY <%-cyear%><%-startyear%> - <%-endyear%> </th>
+                        <th> Date of Sale </th>
+                        <th> Amount of Sale </th>
+                        <th> Useful Life </th>
+                        <th> Dep Rate </th>
+                        <th> Days </th>
+                        <th> Dep for FY <%-cyear%><%-startyear%> - <%-endyear%> </th>
+                        <th> Profit/Loss   on Sale </th>
+                        <th> WDV as on 31/03/<%-cyear%><%-endyear%> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%
+                    var tot={t:0,d:0,v:0,dy:0,tt:0,dt:0,vt:0},shift='',mthod='',dep=0,fnldep=0,rval=0,sarte=0,samount=0,sdate='',sprofit='',pamount=''; 
+                    for(var k in row){ 
+                    var second=1000, minute=second*60, hour=minute*60, day=hour*24, week=day*7;
+                    date1 = new Date(row[k].date);
+                    date2 = new Date("03/31/"+cyear+endyear);
+                    var timediff = date2 - date1;
+                    tot.dy = Math.floor(timediff / day)+1;
+                    if(method == 'wdv'){
+                     mthod = row[k].wdv;
+                    }
+                    else{
+                     mthod = row[k].slm;
+                    }
+                    //console.log("mthod "+mthod);
+                    if(row[k].shift == '1'){
+                     shift='Single';
+                     dep = mthod;
+                    }
+                    else if(row[k].shift == '2'){
+                     shift='Double';
+                     dep = (mthod*1.5);
+                    }
+                    else if(row[k].shift == 3){
+                     shift='Triple';
+                     dep = (mthod*2);
+                    }
+                    //console.log("dep "+dep);
+                    tot.t = row[k].rate;
+                    tot.tt += tot.t;
+                    rval = (tot.t*0.05);
+                    sarte = (tot.t - rval)*100 / tot.t;
+                    if(sarte > dep){
+                     fnldep = dep;
+                    }
+                    else{
+                     fnldep = sarte;
+                    }
+                    //console.log("rval "+rval);
+                    //console.log("sarte "+sarte);
+                    tot.d = (tot.t * fnldep / 100) * tot.dy / 366;
+                    tot.v = (tot.t - tot.d);
+                    tot.dt += tot.d;
+                    tot.vt += tot.v;
+                    //console.log("sale "+row[k].sale);
+                    if(row[k].sale == 'yes'){
+                      samount = row[k].samount;
+                      sdate = row[k].sadate;
+                      console.log("samount "+samount);
+                      if(samount != ''){
+                      if(row[k].rate > samount){
+                      pamount = row[k].rate - (samount + tot.d);
+                      sprofit = 'loss - '+pamount.toFixed();
+                      }
+                    else{
+                      pamount = samount - (row[k].rate - tot.d);;
+                      sprofit = 'profit - '+pamount.toFixed();
+                      }
+                     }
+                    }
+                    else{
+                      samount = '';
+                      sdate = '';
+                      sprofit = '';
+                    }
+
+                    console.log("sdate "+sdate);
+                    console.log("pamount "+pamount);
+                    %>
+                    <tr>
+                        <td><%-row[k].asset_name%></td>
+                        <td><%-shift%></td>
+                        <td><%-row[k].aidate%></td>
+                        <td><%-tot.t.toFixed()%></td>
+                        <td><%-row[k].sale%></td>
+                        <td><%-sdate%></td>
+                        <td><%-samount%></td>
+                        <td><%-row[k].useful_life%></td>
+                        <td><%-fnldep.toFixed(2)%></td>
+                        <td><%-tot.dy.toFixed()%></td>
+                        <td><%-tot.d.toFixed()%></td>
+                        <td><%-sprofit%></td>
+                        <td><%-tot.v.toFixed()%></td>
+                    </tr>
+                    <% } %>
+                </tbody>
+                <tfoot>
+                        <td>Total</td>
+                        <td></td>
+                        <td></td>
+                        <td><%-tot.tt.toFixed()%></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><%-tot.dt.toFixed()%></td>
+                        <td></td>
+                        <td><%-tot.vt.toFixed()%></td>
+                </tfoot>
+            </table>
+        </div>
+<script src="assets/js/app/report/asset.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        RASSET.initAdditionsRprtL();
+    });
+</script>

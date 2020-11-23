@@ -1,0 +1,980 @@
+{"user":1,"type":"system login","time":"2019-02-01T05:23:52.598Z"}
+{"user":1,"type":"system login","time":"2019-02-01T05:29:49.325Z"}
+{"user":1,"type":"system login","time":"2019-02-01T05:30:39.840Z"}
+{"user":1,"type":"system login","time":"2019-02-01T05:30:46.701Z"}
+{"user":1,"type":"system login","time":"2019-02-01T05:31:10.451Z"}
+{"user":1,"type":"system login","time":"2019-02-01T05:31:23.675Z"}
+{"user":1,"type":"system login","time":"2019-02-01T05:33:43.911Z"}
+{"user":1,"type":"system login","time":"2019-02-01T05:34:27.876Z"}
+{"user":1,"type":"system login","time":"2019-02-01T05:46:04.195Z"}
+{"user":1,"type":"system login","time":"2019-02-01T05:49:33.839Z"}
+{"user":1,"type":"system login","time":"2019-02-01T05:52:52.242Z"}
+{"user":1,"type":"system login","time":"2019-02-01T06:02:19.351Z"}
+{"user":1,"type":"system login","time":"2019-02-01T06:52:00.570Z"}
+{"user":1,"type":"system login","time":"2019-02-01T06:53:51.658Z"}
+{"user":1,"type":"system login","time":"2019-02-01T06:54:42.737Z"}
+{"user":1,"type":"system login","time":"2019-02-01T06:56:07.096Z"}
+{"user":1,"type":"system login","time":"2019-02-01T06:58:00.652Z"}
+{"user":1,"type":"system login","time":"2019-02-01T06:58:12.956Z"}
+{"user":1,"type":"system login","time":"2019-02-01T06:58:41.922Z"}
+{"user":1,"type":"system login","time":"2019-02-01T06:59:51.914Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:00:19.520Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:02:33.469Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:05:30.185Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:06:21.854Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:07:24.688Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:08:22.433Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:09:15.044Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:10:28.656Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:11:17.127Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:15:00.444Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:16:09.163Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:16:38.675Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-01T07:22:14.845Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-01T07:22:28.397Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-01T07:22:35.186Z"}
+{"user":1,"type":"monthlyplansheet delete","time":"2019-02-01T07:22:43.898Z"}
+{"user":1,"type":"monthlyplansheet delete","time":"2019-02-01T07:23:12.493Z"}
+{"user":1,"type":"monthlyplansheet delete","time":"2019-02-01T07:23:21.238Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-01T07:23:30.680Z"}
+{"user":1,"type":"monthlyplansheet delete","time":"2019-02-01T07:23:48.789Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:25:31.645Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:26:02.493Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-01T07:26:17.766Z"}
+{"user":1,"type":"monthlyplansheet delete","time":"2019-02-01T07:26:32.348Z"}
+{"user":1,"type":"plan creation","time":"2019-02-01T07:31:20.509Z","refer_id":5}
+{"user":2,"type":"system login","time":"2019-02-01T07:32:45.759Z"}
+{"user":1,"type":"system login","time":"2019-02-01T07:33:55.179Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:23:28.594Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:25:12.299Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:27:01.830Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:29:19.658Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:30:34.203Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:30:46.626Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:31:17.416Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:31:52.888Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:43:15.052Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:46:02.985Z"}
+{"user":1,"type":"system login","time":"2019-02-01T08:51:19.952Z"}
+{"user":1,"type":"system login","time":"2019-02-01T09:13:55.252Z"}
+{"user":1,"type":"system login","time":"2019-02-01T09:15:40.814Z"}
+{"user":1,"type":"system login","time":"2019-02-01T09:17:02.357Z"}
+{"user":1,"type":"system login","time":"2019-02-01T09:20:07.825Z"}
+{"user":1,"type":"system login","time":"2019-02-01T09:24:27.168Z"}
+{"user":1,"type":"system login","time":"2019-02-01T09:28:12.544Z"}
+{"user":1,"type":"system login","time":"2019-02-01T09:53:19.511Z"}
+{"user":1,"type":"system login","time":"2019-02-01T09:54:10.143Z"}
+{"user":1,"type":"system login","time":"2019-02-01T09:56:58.256Z"}
+{"user":1,"type":"system login","time":"2019-02-01T10:24:36.850Z"}
+{"user":1,"type":"system login","time":"2019-02-01T10:25:28.497Z"}
+{"user":1,"type":"system login","time":"2019-02-01T10:39:24.554Z"}
+{"user":1,"type":"system login","time":"2019-02-01T10:42:45.537Z"}
+{"user":1,"type":"system login","time":"2019-02-01T10:52:31.675Z"}
+{"user":1,"type":"system login","time":"2019-02-01T10:58:10.932Z"}
+{"user":1,"type":"system login","time":"2019-02-01T11:01:35.466Z"}
+{"user":1,"type":"system login","time":"2019-02-01T11:05:09.334Z"}
+{"user":1,"type":"enquiry creation","time":"2019-02-01T11:06:11.996Z","refer_id":23}
+{"user":1,"type":"enquiry status acctepted","time":"2019-02-01T11:06:16.662Z","refer_id":"23"}
+{"user":1,"type":"offer creation","time":"2019-02-01T11:07:07.348Z","refer_id":49}
+{"user":1,"type":"system login","time":"2019-02-01T11:13:01.753Z"}
+{"user":1,"type":"system login","time":"2019-02-01T11:14:26.362Z"}
+{"user":1,"type":"system login","time":"2019-02-01T11:19:15.139Z"}
+{"user":1,"type":"system login","time":"2019-02-01T11:19:32.769Z"}
+{"user":1,"type":"offer modification","time":"2019-02-01T11:21:48.459Z","refer_id":"49"}
+{"user":1,"type":"system login","time":"2019-02-01T11:23:44.753Z"}
+{"user":1,"type":"offer modification","time":"2019-02-01T11:26:05.188Z","refer_id":"49"}
+{"user":1,"type":"system login","time":"2019-02-01T11:31:32.577Z"}
+{"user":1,"type":"system login","time":"2019-02-01T11:35:50.606Z"}
+{"user":1,"type":"system login","time":"2019-02-01T11:37:48.854Z"}
+{"user":1,"type":"offer modification","time":"2019-02-01T11:38:07.489Z","refer_id":"49"}
+{"user":1,"type":"system login","time":"2019-02-01T12:03:56.085Z"}
+{"user":1,"type":"system login","time":"2019-02-01T12:06:24.516Z"}
+{"user":1,"type":"system login","time":"2019-02-01T12:08:29.500Z"}
+{"user":1,"type":"system login","time":"2019-02-01T12:32:22.587Z"}
+{"user":1,"type":"system login","time":"2019-02-01T12:38:30.348Z"}
+{"user":1,"type":"system login","time":"2019-02-01T12:39:39.938Z"}
+{"user":1,"type":"system login","time":"2019-02-01T12:40:38.448Z"}
+{"user":1,"type":"system login","time":"2019-02-01T12:47:22.774Z"}
+{"user":1,"type":"system login","time":"2019-02-01T12:49:51.679Z"}
+{"user":1,"type":"system login","time":"2019-02-01T12:52:03.860Z"}
+{"user":1,"type":"system login","time":"2019-02-01T13:29:32.711Z"}
+{"user":1,"type":"system login","time":"2019-02-01T13:39:51.247Z"}
+{"user":1,"type":"system login","time":"2019-02-01T13:58:46.080Z"}
+{"user":1,"type":"system login","time":"2019-02-01T14:00:06.600Z"}
+{"user":1,"type":"system login","time":"2019-02-01T14:01:57.388Z"}
+{"user":1,"type":"system login","time":"2019-02-01T14:03:06.776Z"}
+{"user":1,"type":"system login","time":"2019-02-01T14:08:00.422Z"}
+{"user":1,"type":"system login","time":"2019-02-01T14:11:01.913Z"}
+{"user":1,"type":"workorder commercial creation","time":"2019-02-01T14:13:57.026Z","refer_id":"14"}
+{"user":1,"type":"system login","time":"2019-02-01T14:19:48.091Z"}
+{"user":1,"type":"system login","time":"2019-02-01T14:20:07.921Z"}
+{"user":1,"type":"workorder creation","time":"2019-02-01T14:21:02.451Z","refer_id":17}
+{"user":1,"type":"system login","time":"2019-02-01T14:36:40.056Z"}
+{"user":1,"type":"system login","time":"2019-02-01T14:39:50.573Z"}
+{"user":1,"type":"workorder creation","time":"2019-02-01T14:40:43.979Z","refer_id":18}
+{"user":1,"type":"system login","time":"2019-02-01T14:43:09.153Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-01T14:48:52.732Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-01T14:49:48.732Z"}
+{"user":1,"type":"system login","time":"2019-02-04T05:43:52.242Z"}
+{"user":1,"type":"system login","time":"2019-02-04T06:14:20.716Z"}
+{"user":1,"type":"enquiry creation","time":"2019-02-04T06:15:57.851Z","refer_id":24}
+{"user":1,"type":"enquiry creation","time":"2019-02-04T06:16:28.749Z","refer_id":25}
+{"user":1,"type":"enquiry status acctepted","time":"2019-02-04T06:16:41.470Z","refer_id":"25"}
+{"user":1,"type":"enquiry status acctepted","time":"2019-02-04T06:16:43.907Z","refer_id":"24"}
+{"user":1,"type":"offer creation","time":"2019-02-04T06:17:14.025Z","refer_id":50}
+{"user":1,"type":"offer creation","time":"2019-02-04T06:17:34.630Z","refer_id":51}
+{"user":1,"type":"offer status acctepted","time":"2019-02-04T06:18:15.709Z","refer_id":"51"}
+{"user":1,"type":"offer status rejected","time":"2019-02-04T06:19:27.706Z","refer_id":"50"}
+{"user":1,"type":"system login","time":"2019-02-04T06:27:15.174Z"}
+{"user":1,"type":"enquiry creation","time":"2019-02-04T06:27:53.067Z","refer_id":26}
+{"user":1,"type":"enquiry creation","time":"2019-02-04T06:28:18.314Z","refer_id":27}
+{"user":1,"type":"enquiry status acctepted","time":"2019-02-04T06:28:35.755Z","refer_id":"27"}
+{"user":1,"type":"enquiry status rejected","time":"2019-02-04T06:28:49.983Z","refer_id":"26"}
+{"user":1,"type":"system login","time":"2019-02-04T07:32:32.799Z"}
+{"user":1,"type":"system login","time":"2019-02-04T07:36:17.149Z"}
+{"user":1,"type":"system login","time":"2019-02-04T07:38:59.219Z"}
+{"user":1,"type":"system login","time":"2019-02-04T07:51:38.728Z"}
+{"user":1,"type":"system login","time":"2019-02-04T07:52:58.890Z"}
+{"user":1,"type":"system login","time":"2019-02-04T07:53:59.280Z"}
+{"user":1,"type":"system login","time":"2019-02-04T07:56:18.532Z"}
+{"user":1,"type":"system login","time":"2019-02-04T07:57:43.159Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:02:21.280Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:04:38.318Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:07:09.157Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:08:09.298Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:09:39.678Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:12:54.359Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:15:45.886Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:22:10.921Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:25:23.408Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:26:39.718Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:36:27.008Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:37:53.758Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:38:56.732Z"}
+{"user":1,"type":"system login","time":"2019-02-04T08:40:46.641Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:12:58.325Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:14:34.435Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:15:44.643Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:18:17.028Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:20:14.911Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:32:08.535Z"}
+{"user":1,"type":"product specification creation","time":"2019-02-04T10:35:12.032Z","refer_id":1}
+{"user":1,"type":"system login","time":"2019-02-04T10:40:44.675Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:45:11.312Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:47:06.762Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:52:52.380Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:55:38.799Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:57:50.381Z"}
+{"user":1,"type":"system login","time":"2019-02-04T10:59:54.307Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:00:52.087Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:02:36.437Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:03:48.592Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:04:42.655Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:10:38.575Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:13:19.772Z"}
+{"user":1,"type":"enquiry modification","time":"2019-02-04T11:14:09.971Z","refer_id":"20"}
+{"user":1,"type":"system login","time":"2019-02-04T11:15:55.140Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:16:45.311Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:18:09.499Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:19:00.168Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:30:09.070Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:31:35.359Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:33:28.288Z"}
+{"user":1,"type":"product specification modification","time":"2019-02-04T11:33:41.109Z","refer_id":"1"}
+{"user":1,"type":"system login","time":"2019-02-04T11:34:48.292Z"}
+{"user":1,"type":"product specification modification","time":"2019-02-04T11:35:13.292Z","refer_id":"1"}
+{"user":1,"type":"system login","time":"2019-02-04T11:37:11.180Z"}
+{"user":1,"type":"product specification modification","time":"2019-02-04T11:37:23.564Z","refer_id":"1"}
+{"user":1,"type":"system login","time":"2019-02-04T11:38:17.259Z"}
+{"user":1,"type":"product specification modification","time":"2019-02-04T11:38:31.216Z","refer_id":"1"}
+{"user":1,"type":"system login","time":"2019-02-04T11:46:19.452Z"}
+{"user":1,"type":"product specification creation","time":"2019-02-04T11:46:35.469Z","refer_id":2}
+{"user":1,"type":"product specification delete","time":"2019-02-04T11:46:44.575Z","refer":[{"id":2,"company":3,"specification_name":"Size1","specification_no":11,"status":"active","created_by":1,"creation_time":"2019-02-04T11:46:35.000Z","modification_date":"2019-02-04T11:46:35.000Z","modified_by":0}]}
+{"user":1,"type":"system login","time":"2019-02-04T11:50:28.323Z"}
+{"user":1,"type":"system login","time":"2019-02-04T11:52:06.756Z"}
+{"user":1,"type":"system login","time":"2019-02-04T12:08:34.617Z"}
+{"user":1,"type":"system login","time":"2019-02-04T12:10:38.072Z"}
+{"user":1,"type":"system login","time":"2019-02-04T12:12:33.845Z"}
+{"user":1,"type":"system login","time":"2019-02-04T12:14:45.664Z"}
+{"user":1,"type":"system login","time":"2019-02-04T12:16:01.896Z"}
+{"user":1,"type":"system login","time":"2019-02-04T12:21:21.017Z"}
+{"user":1,"type":"system login","time":"2019-02-04T12:46:30.561Z"}
+{"user":1,"type":"system login","time":"2019-02-04T12:56:59.076Z"}
+{"user":1,"type":"product Item specification creation","time":"2019-02-04T12:57:40.547Z","refer_id":1}
+{"user":1,"type":"product Item specification creation","time":"2019-02-04T12:58:14.244Z","refer_id":2}
+{"user":1,"type":"system login","time":"2019-02-04T13:00:12.196Z"}
+{"user":1,"type":"system login","time":"2019-02-04T13:09:25.328Z"}
+{"user":1,"type":"system login","time":"2019-02-04T13:11:18.398Z"}
+{"user":1,"type":"product Item specification creation","time":"2019-02-04T13:13:24.946Z","refer_id":3}
+{"user":1,"type":"system login","time":"2019-02-04T13:15:37.222Z"}
+{"user":1,"type":"product Item specification creation","time":"2019-02-04T13:16:19.071Z","refer_id":4}
+{"user":1,"type":"system login","time":"2019-02-04T13:17:47.646Z"}
+{"user":1,"type":"product Item specification modification","time":"2019-02-04T13:18:20.749Z","refer_id":"4"}
+{"user":1,"type":"system login","time":"2019-02-04T13:20:32.906Z"}
+{"user":1,"type":"product Item specification delete","time":"2019-02-04T13:20:55.219Z","refer":[{"id":4,"specification_id":1,"name":"abc2","code":"ab2","short_code":"ss2","status":"active","created_by":1,"creation_date":"2019-02-04T13:16:19.000Z","modify_by":1,"modification_date":"2019-02-04T07:48:20.000Z"}]}
+{"user":1,"type":"product Item specification delete","time":"2019-02-04T13:21:01.065Z","refer":[{"id":3,"specification_id":1,"name":"abcd","code":"abc","short_code":"sss","status":"active","created_by":1,"creation_date":"2019-02-04T13:13:24.000Z","modify_by":0,"modification_date":"2019-02-04T13:13:24.000Z"}]}
+{"user":1,"type":"product Item specification creation","time":"2019-02-04T13:21:21.830Z","refer_id":5}
+{"user":1,"type":"system login","time":"2019-02-04T14:01:43.046Z"}
+{"user":1,"type":"system login","time":"2019-02-04T14:03:23.551Z"}
+{"user":1,"type":"system login","time":"2019-02-04T14:06:49.316Z"}
+{"user":1,"type":"system login","time":"2019-02-04T14:10:02.967Z"}
+{"user":1,"type":"product Feature creation","time":"2019-02-04T14:10:19.150Z","refer_id":1}
+{"user":1,"type":"product Feature modification","time":"2019-02-04T14:10:25.803Z","refer_id":"1"}
+{"user":1,"type":"product Feature modification","time":"2019-02-04T14:10:32.915Z","refer_id":"1"}
+{"user":1,"type":"product Feature creation","time":"2019-02-04T14:10:43.770Z","refer_id":2}
+{"user":1,"type":"product specification delete","time":"2019-02-04T14:10:47.901Z","refer":[{"id":2,"company":3,"name":"body1","status":"active","created_by":1,"creation_date":"2019-02-04T14:10:43.000Z","modify_by":0,"modification_date":"2019-02-04T14:10:43.000Z"}]}
+{"user":1,"type":"system login","time":"2019-02-04T14:23:50.320Z"}
+{"user":1,"type":"componemt name  modification","time":"2019-02-04T14:24:26.557Z","refer_id":"18"}
+{"user":1,"type":"componemt name  modification","time":"2019-02-04T14:25:14.008Z","refer_id":"18"}
+{"user":1,"type":"system login","time":"2019-02-04T14:26:30.748Z"}
+{"user":1,"type":"componemt name  modification","time":"2019-02-04T14:27:18.464Z","refer_id":"17"}
+{"user":1,"type":"system login","time":"2019-02-04T14:28:04.146Z"}
+{"user":1,"type":"componemt name  modification","time":"2019-02-04T14:28:20.661Z","refer_id":"19"}
+{"user":1,"type":"system login","time":"2019-02-04T14:29:26.113Z"}
+{"user":1,"type":"componemt name  modification","time":"2019-02-04T14:29:57.114Z","refer_id":"15"}
+{"user":1,"type":"system login","time":"2019-02-04T14:39:53.135Z"}
+{"user":1,"type":"system login","time":"2019-02-04T14:43:01.937Z"}
+{"user":1,"type":"system login","time":"2019-02-04T14:44:12.166Z"}
+{"user":1,"type":"system login","time":"2019-02-04T14:45:56.952Z"}
+{"user":1,"type":"system login","time":"2019-02-04T14:47:18.115Z"}
+{"user":1,"type":"system login","time":"2019-02-05T05:46:27.855Z"}
+{"user":1,"type":"product Item specification modification","time":"2019-02-05T05:48:58.154Z","refer_id":"5"}
+{"user":1,"type":"product Feature modification","time":"2019-02-05T05:49:20.407Z","refer_id":"1"}
+{"user":1,"type":"product Feature modification","time":"2019-02-05T05:49:27.523Z","refer_id":"1"}
+{"user":1,"type":"product specification delete","time":"2019-02-05T05:50:39.761Z","refer":[{"id":1,"company":3,"specification_name":"Size","specification_no":1,"status":"active","created_by":1,"creation_time":"2019-02-04T10:35:12.000Z","modification_date":"2019-02-04T06:08:31.000Z","modified_by":1}]}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:50:50.230Z","refer_id":3}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:51:08.799Z","refer_id":4}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:52:05.167Z","refer_id":5}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:52:34.003Z","refer_id":6}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:52:42.070Z","refer_id":7}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:53:20.142Z","refer_id":8}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:54:09.408Z","refer_id":9}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:54:49.347Z","refer_id":10}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:55:13.073Z","refer_id":11}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:55:51.418Z","refer_id":12}
+{"user":1,"type":"product specification modification","time":"2019-02-05T05:56:22.881Z","refer_id":"12"}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:56:53.448Z","refer_id":13}
+{"user":1,"type":"product specification creation","time":"2019-02-05T05:57:11.199Z","refer_id":14}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:08:27.601Z","refer_id":6}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:10:02.280Z","refer_id":7}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:10:26.591Z","refer_id":8}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:10:45.888Z","refer_id":9}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:11:20.520Z","refer_id":10}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:11:45.672Z","refer_id":11}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:17:45.603Z","refer_id":12}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:18:20.308Z","refer_id":13}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:19:01.432Z","refer_id":14}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:19:16.956Z","refer_id":15}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:19:54.472Z","refer_id":16}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:20:19.792Z","refer_id":17}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:20:34.855Z","refer_id":18}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:21:40.133Z","refer_id":19}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:22:01.373Z","refer_id":20}
+{"user":1,"type":"product Item specification modification","time":"2019-02-05T06:22:09.318Z","refer_id":"19"}
+{"user":1,"type":"product Item specification modification","time":"2019-02-05T06:22:34.112Z","refer_id":"11"}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:24:07.560Z","refer_id":21}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:24:41.197Z","refer_id":22}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:26:58.911Z","refer_id":23}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:27:32.921Z","refer_id":24}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:28:09.459Z","refer_id":25}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:28:32.988Z","refer_id":26}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:29:13.559Z","refer_id":27}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:29:32.143Z","refer_id":28}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:30:19.858Z","refer_id":29}
+{"user":1,"type":"product Item specification creation","time":"2019-02-05T06:30:38.925Z","refer_id":30}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:31:26.240Z","refer_id":3}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:31:39.688Z","refer_id":4}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:31:51.343Z","refer_id":5}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:32:02.922Z","refer_id":6}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:32:19.570Z","refer_id":7}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:32:32.925Z","refer_id":8}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:32:47.895Z","refer_id":9}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:33:03.332Z","refer_id":10}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:33:16.985Z","refer_id":11}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:33:31.376Z","refer_id":12}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:34:03.788Z","refer_id":13}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:34:15.409Z","refer_id":14}
+{"user":1,"type":"product Feature creation","time":"2019-02-05T06:34:40.905Z","refer_id":15}
+{"user":1,"type":"system login","time":"2019-02-05T06:36:06.583Z"}
+{"user":1,"type":"system login","time":"2019-02-05T07:31:32.438Z"}
+{"user":1,"type":"system login","time":"2019-02-05T07:39:36.993Z"}
+{"user":1,"type":"system login","time":"2019-02-05T07:48:38.614Z"}
+{"user":1,"type":"system login","time":"2019-02-05T07:52:43.264Z"}
+{"user":1,"type":"system login","time":"2019-02-05T07:54:21.328Z"}
+{"user":1,"type":"system login","time":"2019-02-05T11:48:59.901Z"}
+{"user":1,"type":"system login","time":"2019-02-05T11:52:07.685Z"}
+{"user":1,"type":"system login","time":"2019-02-05T11:54:48.045Z"}
+{"user":1,"type":"system login","time":"2019-02-05T11:59:10.482Z"}
+{"user":1,"type":"system login","time":"2019-02-05T12:02:41.818Z"}
+{"user":1,"type":"system login","time":"2019-02-05T12:06:35.915Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:22.941Z","refer_id":1}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:22.990Z","refer_id":2}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:22.992Z","refer_id":3}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:22.995Z","refer_id":4}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:23.005Z","refer_id":5}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:23.008Z","refer_id":6}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:23.012Z","refer_id":7}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:23.022Z","refer_id":8}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:23.025Z","refer_id":9}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:23.030Z","refer_id":10}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:23.034Z","refer_id":11}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:10:23.036Z","refer_id":12}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.193Z","refer_id":13}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.202Z","refer_id":14}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.279Z","refer_id":15}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.296Z","refer_id":16}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.298Z","refer_id":17}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.301Z","refer_id":18}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.306Z","refer_id":19}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.312Z","refer_id":20}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.314Z","refer_id":21}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.317Z","refer_id":22}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.320Z","refer_id":23}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:12:10.324Z","refer_id":24}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.308Z","refer_id":25}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.335Z","refer_id":26}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.337Z","refer_id":27}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.350Z","refer_id":28}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.361Z","refer_id":29}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.366Z","refer_id":30}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.370Z","refer_id":31}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.371Z","refer_id":32}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.373Z","refer_id":33}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.382Z","refer_id":34}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.385Z","refer_id":35}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:14:50.388Z","refer_id":36}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:36.955Z","refer_id":37}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:36.960Z","refer_id":38}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:36.962Z","refer_id":39}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:36.982Z","refer_id":40}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:36.986Z","refer_id":41}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:36.991Z","refer_id":42}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:36.996Z","refer_id":43}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:36.998Z","refer_id":44}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:37.000Z","refer_id":45}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:37.002Z","refer_id":46}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:37.012Z","refer_id":47}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:16:37.015Z","refer_id":48}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:20:36.686Z","refer_id":49}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:20:36.710Z","refer_id":50}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:22:00.958Z","refer_id":51}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:22:00.987Z","refer_id":52}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:23:28.896Z","refer_id":53}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:23:28.924Z","refer_id":54}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:26:09.243Z","refer_id":55}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:26:09.296Z","refer_id":56}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:27:35.225Z","refer_id":57}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:27:35.244Z","refer_id":58}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:29:46.077Z","refer_id":59}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:29:46.110Z","refer_id":60}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:31:30.654Z","refer_id":61}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:31:30.675Z","refer_id":62}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:33:08.971Z","refer_id":63}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:33:08.976Z","refer_id":64}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:40:42.306Z","refer_id":65}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:40:42.347Z","refer_id":66}
+{"user":1,"type":"system login","time":"2019-02-05T12:46:18.136Z"}
+{"user":1,"type":"system login","time":"2019-02-05T12:47:59.353Z"}
+{"user":1,"type":"system login","time":"2019-02-05T12:51:30.276Z"}
+{"user":1,"type":"system login","time":"2019-02-05T12:52:54.370Z"}
+{"user":1,"type":"system login","time":"2019-02-05T12:54:24.774Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:54:58.643Z","refer_id":67}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:54:58.649Z","refer_id":68}
+{"user":1,"type":"system login","time":"2019-02-05T12:56:31.900Z"}
+{"user":1,"type":"system login","time":"2019-02-05T12:57:58.858Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:58:14.120Z","refer_id":69}
+{"user":1,"type":"product codification creation","time":"2019-02-05T12:58:14.136Z","refer_id":70}
+{"user":1,"type":"system login","time":"2019-02-05T12:59:31.567Z"}
+{"user":1,"type":"system login","time":"2019-02-05T13:01:41.485Z"}
+{"user":1,"type":"system login","time":"2019-02-05T13:03:38.379Z"}
+{"user":1,"type":"system login","time":"2019-02-05T13:05:19.333Z"}
+{"user":1,"type":"system login","time":"2019-02-05T13:06:30.446Z"}
+{"user":1,"type":"system login","time":"2019-02-05T13:09:43.141Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T13:09:59.208Z","refer_id":71}
+{"user":1,"type":"product codification creation","time":"2019-02-05T13:09:59.213Z","refer_id":72}
+{"user":1,"type":"system login","time":"2019-02-05T13:12:06.788Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T13:12:19.482Z","refer_id":73}
+{"user":1,"type":"product codification creation","time":"2019-02-05T13:12:19.485Z","refer_id":74}
+{"user":1,"type":"system login","time":"2019-02-05T13:12:47.792Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T13:13:03.547Z","refer_id":75}
+{"user":1,"type":"product codification creation","time":"2019-02-05T13:13:03.580Z","refer_id":76}
+{"user":1,"type":"system login","time":"2019-02-05T13:16:08.431Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T13:16:24.226Z","refer_id":77}
+{"user":1,"type":"product codification creation","time":"2019-02-05T13:16:24.234Z","refer_id":78}
+{"user":1,"type":"system login","time":"2019-02-05T13:19:59.683Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T13:20:29.467Z","refer_id":79}
+{"user":1,"type":"product codification creation","time":"2019-02-05T13:20:29.521Z","refer_id":80}
+{"user":1,"type":"system login","time":"2019-02-05T13:29:03.425Z"}
+{"user":1,"type":"system login","time":"2019-02-05T13:30:10.262Z"}
+{"user":1,"type":"system login","time":"2019-02-05T13:32:37.914Z"}
+{"user":1,"type":"system login","time":"2019-02-05T13:38:24.340Z"}
+{"user":1,"type":"system login","time":"2019-02-05T13:40:02.260Z"}
+{"user":1,"type":"product codification delete","time":"2019-02-05T13:40:11.707Z","refer":[{"id":80,"prod_specification_category":14,"prod_specification_item":29,"product_item_id":"N-410 + STL-","status":"active","created_by":1,"creation_date":"2019-02-05T13:20:29.000Z"}]}
+{"user":1,"type":"product codification delete","time":"2019-02-05T13:40:44.954Z","refer":[{"id":79,"prod_specification_category":5,"prod_specification_item":10,"product_item_id":"N-410 + STL-","status":"active","created_by":1,"creation_date":"2019-02-05T13:20:29.000Z"}]}
+{"user":1,"type":"product codification delete","time":"2019-02-05T13:40:51.145Z","refer":[{"id":78,"prod_specification_category":14,"prod_specification_item":30,"product_item_id":"99-410 +CLM-","status":"active","created_by":1,"creation_date":"2019-02-05T13:16:24.000Z"}]}
+{"user":1,"type":"system login","time":"2019-02-05T13:43:05.725Z"}
+{"user":1,"type":"system login","time":"2019-02-05T14:00:12.713Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:00:35.709Z","refer_id":81}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:00:35.711Z","refer_id":82}
+{"user":1,"type":"system login","time":"2019-02-05T14:01:45.654Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:02:32.354Z","refer_id":83}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:02:32.369Z","refer_id":84}
+{"user":1,"type":"product codification delete","time":"2019-02-05T14:03:07.124Z","refer":[{"id":84,"prod_specification_category":6,"prod_specification_item":13,"product_item_id":"BL-25-PS-","status":"active","created_by":1,"creation_date":"2019-02-05T14:02:32.000Z"}]}
+{"user":1,"type":"product codification delete","time":"2019-02-05T14:03:12.379Z","refer":[{"id":83,"prod_specification_category":4,"prod_specification_item":8,"product_item_id":"BL-25-PS-","status":"active","created_by":1,"creation_date":"2019-02-05T14:02:32.000Z"}]}
+{"user":1,"type":"system login","time":"2019-02-05T14:44:32.733Z"}
+{"user":1,"type":"system login","time":"2019-02-05T14:46:07.661Z"}
+{"user":1,"type":"system login","time":"2019-02-05T14:47:02.737Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:48:30.806Z","refer_id":85}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:48:30.841Z","refer_id":86}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:48:30.845Z","refer_id":87}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:48:30.849Z","refer_id":88}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:48:30.863Z","refer_id":89}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:48:30.871Z","refer_id":90}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:49:21.874Z","refer_id":91}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:49:21.894Z","refer_id":92}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:49:21.908Z","refer_id":93}
+{"user":1,"type":"product codification creation","time":"2019-02-05T14:49:21.910Z","refer_id":94}
+{"user":1,"type":"system login","time":"2019-02-05T14:50:01.775Z"}
+{"user":1,"type":"system login","time":"2019-02-05T14:52:31.035Z"}
+{"user":1,"type":"system login","time":"2019-02-05T14:53:04.592Z"}
+{"user":1,"type":"system login","time":"2019-02-05T14:58:21.602Z"}
+{"user":1,"type":"system login","time":"2019-02-05T14:58:51.964Z"}
+{"user":1,"type":"system login","time":"2019-02-05T15:02:40.418Z"}
+{"user":1,"type":"system login","time":"2019-02-05T15:06:08.691Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-05T15:06:44.558Z","refer_id":95}
+{"user":1,"type":"product codification creation","time":"2019-02-05T15:06:44.566Z","refer_id":96}
+{"user":1,"type":"product codification creation","time":"2019-02-05T15:06:44.569Z","refer_id":97}
+{"user":1,"type":"system login","time":"2019-02-06T05:48:54.790Z"}
+{"user":1,"type":"system login","time":"2019-02-06T05:58:32.508Z"}
+{"user":1,"type":"product codification delete","time":"2019-02-06T05:58:48.742Z","refer":[{"id":91,"prod_specification_category":3,"prod_specification_item":16,"product_item_id":"1/4\"-V-FLTG-FLRJ-","status":"active","created_by":1,"creation_date":"2019-02-05T14:49:21.000Z"}]}
+{"user":1,"type":"product Item specification modification","time":"2019-02-06T06:00:08.439Z","refer_id":"16"}
+{"user":1,"type":"product codification delete","time":"2019-02-06T06:02:20.724Z","refer":[{"id":91,"prod_specification_category":3,"prod_specification_item":16,"product_item_id":"1/4-V-FLTG-FLRJ-","status":"active","created_by":1,"creation_date":"2019-02-05T14:49:21.000Z"}]}
+{"user":1,"type":"product codification delete","time":"2019-02-06T06:02:25.733Z","refer":[{"id":85,"prod_specification_category":3,"prod_specification_item":6,"product_item_id":"1/8-N-FLTG-99-FLRJ-410 +CLM-","status":"active","created_by":1,"creation_date":"2019-02-05T14:48:30.000Z"}]}
+{"user":1,"type":"product codification delete","time":"2019-02-06T06:02:31.056Z","refer":[{"id":85,"prod_specification_category":3,"prod_specification_item":6,"product_item_id":"1/8-N-FLTG-99-FLRJ-410 +CLM-","status":"active","created_by":1,"creation_date":"2019-02-05T14:48:30.000Z"}]}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:07.331Z","refer_id":98}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:07.369Z","refer_id":99}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:07.378Z","refer_id":100}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:07.399Z","refer_id":101}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:07.402Z","refer_id":102}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:07.408Z","refer_id":103}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:28.309Z","refer_id":104}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:28.358Z","refer_id":105}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:28.372Z","refer_id":106}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:28.387Z","refer_id":107}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:28.398Z","refer_id":108}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:28.402Z","refer_id":109}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:28.420Z","refer_id":110}
+{"user":1,"type":"product codification creation","time":"2019-02-06T06:04:28.424Z","refer_id":111}
+{"user":1,"type":"product codification delete","time":"2019-02-06T06:04:32.377Z","refer":[{"id":98,"prod_specification_category":3,"prod_specification_item":6,"product_item_id":"1/8N4599FLTGSPL","status":"active","created_by":1,"creation_date":"2019-02-06T06:04:07.000Z"}]}
+{"user":1,"type":"system login","time":"2019-02-06T06:54:10.983Z"}
+{"user":1,"type":"system login","time":"2019-02-06T06:54:55.201Z"}
+{"user":1,"type":"system login","time":"2019-02-06T07:31:43.848Z"}
+{"user":1,"type":"system login","time":"2019-02-06T07:52:18.998Z"}
+{"user":1,"type":"system login","time":"2019-02-06T07:55:32.683Z"}
+{"user":1,"type":"system login","time":"2019-02-06T07:58:40.145Z"}
+{"user":1,"type":"system login","time":"2019-02-06T08:26:10.315Z"}
+{"user":1,"type":"system login","time":"2019-02-06T08:28:59.181Z"}
+{"user":1,"type":"system login","time":"2019-02-06T08:48:57.765Z"}
+{"user":1,"type":"system login","time":"2019-02-06T09:16:20.352Z"}
+{"user":1,"type":"system login","time":"2019-02-06T10:05:57.194Z"}
+{"user":1,"type":"system login","time":"2019-02-06T10:07:08.341Z"}
+{"user":1,"type":"system login","time":"2019-02-06T10:09:06.770Z"}
+{"user":1,"type":"system login","time":"2019-02-06T10:10:19.334Z"}
+{"user":1,"type":"system login","time":"2019-02-06T10:17:45.020Z"}
+{"user":1,"type":"system login","time":"2019-02-06T10:34:19.760Z"}
+{"user":1,"type":"item creation","time":"2019-02-06T10:35:05.770Z","refer_id":2070}
+{"user":1,"type":"system login","time":"2019-02-06T10:59:18.832Z"}
+{"user":1,"type":"system login","time":"2019-02-06T11:04:32.015Z"}
+{"user":1,"type":"system login","time":"2019-02-06T11:06:10.285Z"}
+{"user":1,"type":"system login","time":"2019-02-06T11:10:13.061Z"}
+{"user":1,"type":"system login","time":"2019-02-06T11:11:45.863Z"}
+{"user":1,"type":"system login","time":"2019-02-06T11:17:20.918Z"}
+{"user":1,"type":"system login","time":"2019-02-06T11:51:37.680Z"}
+{"user":1,"type":"system login","time":"2019-02-06T11:53:59.414Z"}
+{"user":1,"type":"system login","time":"2019-02-06T11:56:17.672Z"}
+{"user":1,"type":"system login","time":"2019-02-06T11:58:43.178Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:00:07.654Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:01:21.991Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:02:22.886Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:03:15.144Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:05:38.601Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:06:45.741Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:07:32.379Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:08:16.830Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:09:14.207Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:09:48.752Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:10:23.388Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:11:00.602Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:34:35.610Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:40:32.023Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:48:01.179Z"}
+{"user":1,"type":"system login","time":"2019-02-06T12:54:24.782Z"}
+{"user":1,"type":"system login","time":"2019-02-06T13:01:20.661Z"}
+{"user":1,"type":"system login","time":"2019-02-06T13:02:32.431Z"}
+{"user":1,"type":"system login","time":"2019-02-06T13:04:17.761Z"}
+{"user":1,"type":"system login","time":"2019-02-06T13:05:53.072Z"}
+{"user":1,"type":"system login","time":"2019-02-06T13:06:29.739Z"}
+{"user":1,"type":"item creation","time":"2019-02-06T13:06:56.288Z","refer_id":2071}
+{"user":1,"type":"system login","time":"2019-02-06T13:10:57.337Z"}
+{"user":1,"type":"item modification","time":"2019-02-06T13:15:53.688Z","refer_id":"2071"}
+{"user":1,"type":"item modification","time":"2019-02-06T13:18:13.269Z","refer_id":"2071"}
+{"user":1,"type":"item modification","time":"2019-02-06T13:18:30.196Z","refer_id":"2071"}
+{"user":1,"type":"product codification creation","time":"2019-02-06T14:10:47.181Z","refer_id":112}
+{"user":1,"type":"product codification creation","time":"2019-02-06T14:10:47.248Z","refer_id":113}
+{"user":1,"type":"product codification creation","time":"2019-02-06T14:10:47.269Z","refer_id":114}
+{"user":1,"type":"product codification creation","time":"2019-02-06T14:10:47.292Z","refer_id":115}
+{"user":1,"type":"product codification creation","time":"2019-02-06T14:10:47.301Z","refer_id":116}
+{"user":1,"type":"product codification creation","time":"2019-02-06T14:10:47.325Z","refer_id":117}
+{"user":1,"type":"product codification creation","time":"2019-02-06T14:10:47.328Z","refer_id":118}
+{"user":1,"type":"product codification creation","time":"2019-02-06T14:10:47.330Z","refer_id":119}
+{"user":1,"type":"system login","time":"2019-02-06T14:15:42.988Z"}
+{"user":1,"type":"system login","time":"2019-02-07T05:46:17.932Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:53:43.979Z","refer_id":120}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:53:44.002Z","refer_id":121}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:53:44.015Z","refer_id":122}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:53:44.024Z","refer_id":123}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:53:44.027Z","refer_id":124}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:53:44.030Z","refer_id":125}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:53:44.032Z","refer_id":126}
+{"user":1,"type":"system login","time":"2019-02-07T05:56:06.051Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:56:25.920Z","refer_id":127}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:56:25.936Z","refer_id":128}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:56:25.954Z","refer_id":129}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:56:25.971Z","refer_id":130}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:56:25.974Z","refer_id":131}
+{"user":1,"type":"product codification creation","time":"2019-02-07T05:56:25.982Z","refer_id":132}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:00:59.579Z","refer_id":133}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:00:59.603Z","refer_id":134}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:00:59.613Z","refer_id":135}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:00:59.628Z","refer_id":136}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:01:29.620Z","refer_id":137}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:01:29.637Z","refer_id":138}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:01:29.646Z","refer_id":139}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:01:29.649Z","refer_id":140}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:01:41.435Z","refer_id":141}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:01:41.437Z","refer_id":142}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:01:41.440Z","refer_id":143}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:01:41.443Z","refer_id":144}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:01:41.445Z","refer_id":145}
+{"user":1,"type":"system login","time":"2019-02-07T06:05:10.932Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:05:36.009Z","refer_id":146}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:05:36.012Z","refer_id":147}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:05:36.015Z","refer_id":148}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:05:36.021Z","refer_id":149}
+{"user":1,"type":"system login","time":"2019-02-07T06:15:25.405Z"}
+{"user":1,"type":"system login","time":"2019-02-07T06:17:24.392Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:17:42.082Z","refer_id":150}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:17:42.090Z","refer_id":151}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:17:42.124Z","refer_id":152}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:17:42.129Z","refer_id":153}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:17:50.104Z","refer_id":154}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:17:50.107Z","refer_id":155}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:17:50.117Z","refer_id":156}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:17:50.137Z","refer_id":157}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:17:50.184Z","refer_id":158}
+{"user":1,"type":"system login","time":"2019-02-07T06:21:46.400Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:22:04.567Z","refer_id":159}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:22:04.587Z","refer_id":160}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:22:04.590Z","refer_id":161}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:22:04.592Z","refer_id":162}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:22:13.114Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:22:13.115Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:22:13.116Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:22:13.116Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:22:13.117Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:23:00.982Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:24:04.749Z","refer_id":163}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:24:04.757Z","refer_id":164}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:24:04.766Z","refer_id":165}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:24:04.769Z","refer_id":166}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:24:17.349Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:24:17.353Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:24:17.354Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:24:17.355Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T06:24:17.357Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:31:46.260Z","refer_id":167}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:31:46.264Z","refer_id":168}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:31:46.273Z","refer_id":169}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:31:46.280Z","refer_id":170}
+{"user":1,"type":"system login","time":"2019-02-07T06:35:43.082Z"}
+{"user":1,"type":"system login","time":"2019-02-07T06:44:47.739Z"}
+{"user":1,"type":"system login","time":"2019-02-07T06:47:16.350Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:47:49.203Z","refer_id":171}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:47:49.209Z","refer_id":172}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:47:49.212Z","refer_id":173}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:47:49.221Z","refer_id":174}
+{"user":1,"type":"product codification creation","time":"2019-02-07T06:47:49.224Z","refer_id":175}
+{"user":1,"type":"system login","time":"2019-02-07T06:56:04.153Z"}
+{"user":1,"type":"system login","time":"2019-02-07T07:05:24.621Z"}
+{"user":1,"type":"system login","time":"2019-02-07T07:06:19.490Z"}
+{"user":1,"type":"system login","time":"2019-02-07T07:10:06.761Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T07:10:56.437Z","refer_id":176}
+{"user":1,"type":"product codification creation","time":"2019-02-07T07:10:56.471Z","refer_id":177}
+{"user":1,"type":"product codification creation","time":"2019-02-07T07:10:56.475Z","refer_id":178}
+{"user":1,"type":"product codification creation","time":"2019-02-07T07:10:56.482Z","refer_id":179}
+{"user":1,"type":"product codification creation","time":"2019-02-07T07:10:56.487Z","refer_id":180}
+{"user":1,"type":"system login","time":"2019-02-07T07:15:58.681Z"}
+{"user":1,"type":"system login","time":"2019-02-07T07:17:52.375Z"}
+{"user":1,"type":"system login","time":"2019-02-07T07:18:30.004Z"}
+{"user":1,"type":"system login","time":"2019-02-07T07:20:26.685Z"}
+{"user":1,"type":"system login","time":"2019-02-07T07:20:47.626Z"}
+{"user":1,"type":"system login","time":"2019-02-07T07:26:41.086Z"}
+{"user":1,"type":"item creation","time":"2019-02-07T07:27:40.507Z","refer_id":6}
+{"user":1,"type":"item creation","time":"2019-02-07T07:27:40.530Z","refer_id":7}
+{"user":1,"type":"item creation","time":"2019-02-07T07:27:40.559Z","refer_id":8}
+{"user":1,"type":"item creation","time":"2019-02-07T07:29:43.460Z","refer_id":9}
+{"user":1,"type":"item creation","time":"2019-02-07T07:29:43.485Z","refer_id":10}
+{"user":1,"type":"item creation","time":"2019-02-07T07:29:43.489Z","refer_id":11}
+{"user":1,"type":"item creation","time":"2019-02-07T07:29:43.491Z","refer_id":12}
+{"user":1,"type":"system login","time":"2019-02-07T07:50:12.608Z"}
+{"user":1,"type":"system login","time":"2019-02-07T07:53:50.676Z"}
+{"user":1,"type":"product codification delete","time":"2019-02-07T07:56:15.886Z","refer":[{"id":176,"prod_specification_category":3,"prod_specification_item":16,"product_item_id":"1/4SFLTGFLTG410 + STL","status":"active","created_by":1,"creation_date":"2019-02-07T07:10:56.000Z"}]}
+{"user":1,"type":"system login","time":"2019-02-07T07:58:52.175Z"}
+{"user":1,"type":"enquiry status acctepted","time":"2019-02-07T08:05:43.902Z","refer_id":"20"}
+{"user":1,"type":"offer creation","time":"2019-02-07T08:36:20.619Z","refer_id":52}
+{"user":1,"type":"offer status acctepted","time":"2019-02-07T08:36:38.399Z","refer_id":"52"}
+{"user":1,"type":"system login","time":"2019-02-07T09:18:25.739Z"}
+{"user":1,"type":"system login","time":"2019-02-07T10:23:48.909Z"}
+{"user":1,"type":"system login","time":"2019-02-07T10:47:59.957Z"}
+{"user":1,"type":"system login","time":"2019-02-07T10:49:04.434Z"}
+{"user":1,"type":"system login","time":"2019-02-07T10:50:38.683Z"}
+{"user":1,"type":"system login","time":"2019-02-07T10:51:56.518Z"}
+{"user":1,"type":"system login","time":"2019-02-07T10:53:42.433Z"}
+{"user":1,"type":"system login","time":"2019-02-07T10:54:59.758Z"}
+{"user":1,"type":"system login","time":"2019-02-07T10:55:57.554Z"}
+{"user":1,"type":"system login","time":"2019-02-07T11:00:49.322Z"}
+{"user":1,"type":"system login","time":"2019-02-07T11:02:49.484Z"}
+{"user":1,"type":"system login","time":"2019-02-07T11:05:02.289Z"}
+{"user":1,"type":"system login","time":"2019-02-07T11:09:19.080Z"}
+{"user":1,"type":"system login","time":"2019-02-07T11:16:18.574Z"}
+{"user":1,"type":"system login","time":"2019-02-07T11:54:26.141Z"}
+{"user":1,"type":"system login","time":"2019-02-07T11:57:21.586Z"}
+{"user":1,"type":"system login","time":"2019-02-07T11:58:48.552Z"}
+{"user":1,"type":"enquiry permission for change","time":"2019-02-07T12:00:16.567Z","refer_id":"undefined"}
+{"user":1,"type":"system login","time":"2019-02-07T12:07:39.709Z"}
+{"user":1,"type":"enquiry permission for change","time":"2019-02-07T12:08:09.735Z","refer_id":"undefined"}
+{"user":1,"type":"system login","time":"2019-02-07T12:16:20.056Z"}
+{"user":1,"type":"system login","time":"2019-02-07T12:17:27.962Z"}
+{"user":1,"type":"system login","time":"2019-02-07T12:45:06.941Z"}
+{"user":1,"type":"enquiry permission for change","time":"2019-02-07T12:45:30.751Z","refer_id":"undefined"}
+{"user":1,"type":"enquiry permission for change","time":"2019-02-07T12:48:11.729Z","refer_id":"undefined"}
+{"user":1,"type":"system login","time":"2019-02-07T12:49:32.397Z"}
+{"user":1,"type":"enquiry permission for change","time":"2019-02-07T12:50:01.862Z","refer_id":"27"}
+{"user":1,"type":"system login","time":"2019-02-07T12:50:57.628Z"}
+{"user":1,"type":"enquiry permission for change","time":"2019-02-07T12:51:35.687Z","refer_id":"27"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T12:52:41.797Z","refer_id":181}
+{"user":1,"type":"product codification creation","time":"2019-02-07T12:52:41.862Z","refer_id":182}
+{"user":1,"type":"product codification creation","time":"2019-02-07T12:52:41.869Z","refer_id":183}
+{"user":1,"type":"product codification creation","time":"2019-02-07T12:52:41.926Z","refer_id":184}
+{"user":1,"type":"product codification creation","time":"2019-02-07T12:52:41.933Z","refer_id":185}
+{"user":1,"type":"item creation","time":"2019-02-07T12:52:57.479Z","refer_id":13}
+{"user":1,"type":"item creation","time":"2019-02-07T12:52:57.542Z","refer_id":14}
+{"user":1,"type":"item creation","time":"2019-02-07T12:52:57.563Z","refer_id":15}
+{"user":1,"type":"item creation","time":"2019-02-07T12:52:57.569Z","refer_id":16}
+{"user":1,"type":"item modification","time":"2019-02-07T12:54:21.443Z","refer_id":"2086"}
+{"user":1,"type":"item modification","time":"2019-02-07T12:54:33.763Z","refer_id":"2086"}
+{"user":1,"type":"system login","time":"2019-02-07T13:00:12.891Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:01:49.261Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:01:49.266Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:01:49.268Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:01:49.270Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:01:49.271Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:01:49.272Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:01:49.308Z"}
+{"user":1,"type":"system login","time":"2019-02-07T13:14:55.690Z"}
+{"user":1,"type":"system login","time":"2019-02-07T13:15:47.481Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:17:01.231Z","refer_id":193}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:17:01.249Z","refer_id":194}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:17:01.267Z","refer_id":195}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:17:01.275Z","refer_id":196}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:17:20.028Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:17:20.029Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:17:20.031Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:17:20.032Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:17:20.033Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:18:29.389Z","refer_id":202}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:18:29.390Z","refer_id":203}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:18:29.394Z","refer_id":204}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:18:29.423Z","refer_id":205}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:18:47.123Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:18:47.126Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:18:47.136Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:18:47.137Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:18:47.139Z"}
+{"user":1,"type":"product codification delete","time":"2019-02-07T13:19:18.322Z","refer":[{"id":206,"prod_specification_category":5,"prod_specification_item":10,"product_item_id":"NWFLTGFLTGSPL","status":"active","created_by":1,"creation_date":"2019-02-07T13:18:47.000Z"}]}
+{"user":1,"type":"product codification delete","time":"2019-02-07T13:19:23.846Z","refer":[{"id":197,"prod_specification_category":4,"prod_specification_item":7,"product_item_id":"BLN99WFLTG","status":"active","created_by":1,"creation_date":"2019-02-07T13:17:20.000Z"}]}
+{"user":1,"type":"system login","time":"2019-02-07T13:21:39.284Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:22:10.751Z","refer_id":211}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:22:10.771Z","refer_id":212}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:22:10.784Z","refer_id":213}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:22:10.792Z","refer_id":214}
+{"user":1,"type":"item creation","time":"2019-02-07T13:22:37.518Z","refer_id":17}
+{"user":1,"type":"item creation","time":"2019-02-07T13:22:37.561Z","refer_id":18}
+{"user":1,"type":"item creation","time":"2019-02-07T13:22:37.586Z","refer_id":19}
+{"user":1,"type":"item creation","time":"2019-02-07T13:22:50.456Z","refer_id":20}
+{"user":1,"type":"item creation","time":"2019-02-07T13:22:50.462Z","refer_id":21}
+{"user":1,"type":"item creation","time":"2019-02-07T13:22:50.464Z","refer_id":22}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:24:30.147Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:24:30.154Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:24:30.155Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:24:30.160Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-07T13:24:30.170Z"}
+{"user":1,"type":"system login","time":"2019-02-07T13:42:31.971Z"}
+{"user":1,"type":"system login","time":"2019-02-07T13:45:48.622Z"}
+{"user":1,"type":"system login","time":"2019-02-07T13:52:49.520Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:54:12.337Z","refer_id":220}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:54:12.382Z","refer_id":221}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:54:12.388Z","refer_id":222}
+{"user":1,"type":"product codification creation","time":"2019-02-07T13:54:12.391Z","refer_id":223}
+{"user":1,"type":"system login","time":"2019-02-07T14:26:18.263Z"}
+{"user":1,"type":"system login","time":"2019-02-07T14:33:13.590Z"}
+{"user":1,"type":"system login","time":"2019-02-07T14:34:15.907Z"}
+{"user":1,"type":"system login","time":"2019-02-07T14:46:07.717Z"}
+{"user":1,"type":"system login","time":"2019-02-08T05:56:53.287Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-08T05:57:16.181Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-08T05:57:16.193Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-08T05:57:16.195Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-08T05:57:16.196Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-08T05:57:16.197Z"}
+{"user":1,"type":"system login","time":"2019-02-08T06:22:01.675Z"}
+{"user":1,"type":"system login","time":"2019-02-08T06:37:22.527Z"}
+{"user":1,"type":"system login","time":"2019-02-08T07:01:55.906Z"}
+{"user":1,"type":"component mapping","time":"2019-02-08T07:31:24.028Z","refer_id":244}
+{"user":1,"type":"component mapping","time":"2019-02-08T07:31:24.054Z","refer_id":245}
+{"user":1,"type":"component mapping","time":"2019-02-08T07:31:24.075Z","refer_id":246}
+{"user":1,"type":"component mapping","time":"2019-02-08T07:33:07.463Z","refer_id":247}
+{"user":1,"type":"component mapping","time":"2019-02-08T07:33:07.469Z","refer_id":248}
+{"user":1,"type":"component mapping","time":"2019-02-08T07:33:07.476Z","refer_id":249}
+{"user":1,"type":"item modification","time":"2019-02-08T07:40:11.972Z","refer_id":"2090"}
+{"user":1,"type":"item modification","time":"2019-02-08T07:40:19.062Z","refer_id":"2090"}
+{"user":1,"type":"item creation","time":"2019-02-08T07:40:30.051Z","refer_id":23}
+{"user":1,"type":"item creation","time":"2019-02-08T07:40:30.062Z","refer_id":24}
+{"user":1,"type":"item creation","time":"2019-02-08T07:40:30.083Z","refer_id":25}
+{"user":1,"type":"item creation","time":"2019-02-08T07:40:30.085Z","refer_id":26}
+{"user":1,"type":"system login","time":"2019-02-08T08:16:15.566Z"}
+{"user":1,"type":"system login","time":"2019-02-08T08:18:43.959Z"}
+{"user":1,"type":"system login","time":"2019-02-08T08:20:17.450Z"}
+{"user":1,"type":"system login","time":"2019-02-08T08:55:36.037Z"}
+{"user":1,"type":"system login","time":"2019-02-08T09:02:21.620Z"}
+{"user":1,"type":"system login","time":"2019-02-08T09:16:35.521Z"}
+{"user":1,"type":"system login","time":"2019-02-08T09:19:54.170Z"}
+{"user":1,"type":"system login","time":"2019-02-08T09:23:31.302Z"}
+{"user":1,"type":"system login","time":"2019-02-08T09:26:20.135Z"}
+{"user":1,"type":"system login","time":"2019-02-08T09:27:31.593Z"}
+{"user":1,"type":"system login","time":"2019-02-08T09:29:43.589Z"}
+{"user":1,"type":"item creation","time":"2019-02-08T09:30:47.428Z","refer_id":2092}
+{"user":1,"type":"item modification","time":"2019-02-08T09:31:33.942Z","refer_id":"2092"}
+{"user":1,"type":"item delete","time":"2019-02-08T10:17:50.100Z","refer_id":"2069"}
+{"user":1,"type":"system login","time":"2019-02-08T10:30:34.792Z"}
+{"user":1,"type":"system login","time":"2019-02-08T10:34:33.220Z"}
+{"user":1,"type":"system login","time":"2019-02-08T10:36:55.415Z"}
+{"user":1,"type":"system login","time":"2019-02-08T10:39:52.851Z"}
+{"user":1,"type":"system login","time":"2019-02-08T10:43:04.390Z"}
+{"user":1,"type":"component mapping","time":"2019-02-08T10:44:23.886Z","refer_id":250}
+{"user":1,"type":"component mapping","time":"2019-02-08T10:44:34.601Z","refer_id":251}
+{"user":1,"type":"component mapping","time":"2019-02-08T10:44:53.572Z","refer_id":252}
+{"user":1,"type":"component mapping","time":"2019-02-08T10:44:53.578Z","refer_id":253}
+{"user":1,"type":"system login","time":"2019-02-08T10:50:09.167Z"}
+{"user":1,"type":"system login","time":"2019-02-08T10:51:39.954Z"}
+{"user":1,"type":"system login","time":"2019-02-08T11:00:23.726Z"}
+{"user":1,"type":"component mapping","time":"2019-02-08T11:01:58.806Z","refer_id":254}
+{"user":1,"type":"component mapping","time":"2019-02-08T11:01:58.832Z","refer_id":255}
+{"user":1,"type":"component mapping","time":"2019-02-08T11:02:12.616Z","refer_id":256}
+{"user":1,"type":"component mapping","time":"2019-02-08T11:02:12.626Z","refer_id":257}
+{"user":1,"type":"component mapping","time":"2019-02-08T11:02:33.978Z","refer_id":258}
+{"user":1,"type":"component mapping","time":"2019-02-08T11:02:34.004Z","refer_id":259}
+{"user":1,"type":"component mapping","time":"2019-02-08T11:02:46.058Z","refer_id":260}
+{"user":1,"type":"component mapping","time":"2019-02-08T11:02:46.062Z","refer_id":261}
+{"user":1,"type":"item modification","time":"2019-02-08T11:03:04.351Z","refer_id":"2070"}
+{"user":1,"type":"system login","time":"2019-02-08T11:32:37.359Z"}
+{"user":1,"type":"system login","time":"2019-02-08T11:34:23.640Z"}
+{"user":1,"type":"system login","time":"2019-02-08T11:41:26.460Z"}
+{"user":1,"type":"system login","time":"2019-02-08T11:46:53.743Z"}
+{"user":1,"type":"system login","time":"2019-02-08T11:48:02.508Z"}
+{"user":1,"type":"system login","time":"2019-02-08T11:50:47.688Z"}
+{"user":1,"type":"system login","time":"2019-02-08T12:00:50.036Z"}
+{"user":1,"type":"system login","time":"2019-02-08T12:01:39.865Z"}
+{"user":1,"type":"Service item creation","time":"2019-02-08T12:04:04.993Z","refer_id":2093}
+{"user":1,"type":"system login","time":"2019-02-08T12:08:16.086Z"}
+{"user":1,"type":"Service item modification","time":"2019-02-08T12:08:39.015Z","refer_id":"2093"}
+{"user":1,"type":"Service item modification","time":"2019-02-08T12:09:16.152Z","refer_id":"2093"}
+{"user":1,"type":"Service item modification","time":"2019-02-08T12:09:22.764Z","refer_id":"2093"}
+{"user":1,"type":"Service item delete","time":"2019-02-08T12:09:25.846Z","refer_id":"2068"}
+{"user":1,"type":"system login","time":"2019-02-08T12:11:11.418Z"}
+{"user":1,"type":"system login","time":"2019-02-08T12:12:56.484Z"}
+{"user":1,"type":"system login","time":"2019-02-08T12:20:11.519Z"}
+{"user":1,"type":"system login","time":"2019-02-08T12:29:55.181Z"}
+{"user":1,"type":"system login","time":"2019-02-08T12:31:13.024Z"}
+{"user":1,"type":"item creation","time":"2019-02-08T12:32:37.841Z","refer_id":27}
+{"user":1,"type":"item creation","time":"2019-02-08T12:32:37.848Z","refer_id":28}
+{"user":1,"type":"item creation","time":"2019-02-08T12:32:37.850Z","refer_id":29}
+{"user":1,"type":"item creation","time":"2019-02-08T12:32:37.852Z","refer_id":30}
+{"user":1,"type":"product codification modification","time":"2019-02-08T12:35:27.166Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-08T12:35:27.178Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-08T12:35:27.179Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-08T12:35:27.180Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-08T12:35:27.181Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-08T12:35:27.183Z"}
+{"user":1,"type":"system login","time":"2019-02-08T12:39:46.659Z"}
+{"user":1,"type":"Service item creation","time":"2019-02-08T12:40:35.692Z","refer_id":2094}
+{"user":1,"type":"system login","time":"2019-02-08T12:42:12.749Z"}
+{"user":1,"type":"product Item specification modification","time":"2019-02-08T12:43:35.956Z","refer_id":"16"}
+{"user":1,"type":"product Item specification modification","time":"2019-02-08T12:43:42.384Z","refer_id":"6"}
+{"user":1,"type":"product Item specification modification","time":"2019-02-08T12:44:43.090Z","refer_id":"30"}
+{"user":1,"type":"product Item specification modification","time":"2019-02-08T12:44:50.635Z","refer_id":"29"}
+{"user":1,"type":"product codification creation","time":"2019-02-08T12:45:15.756Z","refer_id":235}
+{"user":1,"type":"product codification creation","time":"2019-02-08T12:45:15.759Z","refer_id":236}
+{"user":1,"type":"product codification creation","time":"2019-02-08T12:45:15.777Z","refer_id":237}
+{"user":1,"type":"product codification creation","time":"2019-02-08T12:45:15.781Z","refer_id":238}
+{"user":1,"type":"product codification creation","time":"2019-02-08T12:45:15.784Z","refer_id":239}
+{"user":1,"type":"item modification","time":"2019-02-08T12:45:55.882Z","refer_id":"2095"}
+{"user":1,"type":"item creation","time":"2019-02-08T12:46:16.056Z","refer_id":31}
+{"user":1,"type":"item creation","time":"2019-02-08T12:46:16.067Z","refer_id":32}
+{"user":1,"type":"component mapping","time":"2019-02-08T12:47:08.622Z","refer_id":262}
+{"user":1,"type":"system login","time":"2019-02-11T06:30:28.110Z"}
+{"user":1,"type":"system login","time":"2019-02-11T07:01:49.476Z"}
+{"user":1,"type":"system login","time":"2019-02-11T07:03:27.802Z"}
+{"user":1,"type":"system login","time":"2019-02-11T07:41:52.844Z"}
+{"user":1,"type":"system login","time":"2019-02-11T07:44:16.132Z"}
+{"user":1,"type":"system login","time":"2019-02-11T07:48:33.490Z"}
+{"user":1,"type":"sales unit creation","time":"2019-02-11T07:49:04.799Z","refer_id":3}
+{"user":1,"type":"sales unit modification","time":"2019-02-11T07:49:20.671Z","refer_id":"3"}
+{"user":1,"type":"sales unit delete","time":"2019-02-11T07:49:25.470Z","refer_id":"3"}
+{"user":1,"type":"system login","time":"2019-02-11T07:52:23.469Z"}
+{"user":1,"type":"system login","time":"2019-02-11T07:55:24.174Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-11T08:03:08.173Z","refer_id":240}
+{"user":1,"type":"product codification creation","time":"2019-02-11T08:03:08.183Z","refer_id":241}
+{"user":1,"type":"product codification creation","time":"2019-02-11T08:03:08.200Z","refer_id":242}
+{"user":1,"type":"item modification","time":"2019-02-11T08:04:11.236Z","refer_id":"2096"}
+{"user":1,"type":"system login","time":"2019-02-11T08:32:01.001Z"}
+{"user":1,"type":"system login","time":"2019-02-11T08:37:30.037Z"}
+{"user":1,"type":"system login","time":"2019-02-11T08:51:21.165Z"}
+{"user":1,"type":"system login","time":"2019-02-11T08:55:42.767Z"}
+{"user":1,"type":"system login","time":"2019-02-11T08:58:34.262Z"}
+{"user":1,"type":"system login","time":"2019-02-11T09:01:12.923Z"}
+{"user":1,"type":"system login","time":"2019-02-11T09:04:10.411Z"}
+{"user":1,"type":"system login","time":"2019-02-11T09:07:15.603Z"}
+{"user":1,"type":"system login","time":"2019-02-11T09:12:22.551Z"}
+{"user":1,"type":"componemt sub name  modification","time":"2019-02-11T09:13:21.431Z"}
+{"user":1,"type":"componemt sub name  modification","time":"2019-02-11T09:14:35.475Z"}
+{"user":1,"type":"componemt sub name  modification","time":"2019-02-11T09:17:21.421Z","refer_id":"20"}
+{"user":1,"type":"componemt sub name  modification","time":"2019-02-11T09:17:28.320Z","refer_id":"20"}
+{"user":1,"type":"system login","time":"2019-02-11T09:21:55.206Z"}
+{"user":1,"type":"system login","time":"2019-02-11T09:23:51.108Z"}
+{"user":1,"type":"componemt subname creation","time":"2019-02-11T09:24:16.483Z","refer_id":41}
+{"user":1,"type":"system login","time":"2019-02-11T09:31:53.683Z"}
+{"user":1,"type":"componemt subname creation","time":"2019-02-11T09:34:36.056Z","refer_id":42}
+{"user":1,"type":"system login","time":"2019-02-11T10:14:20.808Z"}
+{"user":1,"type":"componemt subname creation","time":"2019-02-11T10:14:45.881Z","refer_id":43}
+{"user":1,"type":"componemt sub name  modification","time":"2019-02-11T10:14:55.726Z","refer_id":"20"}
+{"user":1,"type":"system login","time":"2019-02-11T10:18:02.424Z"}
+{"user":1,"type":"system login","time":"2019-02-11T10:20:01.454Z"}
+{"user":1,"type":"system login","time":"2019-02-11T10:22:57.340Z"}
+{"user":1,"type":"system login","time":"2019-02-11T10:27:54.137Z"}
+{"user":1,"type":"componemt sub name  modification","time":"2019-02-11T10:28:11.486Z","refer_id":"20"}
+{"user":1,"type":"system login","time":"2019-02-11T10:29:43.580Z"}
+{"user":1,"type":"component Sub name delete","time":"2019-02-11T10:30:00.923Z","refer_id":"20"}
+{"user":1,"type":"system login","time":"2019-02-11T10:34:38.877Z"}
+{"user":1,"type":"component Sub name delete","time":"2019-02-11T10:35:29.661Z","refer_id":"43"}
+{"user":1,"type":"componemt subname creation","time":"2019-02-11T10:35:46.852Z","refer_id":44}
+{"user":1,"type":"component Sub name delete","time":"2019-02-11T10:35:51.198Z","refer_id":"44"}
+{"user":1,"type":"componemt name creation","time":"2019-02-11T10:40:59.280Z","refer_id":22}
+{"user":1,"type":"component name delete","time":"2019-02-11T10:41:06.182Z","refer_id":"22"}
+{"user":1,"type":"system login","time":"2019-02-11T13:55:03.562Z"}
+{"user":1,"type":"system login","time":"2019-02-11T13:56:46.614Z"}
+{"user":1,"type":"system login","time":"2019-02-11T13:58:15.895Z"}
+{"user":1,"type":"system login","time":"2019-02-11T13:59:35.638Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:00:00.749Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:00:00.776Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:00:00.778Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:00:49.109Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:00:49.111Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:00:49.114Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:00:49.116Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-11T14:01:10.473Z","refer_id":250}
+{"user":1,"type":"product codification creation","time":"2019-02-11T14:01:10.497Z","refer_id":251}
+{"user":1,"type":"product codification creation","time":"2019-02-11T14:01:10.518Z","refer_id":252}
+{"user":1,"type":"product codification creation","time":"2019-02-11T14:01:10.523Z","refer_id":253}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:01:37.586Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:01:37.587Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:01:37.589Z"}
+{"user":1,"type":"product codification modification","time":"2019-02-11T14:01:37.592Z"}
+{"user":1,"type":"product codification creation","time":"2019-02-11T14:02:00.413Z","refer_id":258}
+{"user":1,"type":"product codification creation","time":"2019-02-11T14:02:00.415Z","refer_id":259}
+{"user":1,"type":"product codification creation","time":"2019-02-11T14:02:00.417Z","refer_id":260}
+{"user":1,"type":"product codification delete","time":"2019-02-11T14:02:13.760Z","refer":[{"id":258,"prod_specification_category":8,"prod_specification_item":17,"product_item_id":"99FLTGFLTG","status":"active","created_by":1,"creation_date":"2019-02-11T14:02:00.000Z"}]}
+{"user":1,"type":"product codification delete","time":"2019-02-11T14:02:39.586Z","refer":[{"id":254,"prod_specification_category":8,"prod_specification_item":17,"product_item_id":"99FLTGFLTGA105","status":"active","created_by":1,"creation_date":"2019-02-11T14:01:37.000Z"}]}
+{"user":1,"type":"system login","time":"2019-02-12T05:58:14.405Z"}
+{"user":1,"type":"system login","time":"2019-02-12T06:22:10.364Z"}
+{"user":1,"type":"system login","time":"2019-02-12T06:35:37.680Z"}
+{"user":1,"type":"item creation","time":"2019-02-12T06:36:19.354Z","refer_id":33}
+{"user":1,"type":"item creation","time":"2019-02-12T06:36:19.387Z","refer_id":34}
+{"user":1,"type":"system login","time":"2019-02-12T06:39:55.140Z"}
+{"user":1,"type":"system login","time":"2019-02-12T06:41:32.288Z"}
+{"user":1,"type":"system login","time":"2019-02-12T06:53:25.046Z"}
+{"user":1,"type":"system login","time":"2019-02-12T06:57:05.154Z"}
+{"user":1,"type":"system login","time":"2019-02-12T07:05:09.212Z"}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:05:58.760Z","refer_id":263}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:05:58.768Z","refer_id":264}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:06:20.576Z","refer_id":265}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:06:20.582Z","refer_id":266}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:06:48.173Z","refer_id":267}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:06:48.176Z","refer_id":268}
+{"user":1,"type":"system login","time":"2019-02-12T07:09:20.348Z"}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:12:38.296Z","refer_id":269}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:12:38.301Z","refer_id":270}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:14:27.800Z","refer_id":271}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:14:27.817Z","refer_id":272}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:14:39.959Z","refer_id":273}
+{"user":1,"type":"component mapping","time":"2019-02-12T07:14:39.971Z","refer_id":274}
+{"user":1,"type":"offer modification","time":"2019-02-12T07:16:13.576Z","refer_id":"42"}
+{"user":1,"type":"offer modification","time":"2019-02-12T07:16:35.590Z","refer_id":"42"}
+{"user":1,"type":"workorder creation","time":"2019-02-12T07:17:25.366Z","refer_id":19}
+{"user":1,"type":"workorder delete","time":"2019-02-12T07:18:06.732Z","refer":[]}
+{"user":1,"type":"workorder delete","time":"2019-02-12T07:18:11.505Z","refer":[]}
+{"user":1,"type":"item modification","time":"2019-02-12T07:20:12.396Z","refer_id":"2096"}
+{"user":1,"type":"item modification","time":"2019-02-12T07:21:19.203Z","refer_id":"2095"}
+{"user":1,"type":"item modification","time":"2019-02-12T07:21:32.071Z","refer_id":"2090"}
+{"user":1,"type":"offer creation","time":"2019-02-12T07:22:26.106Z","refer_id":53}
+{"user":1,"type":"offer status acctepted","time":"2019-02-12T07:22:32.351Z","refer_id":"53"}
+{"user":1,"type":"workorder creation","time":"2019-02-12T07:24:24.710Z","refer_id":20}
+{"user":1,"type":"offer modification","time":"2019-02-12T07:24:45.394Z","refer_id":"53"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-12T07:26:06.147Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-12T07:26:15.469Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-12T07:26:44.875Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-12T07:27:01.319Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-12T07:27:01.325Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-12T07:27:01.331Z"}
+{"user":1,"type":"monthlyplansheet create","time":"2019-02-12T07:27:23.346Z"}
+{"user":1,"type":"system login","time":"2019-02-12T08:25:49.721Z"}
+{"user":1,"type":"system login","time":"2019-02-12T08:39:31.843Z"}
+{"user":1,"type":"system login","time":"2019-02-12T08:44:49.007Z"}
+{"user":1,"type":"system login","time":"2019-02-12T09:11:32.473Z"}
+{"user":1,"type":"system login","time":"2019-02-12T09:59:15.825Z"}
+{"user":1,"type":"system login","time":"2019-02-12T10:10:24.354Z"}
+{"user":1,"type":"enquiry modification","time":"2019-02-12T10:42:45.076Z","refer_id":"27"}
+{"user":1,"type":"workorder Despatch insurance creation","time":"2019-02-12T10:46:14.289Z","refer_id":"16"}
+{"user":1,"type":"workorder Despatch insurance creation","time":"2019-02-12T10:46:47.149Z","refer_id":"16"}
+{"user":1,"type":"workorder Despatch insurance creation","time":"2019-02-12T10:48:32.841Z","refer_id":"16"}
+{"user":1,"type":"system login","time":"2019-02-12T11:09:50.300Z"}
+{"user":1,"type":"system login","time":"2019-02-12T11:12:13.363Z"}
+{"user":1,"type":"system login","time":"2019-02-12T11:18:36.363Z"}
+{"user":1,"type":"system login","time":"2019-02-12T11:44:51.035Z"}
+{"user":1,"type":"system login","time":"2019-02-12T11:50:58.839Z"}
+{"user":1,"type":"system login","time":"2019-02-12T11:53:37.932Z"}
+{"user":1,"type":"system login","time":"2019-02-12T12:03:09.692Z"}
+{"user":1,"type":"system login","time":"2019-02-12T12:11:51.199Z"}
+{"user":1,"type":"system login","time":"2019-02-12T12:14:10.564Z"}
+{"user":1,"type":"system login","time":"2019-02-12T12:15:32.275Z"}
+{"user":1,"type":"system login","time":"2019-02-12T12:16:26.362Z"}
+{"user":1,"type":"system login","time":"2019-02-12T13:01:10.729Z"}
+{"user":1,"type":"system login","time":"2019-02-12T14:16:06.135Z"}
+{"user":1,"type":"system login","time":"2019-02-12T14:17:08.130Z"}
+{"user":1,"type":"system login","time":"2019-02-12T14:33:10.120Z"}
+{"user":1,"type":"system login","time":"2019-02-12T14:34:00.136Z"}
+{"user":1,"type":"system login","time":"2019-02-12T14:34:46.965Z"}
+{"user":1,"type":"system login","time":"2019-02-13T05:40:00.030Z"}
+{"user":1,"type":"system login","time":"2019-02-13T06:27:37.088Z"}
+{"user":1,"type":"system login","time":"2019-02-13T06:38:01.171Z"}
+{"user":1,"type":"system login","time":"2019-02-14T05:40:07.946Z"}
+{"user":1,"type":"system login","time":"2019-02-14T05:40:10.461Z"}

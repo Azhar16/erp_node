@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+#div2 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+<body>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="div1" class="div1-cls" ondrop="drop(event)" ondragover="allowDrop(event)">
+  
+</div>
+<br>
+<div id="div2" class="div2-cls" ondrop="drop(event)" ondragover="allowDrop(event)">
+  
+</div>
+<br>
+
+<div id="abc">
+	
+  
+  		<div class="drag1"  draggable="true" ondragstart="drag(event)" width="336" height="69">hi my name is azhar</div>
+      <div class="drag2"  draggable="true" ondragstart="drag(event)" width="336" height="69">hi my name is salim</div>
+
+</div>
+
+
+</body>
+</html>
+
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.className);
+
+}
+
+function drop(ev) {
+
+	//console.log(document.getElementById(ev.dataTransfer.getData("text")).parentElement);
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  //console.log (event.target);
+  var dat=document.getElementById("abc").firstElementChild;
+  //console.log(document.getElementsByClassName(data)[0])
+  ev.target.appendChild(document.getElementsByClassName(data)[0]);
+  if(document.getElementById("abc").firstElementChild)
+
+ 	{
+ 		//console.log(document.getElementById("abc").firstElementChild)
+ 	}
+ else
+ 	{
+ 		var div=document.createElement("div");
+ 		div.innerHTML="hi my name is azhar";
+ 		div.className='drag1';
+ 		div.draggable="true";
+ 		div.ondragstart="drag(event)";
+ 		//console.log(div);
+    var div1=document.createElement("div");
+    div1.innerHTML="hi my name is salim";
+    div1.className='drag2';
+    div1.draggable="true";
+    div1.ondragstart="drag(event)";
+ 		document.getElementById('abc').appendChild(div);
+    document.getElementById('abc').appendChild(div1);
+ 		
+ 	};
+}
+
+</script>
+</head>

@@ -1,0 +1,347 @@
+<style type="text/css">
+    .p-name{
+        width: 60%;
+        float: left;
+    }
+    .p-num,.p-del{
+        width: 20%;
+        float: left;
+    }
+</style>
+<div class="row hide-for-modal">
+    <div class="col-sm-12">
+        <div class="btn-group pull-right m-t-20">
+            <button class="btn btn-primary waves-effect w-md waves-light m-b-5 i-n-b">Back</button>
+        </div>
+        <h4 class="page-title">Component Mapping</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <form class="form-horizontal" action="#" data-parsley-validate novalidate id="frmINew">
+            <div class="loginmessage"></div>
+            <div class="card-box">
+            <h4 class="m-t-0 header-title">Product</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label >Size*</label>
+                        <input type="number" name="product_size" parsley-trigger="change" 
+                               placeholder="Enter product size" class="form-control" id="product_size"  value="<% if(compmap != undefined){ %><%-compmap.size%><% } %>">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Type*</label>
+                        <input type="text" name="product_type" parsley-trigger="change" 
+                               placeholder="Enter product type" class="form-control" id="product_type" value="<% if(compmap != undefined){ %><%-compmap.type%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Class*</label>
+                        <input type="text" name="product_class" parsley-trigger="change" 
+                               placeholder="Enter product class" class="form-control" id="product_class" value="<% if(compmap != undefined){ %><%-compmap.class%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Figure*</label>
+                        <input type="text" name="product_figure" parsley-trigger="change" 
+                               placeholder="Enter product figure" class="form-control" id="product_figure" value="<% if(compmap != undefined){ %><%-compmap.figure%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Ends*</label>
+                        <input type="text" name="product_ends" parsley-trigger="change" 
+                               placeholder="Enter product Ends" class="form-control" id="product_ends" value="<% if(compmap != undefined){ %><%-compmap.ends%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >MOC*</label>
+                        <input type="text" name="product_moc" parsley-trigger="change" 
+                               placeholder="Enter product MOC" class="form-control" id="product_moc" value="<% if(compmap != undefined){ %><%-compmap.moc%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Trim*</label>
+                        <input type="text" name="product_trim" parsley-trigger="change" 
+                               placeholder="Enter product Trim" class="form-control" id="product_trim" value="<% if(compmap != undefined){ %><%-compmap.trim%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Order Qty*</label>
+                        <input type="number" name="product_qty" parsley-trigger="change" 
+                               placeholder="Enter product Qty" class="form-control" id="product_qty" value="<% if(compmap != undefined){ %><%-compmap.order_quantity%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-3">
+                         <label >CDD*</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="product_cdd" parsley-trigger="change" value="<% if(compmap != undefined){ %><%-compmap.cdd%><% } %>" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Inspection*</label>
+                        <input type="text" name="product_inspection" parsley-trigger="change" 
+                               placeholder="Enter product Inspection" class="form-control" id="product_inspection" value="<% if(compmap != undefined){ %><%-compmap.inspection%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Hydraulic body*</label>
+                        <input type="text" name="product_hydraulic_body" parsley-trigger="change" 
+                               placeholder="Enter product hydraulic body" class="form-control" id="product_hydraulic_body" value="<% if(compmap != undefined){ %><%-compmap.hydraulic_body%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Hydraulic Seat*</label>
+                        <input type="text" name="product_hydraulic_seat" parsley-trigger="change" 
+                               placeholder="Enter product hydraulic seat" class="form-control" id="product_hydraulic_seat" value="<% if(compmap != undefined){ %><%-compmap.hydraulic_seat%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Pneumatic Seat*</label>
+                        <input type="text" name="product_pneumatic_seat" parsley-trigger="change" 
+                               placeholder="Enter product pneumatic seat" class="form-control" id="product_pneumatic_seat" value="<% if(compmap != undefined){ %><%-compmap.pneumatic_seat%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Hydroback Seat*</label>
+                        <input type="text" name="product_hydroback_seat" parsley-trigger="change" 
+                               placeholder="Enter product Hydroback Seat" class="form-control" id="product_hydroback_seat" value="<% if(compmap != undefined){ %><%-compmap.hydroback_seat%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4" >
+                        <label >Unit Rate*</label>
+                        <input type="number" name="product_unit_rate" parsley-trigger="change" 
+                               placeholder="Enter product unit rate" class="form-control" id="product_unit_rate" value="<% if(compmap != undefined){ %><%-compmap.unit_rate%><% } %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Category*</label>
+                        <input type="text" name="product_category" parsley-trigger="change" 
+                               placeholder="Enter product Category" class="form-control" id="product_category" value="<% if(compmap != undefined){ %><%-compmap.category%><% } %>" > 
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label >Size Id*</label>
+                        <input type="text" name="product_category" parsley-trigger="change" 
+                               placeholder="Enter Size Id" class="form-control" id="size_id" value="<% if(compmap != undefined){ %><%-compmap.size_id%><% } %>" > 
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+            <h4 class="m-t-0 header-title">Features</h4>
+                <div class="form-row " >
+                   <div class="form-group col-md-2">
+                        <label >Body</label>
+                        <select class="form-control" name="body"
+                        id="body" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.body== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.body== 'no'){%>selected <%}%>   value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Forged</label>
+                        <select class="form-control" name="forged"
+                        id="forged" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.forged== 'yes'){%>selected <%}%>  value="yes">Yes</option>
+                            <option  <%if(compftr != undefined && compftr.forged== 'no'){%>selected <%}%>  value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Bonnet/Cover</label>
+                        <select class="form-control" name="bonet"
+                        id="bonet" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.bonet== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.bonet== 'no'){%>selected <%}%>   value="no">No</option>
+                        </select>
+                    </div>
+                   <div class="form-group col-md-2">
+                        <label >Bolted</label>
+                        <select class="form-control" name="bolted"
+                        id="bolted" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.bolted== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.bolted== 'no'){%>selected <%}%>   value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Spindle</label>
+                        <select class="form-control" name="spindle"
+                        id="spindle" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.spindle== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.spindle== 'no'){%>selected <%}%>   value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Rising</label>
+                        <select class="form-control" name="rising"
+                        id="rising" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.rising== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.rising== 'no'){%>selected <%}%>   value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Seat</label>
+                        <select class="form-control" name="seat"
+                        id="seat" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.seat== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.seat== 'no'){%>selected <%}%>   value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Renewable</label>
+                        <select class="form-control" name="renewable"
+                        id="renewable" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.renewable== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.renewable== 'no'){%>selected <%}%>   value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Wedge/Disc</label>
+                        <select class="form-control" name="wedge"
+                        id="wedge" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.wedge== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.wedge== 'no'){%>selected <%}%>   value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Loose Needle</label>
+                        <select class="form-control" name="loose_needle"
+                        id="loose_needle" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.loose_needle== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.loose_needle== 'no'){%>selected <%}%>   value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Gland Boss</label>
+                        <select class="form-control" name="gland_boss"
+                        id="gland_boss" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.gland_boss== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.gland_boss== 'no'){%>selected <%}%>  value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Single</label>
+                        <select class="form-control" name="single"
+                        id="single" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.single== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.single== 'no'){%>selected <%}%>  value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Back Seat</label>
+                        <select class="form-control" name="back_seat"
+                        id="back_seat" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.back_seat== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.back_seat== 'no'){%>selected <%}%>  value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Integral</label>
+                        <select class="form-control" name="integral"
+                        id="integral" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.integral== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option  <%if(compftr != undefined && compftr.integral== 'no'){%>selected <%}%> value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Hand Wheel</label>
+                        <select class="form-control" name="hand_wheel"
+                        id="hand_wheel" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.hand_wheel== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.hand_wheel== 'no'){%>selected <%}%>  value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Gasket</label>
+                        <select class="form-control" name="gasket"
+                        id="gasket" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.gasket== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.gasket== 'no'){%>selected <%}%>  value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label >Spiral wound</label>
+                        <select class="form-control" name="spiral_wound"
+                        id="spiral_wound" parsley-trigger="change">
+                            <option value="">select</option>
+                            <option <%if(compftr != undefined && compftr.spiral_wound== 'yes'){%>selected <%}%> value="yes">Yes</option>
+                            <option <%if(compftr != undefined && compftr.spiral_wound== 'no'){%>selected <%}%>  value="no">No</option>
+                        </select>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+           
+            <div class="card-box">
+            <h4 class="m-t-0 header-title">Component Name & subname</h4>
+                <div class="form-row component" >
+                    <div class="main-cls" style="width: 70%;float:left;" >
+                    <%
+               for(var k in row) {
+                     %>
+                  
+                     <div class="form-group col-md-12 i-sub-row sub-row" data-id="<%-row[k].id%>"  >
+                        
+                    <h6 class="component_name-cls">Component Name : <%-row[k].component_name%></h6>
+                                                                       
+                        <div class="item-wrapper"  style="width: 100%;">
+                          
+                        </div>
+
+                    </div> 
+                       <%
+                     }
+                    %>
+                   </div>
+                   <div class="div-item-fixed" style="width: 30%;float: left;right:0px;">
+                    <div class="prod-srch">
+                        <input type="text"  name="item-srch"  id="item-srch"  >
+                    </div>
+                      <div  class="item-dragable-wrap prod-holder" >
+                        
+                      </div>
+                     </div>                     
+                    </div>
+                   
+            </div>
+                 <div class="card-box">
+                    <div class="form-group text-right m-b-0 col-md-12">
+                      <input type="hidden" name="compmapid" id="compmapid" value="<%-item.id%>"/>
+                    <button class="btn btn-primary waves-effect waves-light" type="submit">
+                        Submit
+                    </button>
+                    <button class="btn btn-secondary waves-effect waves-light m-l-5 i-n-b hide-for-modal">
+                        Cancel
+                    </button>
+                </div>
+                </div>
+        </form>
+    </div><!-- end col -->
+</div>
+<script>
+
+</script>
+<script type="text/javascript" src="default_assets/plugins/parsleyjs/dist/parsley.min.js"></script>
+<script src="assets/js/app/item.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        ITEM.initCN(<%-item.id%>);
+    });
+    jQuery(function($) {
+  function fixDiv() {
+    var $cache = $('.div-item-fixed');
+    if ($(window).scrollTop() > 700)
+      $cache.css({
+        'position': 'fixed',
+        'top': '10px'
+      });
+    else
+      $cache.css({
+        'position': 'relative',
+        'top': 'auto'
+      });
+  }
+  $(window).scroll(fixDiv);
+  fixDiv();
+});
+</script>
